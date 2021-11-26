@@ -1,6 +1,6 @@
 # grupo_7_wineline
 
-##WINELINE
+WINELINE
 
 Somos un equipo apasionado por el mundo del vino, y buscamos compartir con nuestra comunidad el GUSTO DE DESCUBRIR nuevas etiquetas a través de experiencias únicas y exclusivas para nuestros usuarios.
 Nuestra página web está orientada a expertos en la materia, que quieren disfrutar vinos de primer nivel, como asi también al publico que no tiene conocimiento y quiere informarse a la hora de comprar y seleccionar alguna de nuestras bebidas. 
@@ -8,7 +8,7 @@ Ademas ofrecemos distintas variedades de bebidas.
 
 
 
-#####Miembros Fundadores:
+**Miembros Fundadores**:
 
 **Alfredo Burgueño**: Comerciante con experiencia en diseño UI/UX, actualmente cursando programacion web Full Stack.
 
