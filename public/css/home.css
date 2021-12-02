@@ -1,9 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 @import url("normalize.css");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
 
+.img-banner {
+  width: 60vw;
+}
+.barrabusqueda {
+  display: flex;
+  justify-content: center;
+  border-radius: 5%;
+}
+
+.header-main {
+  background-color: rgb(39, 32, 32);
+  color: white;
+  margin: auto;
+}
+
+.banner {
+  width: 100vw;
+  margin-bottom: 5px;
+  box-shadow: 5px 5px 5px rgb(100, 100, 100);
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-product {
+  width: 80vw;
+  margin: 5px;
+  box-shadow: 5px 5px 5px rgb(100, 100, 100);
+}
+
+main {
+  background-color: #c0c0c0;
+}
