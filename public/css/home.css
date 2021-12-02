@@ -7,39 +7,3 @@
 }
 
 
-body {
-    font-family: "Roboto";
-}
-
-.main-header {
-    background-color:#744444;
-    padding-bottom: 5px;
-    
-}
-
-.logo {
-    width: 200px;
-   
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   align-items: flex-start;
-}
-
-.header-topbar i {
-   font-size: 20px;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-}
-
-.main-nav {
-    list-style: none;   
-    display: flex;
-    flex-wrap: wrap;
-   
-}
-
-.main-nav li {
-   list-style: none;
-}
