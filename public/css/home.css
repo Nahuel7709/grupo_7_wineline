@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("normalize.css");
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Roboto";
+}
+
+.main-header {
+    background-color:#744444;
+    padding-bottom: 5px;
+    
+}
+
+.logo {
+    width: 200px;
+   
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   align-items: flex-start;
+}
+
+.header-topbar i {
+   font-size: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+
+.main-nav {
+    list-style: none;   
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.main-nav li {
+   list-style: none;
+}
