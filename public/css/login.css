@@ -228,6 +228,28 @@ footer {
   border: solid rgb(29, 29, 29) 1px;
 }
 
+.password-remember{
+  color: white;
+  text-decoration: none;
+}
+
+.password-remember1{
+  text-align: center;
+}
+
+.password-remember:hover{
+  color: lightgray
+}
+
+.remember{
+  color: white;
+  
+}
+
+.remember1{
+  text-align: center;
+}
+
 
 .icon:hover{
   color: lightgray

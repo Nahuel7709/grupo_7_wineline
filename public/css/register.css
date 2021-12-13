@@ -208,6 +208,15 @@ footer {
     color: white;
 }
 
+.conditions1{
+  color: lightblue;
+  text-decoration: none;
+}
+
+.conditions1:hover{
+  text-decoration: underline;
+}
+
 .register-button2{
     background-color: white;
   color: black;
