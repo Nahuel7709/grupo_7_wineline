@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 @import url("normalize.css");
 
@@ -8,9 +8,8 @@
 }
 
 body {
-  
   font-family: "roboto";
-  background-image: url(/images/background.img2.jpg);
+  background-image: url(/images/black_background.jpg);
 }
 
 main {
@@ -19,11 +18,8 @@ main {
 
 footer {
   margin: 30px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
-
-
 
 .logo {
   display: flex;
@@ -43,14 +39,11 @@ footer {
 
 .header-main {
   padding-top: 25px;
-  
-  
 }
 
 .banner {
   width: 100vw;
   margin-bottom: 5px;
-  
 }
 
 .articles {
@@ -58,8 +51,6 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 30px;
-  
-  
 }
 
 .line {
@@ -68,19 +59,15 @@ footer {
   border-bottom: solid 2px lightgray;
   width: 70vw;
   margin: auto;
-  
 }
 
 .img-product {
   width: 80vw;
   margin: 5px;
-  
 }
-
 
 .img-product:hover {
   box-shadow: 8px 8px 10px rgb(22, 22, 22);
-  
 }
 
 .burger-menu {
@@ -91,19 +78,13 @@ footer {
   color: white;
 }
 
-
-
 .facebook {
   margin-top: 0;
 }
 
-
-
-
 .barrabusqueda {
   text-align: center;
 }
-
 
 .form-busqueda {
   margin-top: 20px;
@@ -118,10 +99,9 @@ footer {
   display: flex;
   color: white;
   font-size: 14px;
-  font-weight:200;
+  font-weight: 200;
   justify-content: space-evenly;
   width: 100%;
-  
 }
 
 .footer-bar {
@@ -129,11 +109,10 @@ footer {
   color: white;
   justify-content: center;
   font-size: 12px;
-  font-weight:200;
+  font-weight: 200;
   margin: auto;
   gap: 15px;
 }
-
 
 .main-footer {
   display: flex;
@@ -142,8 +121,8 @@ footer {
   justify-content: space-between;
 }
 
-.icon:hover{
-  color: lightgray
+.icon:hover {
+  color: lightgray;
 }
 
 .footer-text:hover {

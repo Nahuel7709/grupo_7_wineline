@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("normalize.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto";
+  background-image: url(/images/black_background.jpg);
+}
+
+main {
+  margin-bottom: 20px;
+}
+
+footer {
+  margin: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img-banner {
+  width: 60vw;
+}
+.barrabusqueda {
+  display: flex;
+  justify-content: center;
+  border-radius: 5%;
+}
+
+.header-main {
+  padding-top: 25px;
+}
+
+.banner {
+  width: 100vw;
+  margin-bottom: 5px;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 2px lightgray;
+  width: 70vw;
+  margin: auto;
+}
+
+.burger-menu {
+  color: white;
+}
+
+.shopping-cart {
+  color: white;
+}
+
+.facebook {
+  margin-top: 0;
+}
+
+.barrabusqueda {
+  text-align: center;
+}
+
+.form-busqueda {
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.icono-lupa {
+  border-radius: 5px;
+}
+
+.redessociales {
+  display: flex;
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+}
+
+.footer-bar {
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.main-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.icon:hover {
+  color: lightgray;
+}
+
+.footer-text:hover {
+  color: lightgrey;
+}
+
+.burger-menu:hover {
+  color: lightgrey;
+}
+
+.shopping-cart:hover {
+  color: lightgrey;
+}
+
+.productdetail {
+  display: flex;
+  background-color: white;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.title {
+  margin-bottom: 0px;
+}
+
+.subtitle {
+  margin: 0px;
+  font-size: 14px;
+}
+
+.descriptionprod {
+  padding-top: 0px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.footer-text {
+  text-align: center;
+  width: 20vw;
+}
+
+@media (min-width: 360px) {
+  .productdetail {
+    display: block;
+    margin: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  main img {
+    display: flex;
+    width: 40vw;
+    padding-top: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .imgprod {
+    display: flex;
+    justify-content: center;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .subtitle {
+    text-align: center;
+  }
+
+  .descriptionprod {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  .price {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .contador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .buttons {
+    padding-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  .buttons1 {
+    background: #991128;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .productdetail {
+    display: flex;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  main img {
+    padding: 0px;
+    border-right: black solid 1px;
+    border-bottom: 0px;
+  }
+
+  .imgprod {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .title {
+    margin-bottom: 0px;
+    padding-top: 20px;
+  }
+
+  .subtitle {
+    margin: 0px;
+    font-size: 14px;
+  }
+
+  .descriptionprod {
+    padding-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .options {
+    display: flex;
+  }
+
+  .contador {
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    font-family: "Monstserrat", sans-serif;
+  }
+
+  .conjuntoContador {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .footer-bar {
+    font-size: 15px;
+  }
+
+  .footer-text {
+    width: auto;
+  }
+
+  .redessociales {
+    font-size: 20px;
+    justify-content: center;
+    gap: 30px;
+  }
+}
