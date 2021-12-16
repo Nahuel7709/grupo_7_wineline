@@ -100,25 +100,29 @@ footer {
   color: white;
   font-size: 14px;
   font-weight: 200;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 25px;
   width: 100%;
 }
 
 .footer-bar {
   display: flex;
   color: white;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: 12px;
   font-weight: 200;
-  margin: auto;
-  gap: 15px;
+}
+
+.footer-text {
+  text-align: center;
+  width: 20vw;
 }
 
 .main-footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .icon:hover {
@@ -135,4 +139,19 @@ footer {
 
 .shopping-cart:hover {
   color: lightgrey;
+}
+
+@media (min-width: 768px) {
+  .footer-bar {
+    font-size: 15px;
+  }
+
+  .footer-text {
+    width: auto;
+  }
+  .redessociales {
+    font-size: 20px;
+    justify-content: center;
+    gap: 30px;
+  }
 }

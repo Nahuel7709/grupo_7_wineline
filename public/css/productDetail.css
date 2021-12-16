@@ -31,6 +31,7 @@ footer {
 .img-banner {
   width: 60vw;
 }
+
 .barrabusqueda {
   display: flex;
   justify-content: center;
@@ -111,6 +112,11 @@ footer {
   justify-content: space-evenly;
 }
 
+.footer-text {
+  text-align: center;
+  width: 20vw;
+}
+
 .icon:hover {
   color: lightgray;
 }
@@ -153,20 +159,13 @@ footer {
   justify-content: center;
 }
 
-.footer-text {
-  text-align: center;
-  width: 20vw;
-}
-
 .line {
   display: flex;
   justify-content: center;
   border-bottom: solid 2px lightgray;
   width: 70vw;
   margin: auto;
-  
 }
-
 
 @media (min-width: 360px) {
   .productdetail {
@@ -176,7 +175,6 @@ footer {
     margin-left: 20px;
     border-radius: 15px;
   }
-  
 
   main img {
     display: flex;
@@ -227,7 +225,6 @@ footer {
     color: white;
     padding: 10px;
   }
-  
 }
 
 @media (min-width: 768px) {
@@ -304,8 +301,4 @@ footer {
     justify-content: center;
     gap: 30px;
   }
-
-  
 }
-
-

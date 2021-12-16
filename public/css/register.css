@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 @import url("normalize.css");
 
@@ -8,7 +8,6 @@
 }
 
 body {
-  
   font-family: "roboto";
   background-image: url(/images/background.img2.jpg);
 }
@@ -19,11 +18,8 @@ main {
 
 footer {
   margin: 30px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
-
-
 
 .logo {
   display: flex;
@@ -43,14 +39,11 @@ footer {
 
 .header-main {
   padding-top: 25px;
-  
-  
 }
 
 .banner {
   width: 100vw;
   margin-bottom: 5px;
-  
 }
 
 .articles {
@@ -58,8 +51,6 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 30px;
-  
-  
 }
 
 .line {
@@ -68,19 +59,15 @@ footer {
   border-bottom: solid 2px lightgray;
   width: 70vw;
   margin: auto;
-  
 }
 
 .img-product {
   width: 80vw;
   margin: 5px;
-  
 }
-
 
 .img-product:hover {
   box-shadow: 8px 8px 10px rgb(22, 22, 22);
-  
 }
 
 .burger-menu {
@@ -91,19 +78,13 @@ footer {
   color: white;
 }
 
-
-
 .facebook {
   margin-top: 0;
 }
 
-
-
-
 .barrabusqueda {
   text-align: center;
 }
-
 
 .form-busqueda {
   margin-top: 20px;
@@ -118,106 +99,100 @@ footer {
   display: flex;
   color: white;
   font-size: 14px;
-  font-weight:200;
-  justify-content: space-evenly;
+  font-weight: 200;
+  justify-content: center;
+  gap: 25px;
   width: 100%;
-  
 }
 
 .footer-bar {
   display: flex;
   color: white;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: 12px;
-  font-weight:200;
-  margin: auto;
-  gap: 15px;
+  font-weight: 200;
 }
-
 
 .main-footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
-.register-body{
-  font-family: 'Roboto';
-  
-  }
-
-  .register-box{
-      margin: 20px 50px 50px 50px;
-      padding-top: 15px;
-      
-      
-  }
-
-.register-title{
-    text-align: center;
-    border-bottom: solid 1px lightgray;
-    margin-left: 20px;
-    padding-bottom: 10px;
-    margin-right: 20px;
-    color: white;
-    font-family: "Montserrat";
+.footer-text {
+  text-align: center;
+  width: 20vw;
 }
 
-.register-name{
+.register-body {
+  font-family: "Roboto";
+}
+
+.register-box {
+  margin: 20px 50px 50px 50px;
+  padding-top: 15px;
+}
+
+.register-title {
+  text-align: center;
+  border-bottom: solid 1px lightgray;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  color: white;
+  font-family: "Montserrat";
+}
+
+.register-name {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 5px 0 22px 0;
- 
-  
-  }
+}
 
-.register-usuario{
+.register-usuario {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 5px 0 22px 0;
-  
 }
 
-.register-password{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 5px 0 22px 0;
+.register-password {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px 0 22px 0;
 }
 
-.register-email{
-     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 5px 0 22px 0;
+.register-email {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px 0 22px 0;
 }
 
-.register-button{
+.register-button {
   display: flex;
   justify-content: center;
-  
-  
 }
 
-.conditions{
-    font-size: 12px;
-    text-align: center;
-    color: white;
+.conditions {
+  font-size: 12px;
+  text-align: center;
+  color: white;
 }
 
-.conditions1{
+.conditions1 {
   color: lightblue;
   text-decoration: none;
 }
 
-.conditions1:hover{
+.conditions1:hover {
   text-decoration: underline;
 }
 
-.register-button2{
+.register-button2 {
   background-color: #991128;
   color: white;
   padding: 10px 35px;
@@ -227,42 +202,41 @@ footer {
   opacity: 0.9;
 }
 
-.register-button2:hover{
+.register-button2:hover {
   background-color: lightgrey;
 }
 
-.already-account{
+.already-account {
   display: flex;
   justify-content: center;
 }
 
-.register-name1{
+.register-name1 {
   border-radius: 8px;
   padding: 7px 35px 7px 35px;
   text-align: center;
 }
 
-.register-usuario1{
+.register-usuario1 {
   border-radius: 8px;
   padding: 7px 35px 7px 35px;
   text-align: center;
 }
 
-.register-email1{
+.register-email1 {
   border-radius: 8px;
   padding: 7px 35px 7px 35px;
   text-align: center;
 }
 
-.register-password1{
+.register-password1 {
   border-radius: 8px;
   padding: 7px 35px 7px 35px;
   text-align: center;
 }
 
-
-.icon:hover{
-  color: lightgray
+.icon:hover {
+  color: lightgray;
 }
 
 .footer-text:hover {
@@ -275,4 +249,27 @@ footer {
 
 .shopping-cart:hover {
   color: lightgrey;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 2px lightgray;
+  width: 70vw;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .footer-bar {
+    font-size: 15px;
+  }
+
+  .footer-text {
+    width: auto;
+  }
+  .redessociales {
+    font-size: 20px;
+    justify-content: center;
+    gap: 30px;
+  }
 }
