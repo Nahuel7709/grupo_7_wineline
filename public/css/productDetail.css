@@ -158,13 +158,25 @@ footer {
   width: 20vw;
 }
 
+.line {
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 2px lightgray;
+  width: 70vw;
+  margin: auto;
+  
+}
+
+
 @media (min-width: 360px) {
   .productdetail {
     display: block;
     margin: auto;
     margin-right: 20px;
     margin-left: 20px;
+    border-radius: 15px;
   }
+  
 
   main img {
     display: flex;
@@ -215,6 +227,7 @@ footer {
     color: white;
     padding: 10px;
   }
+  
 }
 
 @media (min-width: 768px) {
@@ -291,4 +304,8 @@ footer {
     justify-content: center;
     gap: 30px;
   }
+
+  
 }
+
+
