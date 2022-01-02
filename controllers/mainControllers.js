@@ -4,31 +4,31 @@ const controller = {
 
     home: (req,res) => {
             
-    return res.render ("home");
+    return res.render ("./users/home");
     },
 
     
     login: (req,res) => {
             
-    return res.render ("login");
+    return res.render ("./users/login");
     },
 
     
     productCart: (req,res) => {
             
-    return res.render ("productCart");
+    return res.render ("./products/productCart");
     },
 
     
     productDetail: (req,res) => {
             
-    return res.render ("productDetail");
+    return res.render ("./products/productDetail");
     },
 
     
     register: (req,res) => {
             
-    return res.render ("register");
+    return res.render ("./users/register");
     },
 
 }
