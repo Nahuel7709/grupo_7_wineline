@@ -8,33 +8,22 @@ app.listen (3000, () => console.log ("Servidor corriendo en el puerto 3000"));
 
 
 app.use (express.static(path.join (__dirname, "public")))
+app.set ("view engine", "ejs")
 
 
-app.get ("/", (req,res) => {
-
-    res.sendFile (path.join(__dirname, "views/home.html"))
-})
 
 
-app.get ("/login", (req,res) => {
+const home = require ("./routes/mainRoutes");
+app.use ("/", home);
 
-    res.sendFile (path.join(__dirname, "views/login.html"))
-})
+const login = require ("./routes/mainRoutes");
+app.use ("/login", login);
 
+const productCart = require ("./routes/mainRoutes");
+app.use ("/productCart", productCart);
 
-app.get ("/productCart", (req,res) => {
+const productDetail = require ("./routes/mainRoutes");
+app.use ("/productDetail", productDetail);
 
-    res.sendFile (path.join(__dirname, "views/productCart.html"))
-})
-
-
-app.get ("/productDetail", (req,res) => {
-
-    res.sendFile (path.join(__dirname, "views/productDetail.html"))
-})
-
-
-app.get ("/register", (req,res) => {
-
-    res.sendFile (path.join(__dirname, "views/register.html"))
-})
+const register = require ("./routes/mainRoutes");
+app.use ("/register", register);
