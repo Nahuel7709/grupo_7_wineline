@@ -1,38 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="/css/productDetail.css">
-
-  <title>Wineline</title>
-</head>
+  <%- include('../partials/head') %>
+  
+<link rel="stylesheet" href="/css/productDetail.css">
 
 <body>
-  <header class="header-main">
-
-    <div class="logo">
-      <div class="burger-menu">
-        <i class="fas fa-bars"></i>
-      </div>
-
-      <img class="img-banner" src="images/wineline1.png" alt="">
-
-      <p class="shopping-cart"><i class="fas fa-shopping-cart"></p></i>
-    </div>
-
-
-
-    <div class="barrabusqueda">
-      <form action="">
-        <input class="form-busqueda" type="search" name="search">
-        <button class="icono-lupa"><i class="fas fa-search"></i></button>
-      </form>
-    </div>
-    <br>
+  <%- include('../partials/header') %>
 
     <main class="productdetail">
       <div class="imgprod">
@@ -71,33 +45,7 @@
 
     </main>
 
-    <footer>
-
-      <div class="line">
-
-      </div>
-      <div class="main-footer">
-
-        <div class="redessociales">
-
-          <p class="icon"> <i class="fab fa-facebook-square"></i></p>
-          <p class="icon"><i class="fab fa-twitter"></i></p>
-          <p class="icon"> <i class="fab fa-instagram"></i></p>
-
-        </div>
-
-        <div class="footer-bar">
-          <p class="footer-text"> ¿Quiénes somos?</p>
-          <p class="footer-text">Contacto</p>
-          <p class="footer-text">Términos y condiciones</p>
-          <p class="footer-text">Preguntas frecuentes</p>
-        </div>
-
-
-      </div>
-
-
-    </footer>
+    <%- include('../partials/footer') %>
 </body>
 
 </html>
