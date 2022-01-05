@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<html>
+
+<%- include('../partials/head') %>
+
+  <link rel="stylesheet" href="/css/create.css">
+
+  <body>
+
+    <!--Main Header-->
+
+
+    <%- include('../partials/header') %>
+
+
+      <!--Formulario de creación de productos-->
+
+      <main class="create-body">
+        <h2 class="create-title">Nuevo artículo</h1>
+
+
+
+          <form class="create-box" action="" method="">
+
+
+            <div>
+              <label for="nombre"></label>
+              <input type="text" name="Marca" id="nombre" placeholder="Marca del articulo" required class="data-box">
+            </div>
+            </div>
+            <br>
+
+            <div>
+              <label for="nombre"></label>
+              <input type="text" name="Variedad" id="nombre" placeholder="Malbec, Cabernet, Lager..." required
+                class="data-box">
+            </div>
+            </div>
+            <br>
+
+            <div>
+              <label for="nombre"></label>
+              <input type="text" name="Presentacion" id="nombre" placeholder="750ml" required class="data-box">
+            </div>
+            </div>
+            <br>
+
+            <div>
+              <label for="precio"></label>
+              <input type="number" name="price" id="precio" placeholder="Precio?" required class="data-box">
+            </div>
+            </div>
+            <br>
+
+            <div class="description-article">
+              <div>
+                <label for="descripcion"></label>
+                <textarea name="textarea" rows="10" cols="50" placeholder="Agregá una descripción"></textarea>
+              </div>
+            </div>
+
+            <p>Categoria:</p>
+            <div class="categories">
+              <div>
+                <label for="categoria"></label>
+                <input type="radio" name="categorias" id="categoria" value="Vinos">
+                <label for="">Vinos</label>
+                <input type="radio" name="categorias" id="categoria" value="Cervezas">
+                <label for="">Cervezas</label>
+                <input type="radio" name="categorias" id="categoria" value="Espumantes">
+                <label for="">Espumantes</label>
+              </div>
+            </div>
+            <br>
+            <div class="image">
+              <p>Inserte una imagen del producto:</p>
+              <input type="file" name="imagen" accept=".jpg, .png, .bmp, .jpeg">
+              <br>
+              <br>
+              <button class="create-button" type="submit">Crear</button>
+              <br>
+
+          </form>
+
+      </main>
+
+
+      <%- include('../partials/footer') %>
+
+
+
+
+
+
+
+  </body>
+
+</html>
