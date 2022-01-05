@@ -21,7 +21,7 @@ const controller = {
     return res.render("./users/register");
   },
 
-  create: (req, res) => {
+  productCreate: (req, res) => {
     return res.render("./products/productCreate");
   },
 };
