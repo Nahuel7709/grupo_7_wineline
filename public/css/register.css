@@ -29,7 +29,7 @@ footer {
 }
 
 .img-banner {
-  width: 20vw;
+  width: 30vw;
   
 }
 .barrabusqueda {
@@ -260,51 +260,23 @@ footer {
   margin: auto;
 }
 
-@media (min-width: 768px) {
-  .footer-bar {
-    font-size: 15px;
-  }
 
-  .footer-text {
-    width: auto;
-  }
-  .redessociales {
-    font-size: 20px;
-    justify-content: center;
-    gap: 30px;
-  }
+
+.barrabusqueda {
+  text-align: center;
 }
 
-
-/*HEADER*/
-
-
-@media (max-width: 768px) {
-
-  .line-header{
-  display: none;
-}
-
-.barrabusqueda-header{
-  display: none;
-}
-
-.main-navbar{
-  display: none;
-}
-
-
-.copy-header{
-  display: none;
-}
-
-.mobile-navbar{
+.mobile-navbar {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-evenly;
   margin-bottom: 8px;
   color: white;
+}
+
+.barrabusqueda-header {
+  display: none;
 }
 
 .line-header-mobile{
@@ -322,13 +294,83 @@ footer {
   font-size: 30px;
 }
 
-.logo-desktop{
+.redessociales {
+  display: flex;
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+}
+
+.footer-bar {
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.footer-text {
+  text-align: center;
+  width: 20vw;
+}
+
+.main-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.icon:hover {
+  color: lightgray;
+}
+
+.footer-text:hover {
+  color: lightgrey;
+}
+
+.burger-menu:hover {
+  color: lightgrey;
+}
+
+.shopping-cart:hover {
+  color: lightgrey;
+}
+
+.banner-home {
   display: none;
 }
 
+ 
+.copy-header {
+  display: none;
+}
+
+
+.main-navbar {
+  display: none;
 }
 
 @media (min-width: 768px) {
+  .lupa-mobile {
+    display: none;
+  }
+
+  .menu-hamburguesa {
+    display: none;
+  }
+
+  .copy-header {
+    display: flex;
+  }
+
+  .barrabusqueda-header {
+    display: flex;
+  }
+
   .footer-bar {
     font-size: 15px;
   }
@@ -342,19 +384,14 @@ footer {
     gap: 30px;
   }
 
-  .menu-hamburguesa{
-    display: none;
-  }
-
   .main-header-top-bar{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  
+
   .copy-header{
-    color: white;
-    color: white;
+      color: white;
       display: flex;
       width: 20vw;
       justify-content: space-evenly;
@@ -362,41 +399,60 @@ footer {
   }
   
   .barrabusqueda-header{
-    display: none;
-  }
-
-  .main-navbar ul{
-    list-style: none;
     display: flex;
     justify-content: center;
-    justify-content: space-evenly;
-    padding: 0px;
+    border-radius: 10px;
+    width: 40vw;
+    padding: 8px;
+    border: none;
+    height: 4vh;
   }
 
-  .main-navbar a{
-    text-decoration: none;
-    color: white;
-  }
-
-  .mobile-navbar{
+  .cart-mobile {
     display: none;
   }
 
-  .line-header-mobile{
-    display: none;
+  .img-banner {
+    width: 20vw;
+    
   }
 
- .logo-desktop{
+  .banner-home {
+    display: flex;
+  }
+
+
+
+  .main-navbar {
    display: flex;
    
- }
+  
+  }
 
- .line-header{
-  display: flex;
-  justify-content: center;
-  border-bottom: solid 2px white;
-  width: 70vw;
-  margin: auto;
+  .main-navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+
+
+  }
+
+  .main-navbar li {
+    margin: 0 40px;
 }
 
+.main-navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+
+
+  
+  
 }

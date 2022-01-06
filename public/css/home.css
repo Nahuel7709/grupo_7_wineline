@@ -10,7 +10,7 @@
 }
 
 body {
-  
+ 
   background-image: url(/images/black_background.jpg);
 }
 
@@ -33,20 +33,22 @@ footer {
 }
 
 .img-banner {
-  width: 20vw;
+  width: 30vw;
+  
 }
 
 
 .header-main {
   padding-top: 25px;
+  
 }
 
-.banner {
+.banner-home {
   width: 100vw;
   margin-bottom: 5px;
 }
 
-.articles {
+.articles-home {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -61,12 +63,12 @@ footer {
   margin: auto;
 }
 
-.img-product {
+.img-product-home {
   width: 80vw;
   margin: 5px;
 }
 
-.img-product:hover {
+.img-product-home:hover {
   box-shadow: 8px 8px 10px rgb(22, 22, 22);
 }
 
@@ -86,13 +88,32 @@ footer {
   text-align: center;
 }
 
-.form-busqueda {
-  margin-top: 20px;
-  border-radius: 5px;
+.mobile-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-bottom: 8px;
+  color: white;
 }
 
-.icono-lupa {
-  border-radius: 5px;
+.barrabusqueda-header {
+  display: none;
+}
+
+.line-header-mobile{
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 2px white;
+  width: 70vw;
+  margin: auto;
+}
+
+.menu-hamburguesa{
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 30px;
 }
 
 .redessociales {
@@ -141,57 +162,40 @@ footer {
   color: lightgrey;
 }
 
-
-@media (max-width: 768px) {
-
-  .line-header{
+.banner-home {
   display: none;
 }
 
-.barrabusqueda-header{
+ 
+.copy-header {
   display: none;
 }
 
-.main-navbar{
+.main-navbar {
   display: none;
 }
 
 
-.copy-header{
-  display: none;
-}
 
-.mobile-navbar{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-content: space-evenly;
-  margin-bottom: 8px;
-  color: white;
-}
 
-.line-header-mobile{
-  display: flex;
-  justify-content: center;
-  border-bottom: solid 2px white;
-  width: 70vw;
-  margin: auto;
-}
-
-.menu-hamburguesa{
-  color: white;
-  padding: 15px;
-  text-align: center;
-  font-size: 30px;
-}
-
-.logo-desktop{
-  display: none;
-}
-
-}
 
 @media (min-width: 768px) {
+  .lupa-mobile {
+    display: none;
+  }
+
+  .menu-hamburguesa {
+    display: none;
+  }
+
+  .copy-header {
+    display: flex;
+  }
+
+  .barrabusqueda-header {
+    display: flex;
+  }
+
   .footer-bar {
     font-size: 15px;
   }
@@ -205,19 +209,14 @@ footer {
     gap: 30px;
   }
 
-  .menu-hamburguesa{
-    display: none;
-  }
-
   .main-header-top-bar{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  
+
   .copy-header{
-    color: white;
-    color: white;
+      color: white;
       display: flex;
       width: 20vw;
       justify-content: space-evenly;
@@ -231,39 +230,54 @@ footer {
     width: 40vw;
     padding: 8px;
     border: none;
+    height: 4vh;
   }
 
-  .main-navbar ul{
+  .cart-mobile {
+    display: none;
+  }
+
+  .img-banner {
+    width: 20vw;
+    
+  }
+
+  .banner-home {
+    display: flex;
+  }
+
+
+
+  .main-navbar {
+   display: flex;
+   
+  
+  }
+
+  .main-navbar ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     justify-content: space-evenly;
-    padding: 0px;
-  }
-
-  .main-navbar a{
-    text-decoration: none;
     color: white;
+
+
   }
 
-  .mobile-navbar{
-    display: none;
-  }
-
-  .line-header-mobile{
-    display: none;
-  }
-
- .logo-desktop{
-   display: flex;
- }
-
- .line-header{
-  display: flex;
-  justify-content: center;
-  border-bottom: solid 2px white;
-  width: 70vw;
-  margin: auto;
+  .main-navbar li {
+    margin: 0 40px;
 }
 
+.main-navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+
+
+  
+  
 }
