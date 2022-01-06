@@ -553,7 +553,7 @@ main {
 .create-body {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     background-color: white;
     font-family: "Roboto";
     margin-left: 40px;
@@ -561,10 +561,22 @@ main {
     border-radius: 15px;
   }
   
+.create-title-box{
+  margin-bottom: 30px;
+}
+
+.line-create{
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 2px grey;
+  width: 70vw;
+  margin: auto;
+}
+
   .create-title {
     text-align: center;
     font-family: "Segoe UI";
-    color: grey;
+    color: #991128;
     font-weight: 400;
   }
   
@@ -572,22 +584,23 @@ main {
     display: flex;
     align-content: center;
     flex-direction: column;
+    margin-bottom: 20px;
   }
   
   textarea {
-    min-width: 80vw;
+    min-width: 50vw;
     max-width: 80vw;
     min-height: 30vw;
     max-height: 30vw;
   }
-  
+
   .data-box {
     width: 40vw;
-    padding: 7px 35px 7px 5px;
+    padding: 7px;
+    font-size: 16px;
   }
   
   .create-button {
-    width: 20vw;
     background-color: #991128;
     color: white;
     padding: 10px 35px;
@@ -595,10 +608,10 @@ main {
     border-radius: 10px;
     border: solid rgb(29, 29, 29) 1px;
     opacity: 0.9;
+    text-align: center;
   }
 
-
-
+  
 
 
 
@@ -840,6 +853,31 @@ main {
     justify-content: center;
     margin-top: 20px;
   }
+
+
+/*-------------------------------------------------------PRODUCT CREATE----------------------------------------------*/
+
+.create-body input:hover{
+  border: 2px solid #991128 ;
+  border-radius: 10px;
+}
+
+.create-body textarea:hover{
+  border: 2px solid #991128 ;
+  border-radius: 10px;
+}
+
+.create-button {
+  width: 80vw;
+  background-color: #991128;
+  color: white;
+  padding: 10px 25px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: solid rgb(29, 29, 29) 1px;
+  opacity: 0.9;
+  text-align: center;
+}
 
   
 }
