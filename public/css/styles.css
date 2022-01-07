@@ -30,7 +30,7 @@ main {
   }
   
   .img-banner {
-    width: 30vw;
+    width: 40vw;
     
   }
   
@@ -134,7 +134,9 @@ main {
       justify-content: space-evenly;
       font-size: 12px;
       font-weight: 200;
-    }
+      flex-direction: column;
+      align-items: center;
+  }
     
     .footer-text {
       text-align: center;
@@ -173,8 +175,11 @@ main {
   .articles-home {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     padding-bottom: 30px;
+    align-items: center;
+
   }
 
   .img-product-home {
@@ -183,14 +188,29 @@ main {
   }
   
   .img-product-home:hover {
-    box-shadow: 8px 8px 10px rgb(22, 22, 22);
+    box-shadow: 8px 8px 10px rgb(153, 150, 150);
   }
   
   .banner-home {
     display: none;
   }
 
+  .title-home-cat{
+    font-family: "Montserrat";
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: initial;
+  }
 
+  .line-home-cat{
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 2px white;
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 30px;
+  }
 
 /*-------------------------------------------------REGISTER---------------------------------------*/
 
@@ -724,7 +744,15 @@ main {
         justify-content: space-evenly;
         text-align: center;
     }
+
+    .copy-header p:hover{
+      color: lightgray;
+    }
     
+    .copy-header i:hover{
+      color: lightgrey;
+    }
+
     .barrabusqueda-header{
       display: flex;
       justify-content: center;
@@ -767,6 +795,10 @@ main {
     text-decoration: none;
     color: white;
   }
+
+  .main-navbar a:hover{
+    color: lightgray;
+  }
   
 /*MEDIA QUERI FOOTER*/
 
@@ -782,6 +814,16 @@ main {
     justify-content: center;
     gap: 30px;
   }
+
+  .footer-bar {
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    font-size: 12px;
+    font-weight: 200;
+    flex-direction: row;
+    
+}
   
   
 /*MEDIA QUERI HOME*/
@@ -789,6 +831,20 @@ main {
 .banner-home {
     display: flex;
   }
+
+  .img-product-home {
+    width: 40vw;
+    margin: 5px;
+  }
+
+  .articles-home {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 30px;
+    align-items: center;
+}
 
 
 
@@ -855,7 +911,7 @@ main {
   }
 
 
-/*-------------------------------------------------------PRODUCT CREATE----------------------------------------------*/
+/* MEDIA QUERI PRODUCT CREATE*/
 
 .create-body input:hover{
   border: 2px solid #991128 ;
