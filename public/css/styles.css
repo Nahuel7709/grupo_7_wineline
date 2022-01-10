@@ -611,7 +611,118 @@ main {
     text-align: center;
   }
 
-  
+  /*---------------------------------------PRODUCT CART-----------------------------------------*/
+
+.carrito{
+  color: white;
+  text-align: center;
+}
+.panel-carrito{
+  background-color: whitesmoke;
+  display: flex;
+  border-radius: 3px;
+  width:auto;
+ 
+}
+.img-cart{
+  width: 20vw;
+  height: 25vw;
+
+}
+.membrete-carrito{
+  width: 90%;
+}
+.item-carrito{
+  display: flex;
+  font-size: medium;
+}
+.descriptionItem-carrito{
+  color: gray;
+  font-size: small;
+  padding: 4px;
+  margin-bottom: 4px;
+  width: 80%;
+}
+.shipping-carrito{
+  color: green;
+  font-style: italic;
+  font-size: 0.7em;
+  font-weight: bold;
+  margin-top:5px ;
+}
+.conjuntoContador-carrito{
+  display: flex;
+  justify-content:space-evenly;
+  margin-bottom: 10px;
+  width: 50vw;
+  height: 25px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.contador-carrito{
+  display: flex;
+  flex-wrap: wrap;
+  border:rgb(196, 190, 190) 1px solid;
+ width: auto;
+  justify-content:flex-end;
+  align-items: center; 
+ 
+}
+
+.contar-carrito{
+  color: grey;
+  font-size: 0.9rem;
+  margin:0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px;
+}
+button{
+    margin: 5px;
+    width: 10px;
+    height: 10px;
+    cursor:auto;
+    font-size: 0.6rem;
+    background: white;
+    border:none;
+    border-radius: 5px;
+
+}
+
+.valor-carrito{
+  display: flex;
+  flex-wrap: wrap;
+  color:black;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+.opciones-carrito{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -681,7 +792,7 @@ main {
       padding: 10px;
     }
   }
-
+/*CARRITO*/
 
 
 
@@ -853,7 +964,48 @@ main {
     justify-content: center;
     margin-top: 20px;
   }
+/*media quary 768 carrito*/
 
+.panel-carrito{
+  width: 90%;
+  height: auto;
+  margin: 5%;
+}
+.item-carrito{
+  display: flex;
+  flex-wrap: nowrap;
+ 
+  
+}
+.title-item-carrito{
+  display: flex;
+  flex-wrap: nowrap;
+  width:95%;
+  align-items: center;
+  
+}
+.membrete-carrito{
+  border: blueviolet solid 5px;
+  width: 100%;
+}
+
+
+
+.opciones-carrito{
+
+  display: flex;
+  justify-content:flex-start;
+  color:blue;
+  font-style: italic;
+  margin-top: 10%;
+  padding: 10px;
+}
+.opcion1-carrito{
+  margin-left: 10px
+}
+.opcion2-carrito{
+  margin-left: 20px
+}
 
 /*-------------------------------------------------------PRODUCT CREATE----------------------------------------------*/
 
@@ -879,5 +1031,4 @@ main {
   text-align: center;
 }
 
-  
 }
