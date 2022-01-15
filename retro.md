@@ -38,5 +38,22 @@
 4. Hacer menos:
 
 
+5. Dejar de hacer:
+
+**Retrospectiva Sprint 3.**
+
+1. Comenzar a hacer: 
+. Fijar dos dias a la semana, para que la reuniones sean mas cortas y poder asi solicionar los problemas que surgan en periodos mas cortos.
+
+2. Hacer más:
+. Reuniones mas cortas, para acostumbrase a en poco tiempo exponer las ideas.
+
+3. Continuar haciendo:
+•Trabajar en equipo y ayudarnos entre todos.
+•Reuniones para ayudarnos y controlar el progreso.
+.Mantenernos comunicados todo el tiempo para mejoras del trabajo.
+
+4. Hacer menos:
+. Reuniones que superen el tiempo establecido, para que nos sirva de parctica a futuros trabajos. 
 
 5. Dejar de hacer:
