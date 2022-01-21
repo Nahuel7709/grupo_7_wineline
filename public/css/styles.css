@@ -698,17 +698,7 @@ main {
   flex-wrap: wrap;
   padding: 2px;
 }
-button{
-    margin: 5px;
-    width: 10px;
-    height: 10px;
-    cursor:auto;
-    font-size: 0.6rem;
-    background: white;
-    border:none;
-    border-radius: 5px;
 
-}
 
 .valor-carrito{
   display: flex;

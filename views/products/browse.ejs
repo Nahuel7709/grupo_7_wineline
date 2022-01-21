@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %>
+<body>
+    <%- include('../partials/header') %>
+
+    
+
+        <% if (locals.redirect !== undefined && redirect === true) { %>
+			<h3>El producto se guardó correctamente</h3>
+		<% } %>
+		<h2>Listado de productos</h2>
+		<ul>
+			<% for( let i=0; i < productsList.length; i++ ) { %>
+				<li>
+					<h2>
+						<%= productsList[i].marca %>
+					</h2>
+					<p><strong>$ <%= productsList[i].precio %> </strong></p>
+				</li>
+			<% } %>
+		</ul>
+
+    
+
+ 
+
+    <%- include('../partials/footer') %>
+</body>
+</html>

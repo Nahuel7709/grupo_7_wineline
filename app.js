@@ -8,20 +8,12 @@ app.listen(3000, () => console.log("Servidor corriendo en el puerto 3000"));
 app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
 
-const home = require("./routes/mainRoutes");
+app.use (express.urlencoded({extended:false}));
+app.use (express.json());
+
+const home = require("./routes/main");
 app.use("/", home);
 
-const login = require("./routes/mainRoutes");
-app.use("/login", login);
+const productsRoutes = require("./routes/products");
+app.use("/products", productsRoutes);
 
-const productCart = require("./routes/mainRoutes");
-app.use("/productCart", productCart);
-
-const productDetail = require("./routes/mainRoutes");
-app.use("/productDetail", productDetail);
-
-const register = require("./routes/mainRoutes");
-app.use("/register", register);
-
-const create = require("./routes/mainRoutes");
-app.use("/create", create);
