@@ -10,16 +10,14 @@
 
     <main class="productdetail">
       <div class="imgprod">
-        <img class="img-detail" src="/images/rutinicabmal.jpg" alt="">
+        <img class="img-detail" src="/uploads/<%= theProduct.pdtImage %>" alt="">
       </div>
       <div class="producttext">
-        <h3 class="title">Rutuni Cabernet Malbec</h4>
-          <p class="subtitle">750ml</p>
-          <p class="descriptionprod">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum iure eos in facilis
-            architecto doloribus
-            consectetur nihil repudiandae illo accusantium repellendus corporis at minus labore reiciendis doloremque,
-            culpa esse expedita.</p>
-          <h4 class="price">Precio: $1300</h2>
+        <h3 class="title"><%= theProduct.pdtMarca %></h4>
+          <p class="subtitle"><%= theProduct.pdtVariedad %></p>
+          <p class="categoriaprod"><%= theProduct.pdtCategorias %></p>
+          <p class="descriptionprod"><%= theProduct.pdtDescripcion %></p>
+          <h4 class="price">$<%= theProduct.pdtPrice %></h2>
             <br>
             <div class="conjuntoContador">
               <div class="contador">
@@ -37,6 +35,9 @@
               <div class="buttons">
                 <button class="buttons1">Comprar</button>
                 <button class="buttons1">Agregar al carrito</button>
+                <form action="/products/<%= theProduct.id %>?_method=delete" method="POST">
+                <button class="buttons1" type="submit">Eliminar</button>
+                </form>
               </div>
 
             </div>

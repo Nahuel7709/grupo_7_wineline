@@ -44,7 +44,7 @@ router.put("/:id", controller.update);
 
 //UN PRODUCTO
 //http://localhost:3000/products/id
-router.get("/:id", controller.read);
+router.get("/read/:id", controller.read);
 
 //http://localhost:3000/products/id
 router.delete("/:id", controller.delete);

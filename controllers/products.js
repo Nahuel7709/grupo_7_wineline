@@ -15,23 +15,33 @@ const controller = {
    });
    },
 
-  read: (req,res)=>{
-    const productId = req.params.id
-    res.send("detalle de un producto ID:" + productId);
-    },
+  read: (req, res) => {
+    
+    const id = Number(req.params.id); 
+    
+    const product = productsArray.find(oneProduct => oneProduct.id === id);
+    return res.render('products/productDetail', {
+        theProduct: product 
+    });
+},
 
   create: (req,res)=>{
     res.render("products/productCreate");
     },
 
-  edit: (req,res)=>{
-    const productId = req.params.id
-    res.send("formulario edicion de un producto ID:" + productId);
-    },
-
   add: (req,res)=>{
-    //se guarda el producto
+    
+    //generamos el id
+    const generateID = () => {
+        const lastProduct =  productsArray[productsArray.length - 1];
+        const lastID = lastProduct.id;
+        return lastID + 1;
+    }
+
+
+    
      productsArray.push({
+         id: generateID(),
          pdtMarca: req.body.pdtMarca,
          pdtVariedad: req.body.pdtVariedad,
          pdtPresentacion: req.body.pdtPresentacion,
@@ -41,19 +51,59 @@ const controller = {
          pdtImage: req.file.filename,
      });
     fs.writeFileSync(filePath, JSON.stringify(productsArray,null," "));
-    //la redireccion
+    
     res.redirect("/products");
     },
 
-  update: (req,res)=>{
-    const productId = req.params.id
-    res.send("vamos a actualizar el producto con ID: " + productId);
-    },
+  edit: (req, res) => {
+    
+    const id = Number(req.params.id); r
+    const product = productsArray.find(oneProduct => oneProduct.id === id);
+    return res.render('products/productEdit', { 
+        theProduct: product 
+    });
+},
 
-  delete: (req,res)=>{
-    const productId = req.params.id
-    res.send("vamos a borrar el producto con ID: " + productId);
-    },
+  update: (req, res) => {
+    
+    const id = Number(req.params.id);
+    
+    
+    const productsArrayEdited = productsArray.map(oneProduct => {
+        if (oneProduct.id === id) { 
+            return {
+                ...oneProduct, 
+         pdtMarca: req.body.pdtMarca,
+         pdtVariedad: req.body.pdtVariedad,
+         pdtPresentacion: req.body.pdtPresentacion,
+         pdtDescripcion: req.body.pdtDescripcion,
+         pdtPrice: req.body.pdtPrice,
+         pdtCategorias: req.body.pdtCategorias,
+            }
+        }
+        return oneProduct;
+    });
+
+    
+    fs.writeFileSync(filePath, JSON.stringify(productsArrayEdited, null, ' '));
+    
+    
+    return res.redirect('/products'); 
+},
+
+  delete: (req, res) => {
+    
+    const id = Number(req.params.id); 
+
+    
+    const productsArrayFiltered = productsArray.filter(oneProduct => oneProduct.id !== id);
+
+    
+    fs.writeFileSync(filePath, JSON.stringify(productsArrayFiltered, null, ' '));
+
+    
+    return res.redirect('/products'); 
 }
+};
 
 module.exports= controller;

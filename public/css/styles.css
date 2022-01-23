@@ -983,6 +983,11 @@ main {
     font-size: 14px;
   }
 
+  .categoriaprod{
+    margin: 0px;
+    font-size: 14px;
+  }
+
   .descriptionprod {
     padding-top: 0px;
     margin-left: 20px;

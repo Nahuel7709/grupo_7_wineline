@@ -1,11 +1,22 @@
 [
- {
-  "pdtMarca": "Rutini",
-  "pdtVariedad": "Cabernet",
-  "pdtPresentacion": "750",
-  "pdtDescripcion": "asddsadsadsadsa",
-  "pdtPrice": "288",
-  "pdtCategorias": "Vinos",
-  "pdtImage": "1642964504482-486196644_productImage.jpg"
- }
-]
+   {
+     "id": 1,
+     "pdtMarca": "Rutini",
+     "pdtVariedad": "Cabernet",
+     "pdtPresentacion": "750",
+     "pdtDescripcion": "Rojo intenso, con matices azulados. Variedad: 100% Cabernet de Altamira, Gualtallary y La Consulta.\r\n",
+     "pdtPrice": "1280",
+     "pdtCategorias": "Vinos",
+     "pdtImage": "1642967776244-933267020_productImage.jpg"
+    },
+    {
+     "id": 2,
+     "pdtMarca": "Trumpeter",
+     "pdtVariedad": "Cabernet",
+     "pdtPresentacion": "750",
+     "pdtDescripcion": "Rojo violáceo brillante, seduce con sus aromas frutales (ciruela) y especiados (canela, cardamomo, pimienta negra). Variedad: 100% Malbec.",
+     "pdtPrice": "850",
+     "pdtCategorias": "Vinos",
+     "pdtImage": "1642967938171-466855707_productImage.jpg"
+    }
+   ]

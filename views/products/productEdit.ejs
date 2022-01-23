@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<html>
+
+<%- include('../partials/head') %>
+
+  
+
+  <body>
+
+    <!--Main Header-->
+
+
+    <%- include('../partials/header') %>
+
+
+      <!--Formulario de creación de productos-->
+
+      <main class="create-body">
+        
+        <div class="create-title-box">
+        <h1 class="create-title">Editar artículo</h1>
+
+          <div class="line-create"></div>
+        </div>
+
+
+          <form class="create-box" action="/products/<%= theProduct.id %>?_method=put" method="post">
+
+
+            <div class="form-divs">
+              <input type="text" name="pdtMarca"  placeholder="Marca, ej: Rutini" required class="data-box" value="<%= theProduct.pdtMarca %>">
+            </div>
+            
+            
+
+            <div class="form-divs">
+              <input type="text" name="pdtVariedad"  placeholder="Variedad, ej: Malbec" required
+                class="data-box" value="<%= theProduct.pdtVariedad %>">
+            </div>
+            
+            
+
+            <div class="form-divs">
+              <input type="text" name="pdtPresentacion"  placeholder="Cantidad, ej:750ml" required class="data-box" value="<%= theProduct.pdtPresentacion %>">
+            </div>
+            
+            
+
+            <div class="form-divs">
+              <input type="number" name="pdtPrice"  placeholder="Precio" required class="data-box" value="<%= theProduct.pdtPrice %>">
+            </div>
+            
+            
+
+            <div class="description-article">
+              <div>
+                <textarea name="pdtDescripcion" rows="10" cols="30" placeholder="Agregá una descripción"><%= theProduct.pdtDescripcion %></textarea>
+              </div>
+            
+
+            <p>Categoria:</p>
+            <div class="categories">
+              <div>
+                <label for="categoria"></label>
+                <input type="radio" name="pdtCategorias" id="categoria" value="Vinos">
+                <label for="">Vinos</label>
+                <input type="radio" name="pdtCategorias" id="categoria" value="Cervezas">
+                <label for="">Cervezas</label>
+                <input type="radio" name="pdtCategorias" id="categoria" value="Espumantes">
+                <label for="">Espumantes</label>
+              </div>
+           
+            
+            <div class="image">
+              <p>Inserte una imagen del producto:</p>
+              <input type="file" name="productImage" value="<%= theProduct.productImage %>">
+            </div>
+              
+              <button class="create-button" type="submit">Editar</button>
+              
+
+          </form>
+
+      </main>
+
+
+      <%- include('../partials/footer') %>
