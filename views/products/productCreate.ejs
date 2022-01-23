@@ -26,65 +26,60 @@
         </div>
 
 
-          <form class="create-box" action="/products" method="post">
+          <form class="create-box" action="/products" method="post" enctype="multipart/form-data">
 
 
-            <div>
-              <label for=""></label>
-              <input type="text" name="marca"  placeholder="Marca, ej: Rutini" required class="data-box">
+            <div class="form-divs">
+              <input type="text" name="pdtMarca"  placeholder="Marca, ej: Rutini" required class="data-box">
             </div>
-            </div>
-            <br>
+            
+            
 
-            <div>
-              <label for=""></label>
-              <input type="text" name="variedad" placeholder="Variedad, ej: Malbec" required
+            <div class="form-divs">
+              <input type="text" name="pdtVariedad"  placeholder="Variedad, ej: Malbec" required
                 class="data-box">
             </div>
-            </div>
-            <br>
+            
+            
 
-            <div>
-              <label for=""></label>
-              <input type="text" name="presentacion" placeholder="Cantidad, ej:750ml" required class="data-box">
+            <div class="form-divs">
+              <input type="text" name="pdtPresentacion"  placeholder="Cantidad, ej:750ml" required class="data-box">
             </div>
-            </div>
-            <br>
+            
+            
 
-            <div>
-              <label for="precio"></label>
-              <input type="number" name="price" id="precio" placeholder="Precio" required class="data-box">
+            <div class="form-divs">
+              <input type="number" name="pdtPrice"  placeholder="Precio" required class="data-box">
             </div>
-            </div>
-            <br>
+            
+            
 
             <div class="description-article">
               <div>
-                <label for="descripcion"></label>
-                <textarea name="textarea" rows="10" cols="30" placeholder="Agregá una descripción"></textarea>
+                <textarea name="pdtDescripcion" rows="10" cols="30" placeholder="Agregá una descripción"></textarea>
               </div>
-            </div>
+            
 
             <p>Categoria:</p>
             <div class="categories">
               <div>
                 <label for="categoria"></label>
-                <input type="radio" name="categorias" id="categoria" value="Vinos">
+                <input type="radio" name="pdtCategorias" id="categoria" value="Vinos">
                 <label for="">Vinos</label>
-                <input type="radio" name="categorias" id="categoria" value="Cervezas">
+                <input type="radio" name="pdtCategorias" id="categoria" value="Cervezas">
                 <label for="">Cervezas</label>
-                <input type="radio" name="categorias" id="categoria" value="Espumantes">
+                <input type="radio" name="pdtCategorias" id="categoria" value="Espumantes">
                 <label for="">Espumantes</label>
               </div>
-            </div>
-            <br>
+           
+            
             <div class="image">
               <p>Inserte una imagen del producto:</p>
-              <input type="file" name="imagen" accept=".jpg, .png, .bmp, .jpeg">
-              <br>
-              <br>
+              <input type="file" name="productImage">
+            </div>
+              
               <button class="create-button" type="submit">Crear</button>
-              <br>
+              
 
           </form>
 
@@ -92,13 +87,3 @@
 
 
       <%- include('../partials/footer') %>
-
-
-
-
-
-
-
-  </body>
-
-</html>

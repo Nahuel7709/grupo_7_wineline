@@ -1,7 +1,11 @@
 [
  {
-  "precio": "500",
-  "textarea": "vino rico",
-  "categoria": "Vinos"
+  "pdtMarca": "Rutini",
+  "pdtVariedad": "Cabernet",
+  "pdtPresentacion": "750",
+  "pdtDescripcion": "asddsadsadsadsa",
+  "pdtPrice": "288",
+  "pdtCategorias": "Vinos",
+  "pdtImage": "1642964504482-486196644_productImage.jpg"
  }
 ]

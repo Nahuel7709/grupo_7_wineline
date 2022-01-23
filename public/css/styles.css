@@ -631,6 +631,10 @@ main {
     text-align: center;
   }
 
+  .form-divs{
+    margin-bottom: 13px;
+  }
+
   /*---------------------------------------PRODUCT CART-----------------------------------------*/
 
 .carrito{
