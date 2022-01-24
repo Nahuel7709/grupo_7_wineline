@@ -57,7 +57,7 @@ const controller = {
 
   edit: (req, res) => {
     
-    const id = Number(req.params.id); r
+    const id = Number(req.params.id); 
     const product = productsArray.find(oneProduct => oneProduct.id === id);
     return res.render('products/productEdit', { 
         theProduct: product 
