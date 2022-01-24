@@ -1,1 +1,8 @@
-[]
+[
+ {
+  "usersName": "Geronimo Eguiguren",
+  "usersId": "Gero",
+  "usersPassword": "123456",
+  "usersEmail": "gero@gmail.com"
+ }
+]

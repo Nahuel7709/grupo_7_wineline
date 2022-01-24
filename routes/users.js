@@ -14,6 +14,11 @@ router.post("/", controller.add);
 
 
 
+//Formulario de login
+router.get ("/login", controller.login)
+
+
+
 
 
 

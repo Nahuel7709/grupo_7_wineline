@@ -188,7 +188,7 @@ main {
   }
   
   .img-product-home:hover {
-    box-shadow: 8px 8px 10px rgb(153, 150, 150);
+    box-shadow: 3px 3px 7px rgb(54, 53, 53);
   }
   
   .banner-home {
@@ -196,11 +196,11 @@ main {
   }
 
   .title-home-cat{
-    font-family: "Montserrat";
-    color: white;
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: initial;
+    padding-top: 20px;
+  text-align: center;
+  font-family: "montserrat";
+  color: white;
+  font-weight: 400;
   }
 
   .line-home-cat{
@@ -426,7 +426,7 @@ border-radius: 15px;
 
 .product-data-left{
   margin-left: 10px;
-  width: 30%;
+  width: 35%;
 }
 
 .product-data-price{
@@ -437,7 +437,7 @@ margin-right: 15px;
 
 .product-browse-price{
   font-size: 20px;
-  color: green;
+  color: rgb(12, 196, 12);
   font-weight: bold;
 }
 
@@ -742,7 +742,6 @@ margin-right: 15px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: white;
     font-family: "Roboto";
     margin-left: 40px;
     margin-right: 40px;
@@ -762,10 +761,11 @@ margin-right: 15px;
 }
 
   .create-title {
-    text-align: center;
-    font-family: "Segoe UI";
-    color: #991128;
-    font-weight: 400;
+    padding-top: 20px;
+  text-align: center;
+  font-family: "montserrat";
+  color: white;
+  font-weight: 400;
   }
   
   .create-box {
@@ -805,6 +805,14 @@ margin-right: 15px;
 
   .form-divs{
     margin-bottom: 13px;
+  }
+
+  .categories-radio {
+    color: white;
+  }
+
+  .categoria-create {
+    color: white;
   }
 
   /*---------------------------------------PRODUCT CART-----------------------------------------*/

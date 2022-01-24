@@ -1,62 +1,92 @@
 [
  {
   "id": 1,
-  "pdtMarca": "Rutini",
-  "pdtVariedad": "Cabernet",
-  "pdtPresentacion": "750",
-  "pdtDescripcion": "Rojo intenso, con matices azulados. En nariz, se presenta frutado, con notas de ciruela, vainilla y anís; mientras, en boca, se reafirman los acentos aciruelados.",
-  "pdtPrice": "850",
+  "pdtMarca": "Nieto Senetiner",
+  "pdtVariedad": "Extra brut",
+  "pdtPresentacion": "750 cc",
+  "pdtDescripcion": "Ligero tono ámbar. Aroma complejo y frutado, recuerda notas de frambuesa junto con notas de praliné y pan tostado, fiel a la excelencia del Pinot Noir.",
+  "pdtPrice": "1100",
+  "pdtCategorias": "Espumantes",
+  "pdtImage": "1643036418382-200486929_productImage.jpg"
+ },
+ {
+  "id": 2,
+  "pdtMarca": "Trumpeter",
+  "pdtVariedad": "Malbec",
+  "pdtPresentacion": "750 ml",
+  "pdtDescripcion": "Rojo violáceo brillante, seduce con sus aromas frutales (ciruela) y especiados (canela, cardamomo, pimienta negra). Posee gran cuerpo y su vivaz estructura acentúa los taninos intensos que se vuelven aterciopelados en el retrogusto. Variedad: 100% Malbec.",
+  "pdtPrice": "1160",
   "pdtCategorias": "Vinos",
-  "pdtImage": "1642996137057-587440293_productImage.jpg"
+  "pdtImage": "1643036550919-637800597_productImage.jpg"
  },
  {
   "id": 3,
-  "pdtMarca": "Trumpeter",
+  "pdtMarca": "Luigi Bosca",
   "pdtVariedad": "Malbec",
-  "pdtPresentacion": "1500",
-  "pdtDescripcion": "Rojo violáceo brillante, seduce con sus aromas frutales (ciruela) y especiados (canela, cardamomo, pimienta negra). Posee gran cuerpo y su vivaz estructura acentúa los taninos intensos que se vuelven aterciopelados en el retrogusto.",
-  "pdtPrice": "2000",
+  "pdtPresentacion": "75 ml",
+  "pdtDescripcion": "Luigi Bosca Malbec es un tinto de color rojo violáceo brillante. Sus aromas son intensos y amables, con notas que recuerdan a frutas rojas, y tonos algo florales y especiados. En boca es generoso, fluido y expresivo, con taninos incipientes. De paladar franco y paso refrescante, con buen cuerpo y carácter.",
+  "pdtPrice": "1350",
   "pdtCategorias": "Vinos",
-  "pdtImage": "1642996400260-911906956_productImage.jpg"
+  "pdtImage": "1643036656141-497057436_productImage.jpg"
+ },
+ {
+  "id": 4,
+  "pdtMarca": "Rutini",
+  "pdtVariedad": "Malbec",
+  "pdtPresentacion": "750 ml",
+  "pdtDescripcion": "Rojo intenso, con matices azulados. En nariz, se presenta frutado, con notas de ciruela, vainilla y anís; mientras, en boca, se reafirman los acentos aciruelados. Los taninos, muy presentes pero amables, destacan su personalidad. Variedad: 100% Malbec de Altamira, Gualtallary y La Consulta.",
+  "pdtPrice": "1315",
+  "pdtCategorias": "Vinos",
+  "pdtImage": "1643036924496-833531992_productImage.jpg"
  },
  {
   "id": 5,
-  "pdtMarca": "Bianchi",
-  "pdtVariedad": "Merlot",
-  "pdtPresentacion": "750",
-  "pdtDescripcion": "El vino tinto Bianchi se caracteriza por ser un caldo con fuerza y delicadeza, cuenta con una graduación alcohólica de 14,7%.",
-  "pdtPrice": "800",
-  "pdtCategorias": "Vinos",
-  "pdtImage": "1642996703937-270414541_productImage.jpg"
+  "pdtMarca": "Baron B",
+  "pdtVariedad": "Extra Brut",
+  "pdtPresentacion": "750 cc",
+  "pdtDescripcion": "Sus finas y persistentes burbujas, de color amarillo con destellos ocres, revelan autenticidad y delicadeza. Aromas expresivos a damasco y frutos ci´tricos se combinan con notas de pan tostado y frutos secos, dando complejidad a este espumante con final de boca sensual y de gran persistencia.",
+  "pdtPrice": "2200",
+  "pdtCategorias": "Espumantes",
+  "pdtImage": "1643037117472-740470422_productImage.jpg"
  },
  {
   "id": 6,
-  "pdtMarca": "Andes",
-  "pdtVariedad": "Ipa",
-  "pdtPresentacion": "750",
-  "pdtDescripcion": "La Andes Origen Rubia es una Cerveza estilo american pilsner, una Rubia con cuerpo y carácter maltoso. Aroma leve a lúpulo, cereal y toque de levadura. Debe servirse en copa para apreciar mejor sus aromas y resaltar así su color dorado brillante.",
-  "pdtPrice": "150",
+  "pdtMarca": "Stella Artois",
+  "pdtVariedad": "Rubia",
+  "pdtPresentacion": "330 ml",
+  "pdtDescripcion": "Tiene un Sabor sutil, Stella Artois \"proviene de la mezcla de la mejor malta y las mejores variedades de lúpulo. Utilizando sólo ingredientes naturales que garantiza una lager fresca, de alta calidad con un ligero sabor amargo.",
+  "pdtPrice": "148",
   "pdtCategorias": "Cervezas",
-  "pdtImage": "1642996868105-834314562_productImage.jpg"
+  "pdtImage": "1643037401734-378086644_productImage.png"
  },
  {
   "id": 7,
-  "pdtMarca": "Salentein",
-  "pdtVariedad": "Malbec",
-  "pdtPresentacion": "750",
-  "pdtDescripcion": "A la vista presenta color rojo intenso con tonos violáceos. En nariz se percibe fresco, intenso y complejo, destacándose notas a frutas rojas, flores como rosas y violetas que se combinan con notas balsámicas. En la boca es frutado, fresco y jugoso, de buena estructura y largo final.\r\n",
-  "pdtPrice": "986",
-  "pdtCategorias": "Vinos",
-  "pdtImage": "1643004799831-73127523_productImage.jpg"
+  "pdtMarca": "Corona",
+  "pdtVariedad": "Rubia",
+  "pdtPresentacion": "330 ml",
+  "pdtDescripcion": "Corona Porron 710 cc (Pack x 12) Corona Extra es única porque tiene un color inconfundible, un sabor incomparable y en definitiva no tiene igual. ... Corona es una cerveza clara que no esconde nada, de ahí su botella transparente. Y es que cuando se usan sólo los mejores ingredientes, no hay nada que ocultar.",
+  "pdtPrice": "220",
+  "pdtCategorias": "Cervezas",
+  "pdtImage": "1643037738869-963348033_productImage.jpg"
  },
  {
   "id": 8,
-  "pdtMarca": "Terrazas",
-  "pdtVariedad": "Malbec",
+  "pdtMarca": "Chandon",
+  "pdtVariedad": "Delice",
   "pdtPresentacion": "750",
-  "pdtDescripcion": "Terrazas de los Andes Reserva Malbec es un vino de color rojo brillante e intenso aroma a notas florales y frutadas, como la cereza negra madura y ciruelas. De carácter tostado y especiado de pimienta y chocolate. Su dulce y jugosa entrada de boca entrega fineza, taninos delicados y un final elegante de frutas negras.",
-  "pdtPrice": "1320",
-  "pdtCategorias": "Vinos",
-  "pdtImage": "1643005140942-63284800_productImage.jpg"
+  "pdtDescripcion": "Chandon Délice es la sutil variante de un estilo. Versátil por combinar lo clásico del Chardonnay y Pinot Noir con lo vanguardista del Sémillon y Petit Manseng. Este espumante traspasa la frontera de sabores. Su color es amarillo brillante con algunos matices verdosos.",
+  "pdtPrice": "990",
+  "pdtCategorias": "Espumantes",
+  "pdtImage": "1643048816545-824673284_productImage.jpg"
+ },
+ {
+  "id": 9,
+  "pdtMarca": "Andes",
+  "pdtVariedad": "Rubia",
+  "pdtPresentacion": "710",
+  "pdtDescripcion": "La Andes Origen Rubia es una Cerveza estilo american pilsner, una Rubia con cuerpo y carácter maltoso. Aroma leve a lúpulo, cereal y toque de levadura. Debe servirse en copa para apreciar mejor sus aromas y resaltar así su color dorado brillante.",
+  "pdtPrice": "160",
+  "pdtCategorias": "Cervezas",
+  "pdtImage": "1643048915467-105332606_productImage.jpg"
  }
 ]

@@ -19,20 +19,8 @@ app.use(methodOverride('_method'));
 const home = require("./routes/mainRoutes");
 app.use("/", home);
 
-const login = require("./routes/mainRoutes");
-app.use("/login", login);
-
 const productCart = require("./routes/mainRoutes");
 app.use("/productCart", productCart);
-
-const productDetail = require("./routes/mainRoutes");
-app.use("/productDetail", productDetail);
-
-const register = require("./routes/mainRoutes");
-app.use("/register", register);
-
-const create = require("./routes/mainRoutes");
-app.use("/create", create);
 
 const productsRoutes = require("./routes/products");
 app.use("/products", productsRoutes);

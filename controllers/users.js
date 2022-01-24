@@ -17,7 +17,7 @@ const controller = {
   
 
   add: (req,res)=>{
-    //se guarda el producto
+    //se guarda el usuario
      usersArray.push({
          usersName: req.body.usersName,
          usersId: req.body.usersId,
@@ -27,6 +27,10 @@ const controller = {
     fs.writeFileSync(filePath, JSON.stringify(usersArray,null," "));
     //la redireccion
     res.redirect("/login");
+    },
+
+    login: (req, res) => {
+      return res.render("users/login");
     },
 
   

@@ -103,7 +103,8 @@ const controller = {
 
     
     return res.redirect('/products'); 
-}
+},
+
 };
 
 module.exports= controller;
