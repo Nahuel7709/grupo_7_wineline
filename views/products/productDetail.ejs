@@ -13,26 +13,20 @@
         <img class="img-detail" src="/uploads/<%= theProduct.pdtImage %>" alt="">
       </div>
       <div class="producttext">
-        <h3 class="title"><%= theProduct.pdtMarca %></h4>
+        <h3 class="title"><%= theProduct.pdtMarca %></h3>
           <p class="subtitle"><%= theProduct.pdtVariedad %></p>
           <p class="categoriaprod"><%= theProduct.pdtCategorias %></p>
           <p class="descriptionprod"><%= theProduct.pdtDescripcion %></p>
-          <h4 class="price">$<%= theProduct.pdtPrice %></h2>
+          <p class="price-detail">$<%= theProduct.pdtPrice %></p>
+          
             <br>
-            <div class="conjuntoContador">
-              <div class="contador">
-                <div>
-                  <button class="decr" id="decr"><i class="fas fa-minus"></i></button>
-                </div>
+            <br>
+            <br>
+            <br>
+            <br>
+              
 
-                <p class="contar" id="contar">1</p>
-
-                <div class="botones">
-                  <button class="incr" id="incr"><i class="fas fa-plus"></i></button>
-                </div>
-              </div>
-
-              <div class="buttons">
+              <div class="buttons-pdt-detail">
                 <button class="buttons1">Comprar</button>
                 <button class="buttons1">Agregar al carrito</button>
                 <form action="/products/<%= theProduct.id %>?_method=delete" method="POST">

@@ -292,7 +292,7 @@ main {
   }
   
   .register-button2:hover {
-    background-color: lightgrey;
+    background-color: #cc2642;
   }
   
   .already-account {
@@ -357,7 +357,7 @@ main {
 .browse-title{
   padding-top: 20px;
   text-align: center;
-  font-family: "Segoe UI";
+  font-family: "montserrat";
   color: white;
   font-weight: 400;
 }
@@ -642,6 +642,10 @@ margin-right: 15px;
     margin-left: 40px;
     margin-right: 40px;
   }
+
+  .categoriaprod{
+    text-align: center;
+  }
   
   .title {
     margin-bottom: 0px;
@@ -660,6 +664,76 @@ margin-right: 15px;
     display: flex;
     gap: 10px;
     justify-content: center;
+  }
+
+  .productdetail {
+    display: block;
+    margin: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+  }
+
+  .img-detail {
+    display: flex;
+    width: 40vw;
+    padding-top: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .imgprod {
+    display: flex;
+    justify-content: center;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .subtitle {
+    text-align: center;
+  }
+
+  .descriptionprod {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  
+
+  .contador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .buttons-pdt-detail {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .price-detail{
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .buttons1 {
+    background: #b8112d;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  .buttons1:hover {
+    background-color: #cc2642;
   }
 
 /*-------------------------------------------------------------PRODUCT CREATE-----------------------------------------------------*/
@@ -723,6 +797,10 @@ margin-right: 15px;
     border: solid rgb(29, 29, 29) 1px;
     opacity: 0.9;
     text-align: center;
+  }
+
+  .create-button:hover{
+  background-color: #cc2642;
   }
 
   .form-divs{
@@ -852,71 +930,9 @@ margin-right: 15px;
 
   @media (min-width: 360px) {
     
+  
     
-/* MEDIA QUERI PRODUCT BROWSE*/
     
-
-
-
-    /* MEDIA QUERI PRODUCT DETAIL*/
-    
-    .productdetail {
-      display: block;
-      margin: auto;
-      margin-right: 20px;
-      margin-left: 20px;
-      border-radius: 15px;
-    }
-  
-    .img-detail {
-      display: flex;
-      width: 40vw;
-      padding-top: 10px;
-      border-bottom: 1px solid black;
-    }
-  
-    .imgprod {
-      display: flex;
-      justify-content: center;
-    }
-  
-    .title {
-      text-align: center;
-    }
-  
-    .subtitle {
-      text-align: center;
-    }
-  
-    .descriptionprod {
-      margin-left: 10px;
-      margin-right: 10px;
-      text-align: center;
-    }
-  
-    .price {
-      text-align: center;
-      margin-bottom: 10px;
-    }
-  
-    .contador {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-  
-    .buttons {
-      padding-bottom: 10px;
-      margin-top: 15px;
-    }
-  
-    .buttons1 {
-      background: #991128;
-      border-radius: 10px;
-      color: white;
-      padding: 10px;
-    }
   }
 /*CARRITO*/
 
@@ -1080,9 +1096,12 @@ margin-right: 15px;
 
 
 .product-browse-box{
-  margin: 20px;
+  margin: 20px; 
 }
 
+.product-browse-box:hover {
+  box-shadow: 3px 3px 7px rgb(153, 150, 150);
+}
 
 
 
@@ -1097,9 +1116,10 @@ margin-right: 15px;
   }
 
   .img-detail {
-    padding: 0px;
+    width: 20vw;
     border-right: black solid 1px;
-    border-bottom: 0px;
+    border-bottom: none;
+    
   }
 
   .imgprod {
@@ -1107,19 +1127,14 @@ margin-right: 15px;
     padding-bottom: 20px;
   }
 
-  .title {
-    margin-bottom: 0px;
-    padding-top: 20px;
-  }
+.price-detail{
+  font-size: 25px;
+}
 
-  .subtitle {
-    margin: 0px;
-    font-size: 14px;
-  }
-
-  .categoriaprod{
-    margin: 0px;
-    font-size: 14px;
+  .buttons1{
+  padding: 10px;
+  margin: 5px 10px;
+  width: 40vw;
   }
 
   .descriptionprod {
@@ -1147,13 +1162,30 @@ margin-right: 15px;
     flex-direction: column;
   }
 
-  .buttons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 20px;
+  .buttons-pdt-detail{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
-/*media quary 768 carrito*/
+  
+
+  .title{
+    font-size: 50px;
+  }
+
+  .subtitle{
+    font-size: 40px;
+  }
+
+  .categoriaprod{
+    font-size: 30px;
+  }
+
+  .descriptionprod{
+    font-size: 25px;
+  }
+
+  /*MEDIA QUERY PRODUCT CART*/
 
 .panel-carrito{
   width: 90%;

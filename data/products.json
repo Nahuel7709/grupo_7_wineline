@@ -10,16 +10,6 @@
   "pdtImage": "1642996137057-587440293_productImage.jpg"
  },
  {
-  "id": 2,
-  "pdtMarca": "Salentein",
-  "pdtVariedad": "Malbec",
-  "pdtPresentacion": "750",
-  "pdtDescripcion": "Salentein Brut Nature es un Cuvée Excepcionnelle elaborado con las mejores uvas de nuestros viñedos. Dorado brillante, con un particular y atractivo tono característico del Pinot Noir.",
-  "pdtPrice": "1200",
-  "pdtCategorias": "Vinos",
-  "pdtImage": "1642996315904-221888159_productImage.jpg"
- },
- {
   "id": 3,
   "pdtMarca": "Trumpeter",
   "pdtVariedad": "Malbec",
@@ -28,16 +18,6 @@
   "pdtPrice": "2000",
   "pdtCategorias": "Vinos",
   "pdtImage": "1642996400260-911906956_productImage.jpg"
- },
- {
-  "id": 4,
-  "pdtMarca": "Terrazas",
-  "pdtVariedad": "Cabernet",
-  "pdtPresentacion": "750",
-  "pdtDescripcion": "Terrazas de los Andes Reserva Malbec es un vino de color rojo brillante e intenso aroma a notas florales y frutadas, como la cereza negra madura y ciruelas. De carácter tostado y especiado de pimienta y chocolate.",
-  "pdtPrice": "2500",
-  "pdtCategorias": "Vinos",
-  "pdtImage": "1642996468568-470726457_productImage.jpg"
  },
  {
   "id": 5,
@@ -58,5 +38,25 @@
   "pdtPrice": "150",
   "pdtCategorias": "Cervezas",
   "pdtImage": "1642996868105-834314562_productImage.jpg"
+ },
+ {
+  "id": 7,
+  "pdtMarca": "Salentein",
+  "pdtVariedad": "Malbec",
+  "pdtPresentacion": "750",
+  "pdtDescripcion": "A la vista presenta color rojo intenso con tonos violáceos. En nariz se percibe fresco, intenso y complejo, destacándose notas a frutas rojas, flores como rosas y violetas que se combinan con notas balsámicas. En la boca es frutado, fresco y jugoso, de buena estructura y largo final.\r\n",
+  "pdtPrice": "986",
+  "pdtCategorias": "Vinos",
+  "pdtImage": "1643004799831-73127523_productImage.jpg"
+ },
+ {
+  "id": 8,
+  "pdtMarca": "Terrazas",
+  "pdtVariedad": "Malbec",
+  "pdtPresentacion": "750",
+  "pdtDescripcion": "Terrazas de los Andes Reserva Malbec es un vino de color rojo brillante e intenso aroma a notas florales y frutadas, como la cereza negra madura y ciruelas. De carácter tostado y especiado de pimienta y chocolate. Su dulce y jugosa entrada de boca entrega fineza, taninos delicados y un final elegante de frutas negras.",
+  "pdtPrice": "1320",
+  "pdtCategorias": "Vinos",
+  "pdtImage": "1643005140942-63284800_productImage.jpg"
  }
 ]
