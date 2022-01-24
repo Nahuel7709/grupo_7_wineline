@@ -1,22 +1,62 @@
 [
-   {
-     "id": 1,
-     "pdtMarca": "Rutini",
-     "pdtVariedad": "Cabernet",
-     "pdtPresentacion": "750",
-     "pdtDescripcion": "Rojo intenso, con matices azulados. Variedad: 100% Cabernet de Altamira, Gualtallary y La Consulta.\r\n",
-     "pdtPrice": "1280",
-     "pdtCategorias": "Vinos",
-     "pdtImage": "1642967776244-933267020_productImage.jpg"
-    },
-    {
-     "id": 2,
-     "pdtMarca": "Trumpeter",
-     "pdtVariedad": "Cabernet",
-     "pdtPresentacion": "750",
-     "pdtDescripcion": "Rojo violáceo brillante, seduce con sus aromas frutales (ciruela) y especiados (canela, cardamomo, pimienta negra). Variedad: 100% Malbec.",
-     "pdtPrice": "850",
-     "pdtCategorias": "Vinos",
-     "pdtImage": "1642967938171-466855707_productImage.jpg"
-    }
-   ]
+ {
+  "id": 1,
+  "pdtMarca": "Rutini",
+  "pdtVariedad": "Cabernet",
+  "pdtPresentacion": "750",
+  "pdtDescripcion": "Rojo intenso, con matices azulados. En nariz, se presenta frutado, con notas de ciruela, vainilla y anís; mientras, en boca, se reafirman los acentos aciruelados.",
+  "pdtPrice": "850",
+  "pdtCategorias": "Vinos",
+  "pdtImage": "1642996137057-587440293_productImage.jpg"
+ },
+ {
+  "id": 2,
+  "pdtMarca": "Salentein",
+  "pdtVariedad": "Malbec",
+  "pdtPresentacion": "750",
+  "pdtDescripcion": "Salentein Brut Nature es un Cuvée Excepcionnelle elaborado con las mejores uvas de nuestros viñedos. Dorado brillante, con un particular y atractivo tono característico del Pinot Noir.",
+  "pdtPrice": "1200",
+  "pdtCategorias": "Vinos",
+  "pdtImage": "1642996315904-221888159_productImage.jpg"
+ },
+ {
+  "id": 3,
+  "pdtMarca": "Trumpeter",
+  "pdtVariedad": "Malbec",
+  "pdtPresentacion": "1500",
+  "pdtDescripcion": "Rojo violáceo brillante, seduce con sus aromas frutales (ciruela) y especiados (canela, cardamomo, pimienta negra). Posee gran cuerpo y su vivaz estructura acentúa los taninos intensos que se vuelven aterciopelados en el retrogusto.",
+  "pdtPrice": "2000",
+  "pdtCategorias": "Vinos",
+  "pdtImage": "1642996400260-911906956_productImage.jpg"
+ },
+ {
+  "id": 4,
+  "pdtMarca": "Terrazas",
+  "pdtVariedad": "Cabernet",
+  "pdtPresentacion": "750",
+  "pdtDescripcion": "Terrazas de los Andes Reserva Malbec es un vino de color rojo brillante e intenso aroma a notas florales y frutadas, como la cereza negra madura y ciruelas. De carácter tostado y especiado de pimienta y chocolate.",
+  "pdtPrice": "2500",
+  "pdtCategorias": "Vinos",
+  "pdtImage": "1642996468568-470726457_productImage.jpg"
+ },
+ {
+  "id": 5,
+  "pdtMarca": "Bianchi",
+  "pdtVariedad": "Merlot",
+  "pdtPresentacion": "750",
+  "pdtDescripcion": "El vino tinto Bianchi se caracteriza por ser un caldo con fuerza y delicadeza, cuenta con una graduación alcohólica de 14,7%.",
+  "pdtPrice": "800",
+  "pdtCategorias": "Vinos",
+  "pdtImage": "1642996703937-270414541_productImage.jpg"
+ },
+ {
+  "id": 6,
+  "pdtMarca": "Andes",
+  "pdtVariedad": "Ipa",
+  "pdtPresentacion": "750",
+  "pdtDescripcion": "La Andes Origen Rubia es una Cerveza estilo american pilsner, una Rubia con cuerpo y carácter maltoso. Aroma leve a lúpulo, cereal y toque de levadura. Debe servirse en copa para apreciar mejor sus aromas y resaltar así su color dorado brillante.",
+  "pdtPrice": "150",
+  "pdtCategorias": "Cervezas",
+  "pdtImage": "1642996868105-834314562_productImage.jpg"
+ }
+]

@@ -17,24 +17,41 @@
 
       <!--Formulario de creación de productos-->
 
-      <main class="create-body">
+      <main class="browse-body">
         
         <div class="create-title-box">
-        <h1 class="create-title">Listado de productos</h1>
+        <h1 class="browse-title">Listado de productos</h1>
 
           <div class="line-create"></div>
         </div>
 
-        <div>
+        <div class="all-products-box">
             <% for( let i=0; i < productsList.length; i++ ) { %>
                 
-                    <h2><%= productsList[i].pdtMarca %></h2>
-                    <img src="/uploads/<%= productsList[i].pdtImage %>" alt="imagen de producto" width="250">
-                    <p><%= productsList[i].pdtVariedad %></p>
-                    <p><%= productsList[i].pdtPresentacion %></p>
-                    <p>$<%= productsList[i].pdtPrice %></p>
-                    <P><%= productsList[i].pdtDescripcion %></P>
-                    <p><%= productsList[i].pdtCategorias %></p>
+              <section class="product-browse-box">
+                <article class="product-article-browse">
+                <a href="/products/read/<%= productsList[i].id %>">
+                  <div class="product-browse-title">
+                  <h2><%= productsList[i].pdtMarca %></h2>
+                  <p class="variedad-browse"><%= productsList[i].pdtVariedad %></p>
+                  </div>
+                    <div class="product-browse-img">
+                    <img src="/uploads/<%= productsList[i].pdtImage %>" alt="imagen de producto" class="product-browse-img1">
+                    </div>
+                    <div class="browse-product-line"></div>
+                    <div class="product-browse-data">
+                    <div class="product-data-left">
+                    <p><%= productsList[i].pdtPresentacion %>.ml</p>
+                    <p>Categoria: <%= productsList[i].pdtCategorias %></p>
+                    </div>
+                    <div class="product-data-price">
+                    <p class="product-browse-price">$<%= productsList[i].pdtPrice %></p>
+                    </div>
+                    </div>
+                    
+              </a>
+              </article>
+              </section>
                
                 <% } %>
         </div>

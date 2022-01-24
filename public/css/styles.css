@@ -11,7 +11,7 @@
 
 body {
  
-  background-image: url(/images/black_background.jpg);
+  background-color: black;
 }
 
 main {
@@ -350,7 +350,101 @@ main {
   }
 
 
-/*------------------------------------------------------PRODUCT CART-----------------------------------------------------------*/
+
+/*---------------------------------------PRODUCT BROWSE-----------------------------------------*/
+
+
+.browse-title{
+  padding-top: 20px;
+  text-align: center;
+  font-family: "Segoe UI";
+  color: white;
+  font-weight: 400;
+}
+
+.product-browse-box{
+  margin-bottom: 20px;
+}
+
+
+.product-browse-title{
+text-align: center;
+color: black;
+}
+
+.browse-body{
+font-family: "Roboto";
+margin-left: 40px;
+margin-right: 40px;
+border-radius: 15px;
+}
+
+.product-browse-data{
+  text-align: center;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.browse-product-line{
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px lightgrey;
+  width: 70%;
+  margin: auto;
+}
+
+.product-article-browse a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  background-color: white;
+  width: 80vw;
+  border-radius: 5px;
+}
+
+.all-products-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-browse-img{
+  text-align: center;
+}
+
+.product-browse-img1{
+  width: 25%;
+}
+
+
+
+.variedad-browse{
+  font-size: 15px;
+}
+
+.product-data-left{
+  margin-left: 10px;
+  width: 30%;
+}
+
+.product-data-price{
+display: flex;
+justify-content: flex-end;
+margin-right: 15px;
+}
+
+.product-browse-price{
+  font-size: 20px;
+  color: green;
+  font-weight: bold;
+}
+
+
+
+
+  /*------------------------------------------------------PRODUCT CART-----------------------------------------------------------*/
 
 .cart-title {
     text-align: center;
@@ -740,12 +834,30 @@ main {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
   /*--------------------------------------------------------MEDIA QUERIS-----------------------------------------------------*/
 
 
   @media (min-width: 360px) {
     
     
+/* MEDIA QUERI PRODUCT BROWSE*/
+    
+
+
+
     /* MEDIA QUERI PRODUCT DETAIL*/
     
     .productdetail {
@@ -950,6 +1062,28 @@ main {
     padding-bottom: 30px;
     align-items: center;
 }
+
+
+/*MEDIA QUERI PRODUCT BROWSE*/
+
+
+.product-article-browse a{
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  background-color: white;
+  width: 25vw;
+  border-radius: 5px;
+  
+  
+}
+
+
+.product-browse-box{
+  margin: 20px;
+}
+
+
 
 
 
