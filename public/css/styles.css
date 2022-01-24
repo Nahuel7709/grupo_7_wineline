@@ -33,6 +33,10 @@ main {
     width: 40vw;
     
   }
+
+  .barrabusqueda-header1{
+    margin-top: 10px;
+  }
   
   
   .header-main {
@@ -827,13 +831,14 @@ margin-right: 15px;
 .article-productCart {
   display: flex;
   background-color: white;
-  margin: 50px;
+  margin: 20px;
   border-radius: 5px;
   
 }
 
 .img-productCart {
- width: 8vw;
+ width: 10vw;
+ text-align: center;
 }
 
 .marca-productCart {
@@ -860,10 +865,18 @@ margin-right: 15px;
 
 .price-productCart {
   color: black;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .discount-productCart {
   color: green;
+  margin: 0px;
+}
+
+.old-price-productCart{
+  text-decoration: line-through;
+  margin: 0px;
 }
 
 .data-product-productCart {
@@ -878,17 +891,21 @@ margin-right: 15px;
 }
 
 
+.discount-box-productCart{
+  display: flex;
+  font-size: 15px;
+  flex-direction: column;
+  margin: 18 0 10 0;
+}
+
 
 
 
 .navbar-productCart ul{
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 80px;
-  flex-direction: row;
   list-style: none;
   margin-left: 0px;
-  justify-content: flex-start;
+  padding: 0;
 
 }
 
@@ -897,9 +914,7 @@ margin-right: 15px;
 }
 
 .precio-descuento-productCart {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
+  margin: 5 30 0 0;
 }
 
 
@@ -954,7 +969,7 @@ margin-right: 15px;
     
     
   }
-/*CARRITO*/
+
 
 
 
@@ -1205,7 +1220,112 @@ margin-right: 15px;
     font-size: 25px;
   }
 
+
   /*MEDIA QUERY PRODUCT CART*/
+
+  .carrito{
+    padding-top: 20px;
+    text-align: center;
+    font-family: "Montserrat";
+    color: white;
+    font-weight: 400;
+  }
+  .article-productCart {
+    display: flex;
+    background-color: white;
+    margin: 70px;
+    border-radius: 5px;
+    
+  }
+  
+  .img-productCart {
+   width: 8vw;
+  }
+  
+  .marca-productCart {
+    color: black;
+  }
+  
+  .variedad-productCart {
+    color: black;
+  }
+  
+  .capacidad-productCart {
+    color: black;
+  }
+  
+  .data-navbar-productCart a {
+    color: #3483fa;
+    
+    text-decoration: none;
+  }
+  
+  .envio-productCart {
+    color: green;
+  }
+  
+  .price-productCart {
+    color: black;
+      font-size: 30px;
+      font-weight: bold;
+  }
+  
+  .discount-productCart {
+    color: green;
+  }
+  
+  .old-price-productCart{
+    text-decoration: line-through;
+    margin: 0px;
+  }
+  
+  .data-product-productCart {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 90%;
+  }
+  
+  .especificaciones-productCart {
+    margin-left: 46px;
+  }
+  
+  
+  .discount-box-productCart{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  
+  
+  
+  .navbar-productCart ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    flex-direction: row;
+    list-style: none;
+    margin-left: 0px;
+    justify-content: flex-start;
+  
+  }
+  
+  .navbar-productCart a {
+    margin: 0px 10px 0px 10px;
+  }
+  
+  .precio-descuento-productCart {
+    margin: 5 30 0 0;
+  }
+
+
+
+
+
 
 
 /* MEDIA QUERI PRODUCT CREATE*/
