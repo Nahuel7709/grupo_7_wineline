@@ -27,4 +27,4 @@ https://rincondevinos.com.ar/productos/lamalamariaseleccioncabernetfranc/
 https://www.alafut.qc.ca/en/
 
 
-trello: https://trello.com/b/Fu1Q6yRE/wineline
+trello: https://trello.com/b/Fu1Q6yRE/wineline (actualizado al sprint 4)
