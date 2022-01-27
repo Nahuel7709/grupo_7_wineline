@@ -1047,12 +1047,12 @@ margin-right: 15px;
     }
   
     .main-navbar ul {
+      padding-top: 20px;
       list-style: none;
       display: flex;
       justify-content: space-evenly;
       color: white;
-  
-  
+      margin-bottom: 20px;
     }
   
     .main-navbar li {
@@ -1078,6 +1078,7 @@ margin-right: 15px;
     width: auto;
   }
   .redessociales {
+    padding-top: 20px;
     font-size: 20px;
     justify-content: center;
     gap: 30px;
