@@ -17,16 +17,29 @@ const controller = {
   
 
   add: (req,res)=>{
+
+
+ //generamos el id
+ const generateID = () => {
+  const lastUser =  usersArray[usersArray.length - 1];
+  const lastID = lastUser.id;
+  return lastID + 1;
+}
+
+
     //se guarda el usuario
      usersArray.push({
+         id: generateID(),
          usersName: req.body.usersName,
          usersId: req.body.usersId,
          usersPassword: req.body.usersPassword,
          usersEmail: req.body.usersEmail,
+         country: req.body.country,
+         usersAvatar: req.file.filename
      });
     fs.writeFileSync(filePath, JSON.stringify(usersArray,null," "));
     //la redireccion
-    res.redirect("/login");
+    res.redirect("/users/login");
     },
 
     login: (req, res) => {

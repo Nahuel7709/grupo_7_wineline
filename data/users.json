@@ -1,8 +1,18 @@
 [
  {
+  "id": 1,
   "usersName": "Geronimo Eguiguren",
   "usersId": "Gero",
   "usersPassword": "123456",
   "usersEmail": "gero@gmail.com"
+ },
+ {
+  "id": 2,
+  "usersName": "Nahuel Menichetti",
+  "usersId": "Nahuel",
+  "usersPassword": "hola123",
+  "usersEmail": "nahuel@gmail.com",
+  "country": "Argentina",
+  "usersAvatar": "1643420724630-188464333_usersAvatar.webp"
  }
 ]

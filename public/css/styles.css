@@ -716,7 +716,7 @@ margin-right: 15px;
   .buttons-pdt-detail {
     padding-bottom: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     
   }
 
@@ -963,9 +963,12 @@ margin-right: 15px;
   /*--------------------------------------------------------MEDIA QUERIS-----------------------------------------------------*/
 
 
-  @media (min-width: 360px) {
+  @media (max-width: 560px) {
     
   
+    .form-logo{
+      display: none;
+    }
     
     
   }
@@ -1198,10 +1201,8 @@ margin-right: 15px;
     flex-direction: column;
   }
 
-  .buttons-pdt-detail{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+  .producttext{
+    margin-top: 50px;
   }
   
 

@@ -26,11 +26,11 @@
             <br>
               
 
-              <div class="buttons-pdt-detail">
-                <button class="buttons1">Comprar</button>
-                <button class="buttons1">Agregar al carrito</button>
-                <form action="/products/<%= theProduct.id %>?_method=delete" method="POST">
-                <button class="buttons1" type="submit">Eliminar</button>
+              <div class="buttons-pdt-detail" style="width:50vw;margin:auto;">
+                <button class="btn btn-lg btn-primary m-3">Comprar</button>
+                <button class="btn btn-lg btn-primary m-3">Agregar al carrito</button>
+                <form class="text-center" action="/products/<%= theProduct.id %>?_method=delete" method="POST">
+                <button class="btn btn-lg btn-danger  m-3" type="submit">Eliminar</button>
                 </form>
               </div>
 
