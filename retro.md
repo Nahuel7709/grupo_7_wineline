@@ -57,3 +57,23 @@
 . Reuniones que superen el tiempo establecido, para que nos sirva de parctica a futuros trabajos. 
 
 5. Dejar de hacer:
+
+
+**Retrospectiva Sprint 4.**
+
+1. Comenzar a hacer: 
+. Organizarse mejor con los tiempos, ya que a medida que pasan los strint se hacen mas complejos.
+
+2. Hacer más:
+. Elevar requerimientos en plazos cortos a medida que se termine lo solicitado.
+
+3. Continuar haciendo:
+• Trabajar en equipo y ayudarnos entre todos.
+• Reuniones para ayudarnos y controlar el progreso.
+. Mantenernos comunicados todo el tiempo para mejoras del trabajo.
+. Mantener las reunines cortas implementadas en el strint 3.
+
+4. Hacer menos:
+. Esperar los ultimos dias, para elevar todo el trabajo. 
+
+5. Dejar de hacer:
