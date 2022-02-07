@@ -14,5 +14,14 @@
   "usersEmail": "nahuel@gmail.com",
   "country": "Argentina",
   "usersAvatar": "1643420724630-188464333_usersAvatar.webp"
+ },
+ {
+  "id": 3,
+  "usersName": "Emiliano Gomez Pola",
+  "usersId": "potter",
+  "usersPassword": "1234",
+  "usersEmail": "egomezpola@hotmail.com",
+  "country": "Argentina",
+  "usersAvatar": "1644258073214-725687135_usersAvatar.jpeg"
  }
 ]
