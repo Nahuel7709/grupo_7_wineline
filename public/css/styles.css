@@ -192,7 +192,8 @@ main {
   }
   
   .img-product-home:hover {
-    box-shadow: 3px 3px 7px rgb(54, 53, 53);
+    transition-duration: 120ms;
+    box-shadow: 3px 3px 7px rgb(34, 32, 32);
   }
   
   .banner-home {
@@ -1028,6 +1029,7 @@ margin-right: 15px;
     }
     
     .copy-header i:hover{
+      transition-duration: 20ms;
       color: lightgrey;
     }
 
