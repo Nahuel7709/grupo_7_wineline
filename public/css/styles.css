@@ -964,8 +964,15 @@ margin-right: 15px;
 
 
   @media (max-width: 560px) {
+
+    .navbar1 {
+      display: flex;
+      flex-wrap: inherit;
+      align-items: center;
+      justify-content: center;
+    }
     
-  
+
     .form-logo{
       display: none;
     }
@@ -1105,8 +1112,8 @@ margin-right: 15px;
   }
 
   .img-product-home {
-    width: 40vw;
-    margin: 5px;
+    width: 22vw;
+    margin: 10px;
   }
 
   .articles-home {

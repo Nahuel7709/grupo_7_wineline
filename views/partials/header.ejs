@@ -1,79 +1,48 @@
 
-
-<header class="header-main">
-
- 
-
- <div class="main-header-top-bar">
-   
-<div class="mobile-navbar">
-  
-  <div class="lupa-mobile"><i class="fas fa-search"></i></div>
-  
-  <a href="/"><img class="img-banner" src="/images/wineline-logo2.png" alt=""></a>
-
-  <div class="barrabusqueda-header1">
-  <input class="barrabusqueda-header" type="text" placeholder="Buscar productos">
+<div class="header-top">
+ <nav class="navbar navbar-light bg-black">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><img src="/images/wineline-logo2.png" width="200" alt=""></a>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
   </div>
-  
-  <div class="copy-header">
-    <div>
-    </i>
-    <a href="/productCart"><i class="fas fa-shopping-cart"></i>
-    <p> Mi carrito</p></a>
-    </div>
-    <div>
-      <a href="/users/register"><i class="far fa-user"></i>
-   <p>Mi cuenta</p></a>
-    </div>
-  </div>
-
-  
-  <div class="cart-mobile"><i class="fas fa-shopping-cart"></i></div>
-
-
-
+ </nav>
 </div>
 
-<div class="line-header-mobile"></div>
-
-
-<nav class="main-navbar">
-
- 
- 
-    <ul>
-      <li><a href="">Ofertas</a></li>
-      <li><a href="/products">Productos</a></li>
-      <li><a href="/products/create">Crear producto</a></li>
-      <li><a href="">Ayuda</a></li>
-    </ul>
-
-
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+	<div class="container">
+		
+	
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	
+		<div class="collapse navbar-collapse" id="mainNavbar">
+			<ul class="navbar-nav me-auto">
+				<li class="nav-item"><a class="nav-link" href="/">Ofertas</a></li>
+				<li class="nav-item"><a class="nav-link" href="/products">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="/">Ayuda</a></li>
+				<li class="nav-item"><a class="nav-link" href="/products/create">Crear productos</a></li>
+			</ul>
+			<ul class="navbar-nav align-items-center">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropUser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<img src="/uploads/avatars/default.png" class="navbar-avatar">
+						Usuario
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="/user/profile">My profile</a>
+						<li><hr class="dropdown-divider"></li>
+						<form action="/user/logout" method="post">
+							<button class="dropdown-item" href="/user/logout">Logout</button>
+						</form>
+					</ul>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="/users/register">Register</a></li>
+				<li class="nav-item"><a class="nav-link" href="/users/login">Login</a></li>
+			</ul>
+		</div>
+	</div>
 </nav>
-
-
-
-
-  <div class="menu-hamburguesa">
-    <i class="fas fa-bars"></i>
-    </div>
-
-  
-  
-  </div>
-  
-  
-  
-  
-  
-
-
-    
-
-
-   
-
-  </header>
-
-  
