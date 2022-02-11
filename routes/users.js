@@ -9,17 +9,19 @@ const controller = require("../controllers/users");
 const multer = require("multer");
 
 const multerDiskStorage = multer.diskStorage({
-    destination: function (req, file, cb) {
-      cb(null,path.resolve(__dirname, '../public/uploads/users'));
-    },
-    filename: function (req, file, cb) {
-      const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
-      cb(null, uniqueSuffix +"_"+ file.fieldname + path.extname(file.originalname));
-    }
-  })
-  
-  const upload = multer({ storage: multerDiskStorage });
+  destination: function (req, file, cb) {
+    cb(null, path.resolve(__dirname, "../public/uploads/users"));
+  },
+  filename: function (req, file, cb) {
+    const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);
+    cb(
+      null,
+      uniqueSuffix + "_" + file.fieldname + path.extname(file.originalname)
+    );
+  },
+});
 
+const upload = multer({ storage: multerDiskStorage });
 
 //CUANDO CREO
 //http://localhost:3000/products/create
@@ -27,14 +29,10 @@ router.get("/register", controller.create);
 //http://localhost:3000/products
 router.post("/", upload.single("usersAvatar"), controller.add);
 
-
-
 //Formulario de login
-router.get ("/login", controller.login)
+router.get("/login", controller.login);
 
+//Menú de usuario
+router.get("/profile", controller.account);
 
-
-
-
-
-module.exports=router;
+module.exports = router;

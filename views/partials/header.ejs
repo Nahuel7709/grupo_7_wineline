@@ -1,48 +1,51 @@
-
 <div class="header-top">
- <nav class="navbar navbar-light bg-black">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/"><img src="/images/wineline-logo2.png" width="200" alt=""></a>
-    <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </div>
- </nav>
+  <nav class="navbar navbar-light bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><img src="/images/wineline-logo2.png" width="200" alt=""></a>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
 </div>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-	<div class="container">
-		
-	
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-	
-		<div class="collapse navbar-collapse" id="mainNavbar">
-			<ul class="navbar-nav me-auto">
-				<li class="nav-item"><a class="nav-link" href="/">Ofertas</a></li>
-				<li class="nav-item"><a class="nav-link" href="/products">Productos</a></li>
+  <div class="container">
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="/">Ofertas</a></li>
+        <li class="nav-item"><a class="nav-link" href="/products">Productos</a></li>
         <li class="nav-item"><a class="nav-link" href="/">Ayuda</a></li>
-				<li class="nav-item"><a class="nav-link" href="/products/create">Crear productos</a></li>
-			</ul>
-			<ul class="navbar-nav align-items-center">
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="dropUser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						<img src="/uploads/avatars/default.png" class="navbar-avatar">
-						Usuario
-					</a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="/user/profile">My profile</a>
-						<li><hr class="dropdown-divider"></li>
-						<form action="/user/logout" method="post">
-							<button class="dropdown-item" href="/user/logout">Logout</button>
-						</form>
-					</ul>
-				</li>
-				<li class="nav-item"><a class="nav-link" href="/users/register">Register</a></li>
-				<li class="nav-item"><a class="nav-link" href="/users/login">Login</a></li>
-			</ul>
-		</div>
-	</div>
+        <li class="nav-item"><a class="nav-link" href="/products/create">Crear productos</a></li>
+      </ul>
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropUser" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="/uploads/avatars/default.png" class="navbar-avatar">
+            Usuario
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/users/profile">My profile</a>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <form action="/users/logout" method="post">
+              <button class="dropdown-item" href="/users/logout">Logout</button>
+            </form>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/users/register">Register</a></li>
+        <li class="nav-item"><a class="nav-link" href="/users/login">Login</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>

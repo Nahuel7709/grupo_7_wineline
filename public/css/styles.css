@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap");
 @import url("normalize.css");
 
 * {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
- 
   background-color: black;
 }
 
@@ -18,348 +17,177 @@ main {
   margin-bottom: 20px;
 }
 
-
-
 /*----------------------------------------------------------------------HEADER--------------------------------------*/
 
 .logo {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  .img-banner {
-    width: 40vw;
-    
-  }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
 
-  .barrabusqueda-header1{
-    margin-top: 10px;
-  }
-  
-  
-  .header-main {
-    padding-top: 25px;
-    
-  }
-  
-  
-  .line {
-    display: flex;
-    justify-content: center;
-    border-bottom: solid 2px lightgray;
-    width: 70vw;
-    margin: auto;
-  }
-  
-  .burger-menu {
-    color: white;
-  }
-  
-  .shopping-cart {
-    color: white;
-  }
-  
-  .barrabusqueda {
-    text-align: center;
-  }
-  
-  .mobile-navbar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-evenly;
-    margin-bottom: 8px;
-    color: white;
-  }
-  
-  .barrabusqueda-header {
-    display: none;
-  }
-  
-  .line-header-mobile{
-    display: flex;
-    justify-content: center;
-    border-bottom: solid 2px white;
-    width: 70vw;
-    margin: auto;
-  }
-  
-  .menu-hamburguesa{
-    color: white;
-    padding: 15px;
-    text-align: center;
-    font-size: 30px;
-  }
-  
-  .copy-header a{
-    text-decoration: none;
-    color: white;
-  }
-  .icon:hover {
-    color: lightgray;
-  }
-  
-  
-  .burger-menu:hover {
-    color: lightgrey;
-  }
-  
-  .shopping-cart:hover {
-    color: lightgrey;
-  }
-  
-  
-  .copy-header {
-    display: none;
-  }
-  
-  .main-navbar {
-    display: none;
-  }
-  
-  
-  /*---------------------------------FOOTER-----------------------------------------------------------*/
-  
-  .redessociales {
-      display: flex;
-      color: white;
-      font-size: 14px;
-      font-weight: 200;
-      justify-content: center;
-      gap: 25px;
-      width: 100%;
-    }
-    
-    .footer-bar {
-      display: flex;
-      color: white;
-      justify-content: space-evenly;
-      font-size: 12px;
-      font-weight: 200;
-      flex-direction: column;
-      align-items: center;
-  }
-    
-    .footer-text {
-      text-align: center;
-      width: 20vw;
-    }
-    
-    .main-footer {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: space-evenly;
-    }
-  
-    .footer-text:hover {
-      color: lightgrey;
-    }
-  
-    .facebook {
-      margin-top: 0;
-    }
-  
-    footer {
-      margin: 30px;
-      font-family: "Montserrat", sans-serif;
-    }
-  
+.img-banner {
+  width: 40vw;
+}
 
+.barrabusqueda-header1 {
+  margin-top: 10px;
+}
 
-    /*----------------------------------------------HOME------------------------------------*/
-  
-  .banner-home {
-    width: 100vw;
-    margin-bottom: 5px;
-  }
-  
-  .articles-home {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 30px;
-    align-items: center;
+.header-main {
+  padding-top: 25px;
+}
 
-  }
+.line {
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 2px lightgray;
+  width: 70vw;
+  margin: auto;
+}
 
-  .img-product-home {
-    width: 80vw;
-    margin: 5px;
-  }
-  
-  .img-product-home:hover {
-    transition-duration: 120ms;
-    box-shadow: 3px 3px 7px rgb(34, 32, 32);
-  }
-  
-  .banner-home {
-    display: none;
-  }
-
-  .title-home-cat{
-    padding-top: 20px;
-  text-align: center;
-  font-family: "montserrat";
+.burger-menu {
   color: white;
-  font-weight: 400;
-  }
+}
 
-  .line-home-cat{
-    display: flex;
-    justify-content: center;
-    border-bottom: solid 2px white;
-    width: 70vw;
-    margin: auto;
-    margin-bottom: 30px;
-  }
+.shopping-cart {
+  color: white;
+}
 
-/*-------------------------------------------------REGISTER---------------------------------------*/
+.barrabusqueda {
+  text-align: center;
+}
 
-.register-body {
-    font-family: "Roboto";
-  }
-  
-  .register-box {
-    margin: 20px 50px 50px 50px;
-    padding-top: 15px;
-  }
-  
-  .register-title {
-    text-align: center;
-    border-bottom: solid 1px lightgray;
-    margin-left: 20px;
-    padding-bottom: 10px;
-    margin-right: 20px;
-    color: white;
-    font-family: "Montserrat";
-  }
-  
-  .register-name {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 5px 0 22px 0;
-  }
-  
-  .register-usuario {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 5px 0 22px 0;
-  }
-  
-  .register-password {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 5px 0 22px 0;
-  }
-  
-  .register-email {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 5px 0 22px 0;
-  }
-  
-  .register-button {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .conditions {
-    font-size: 12px;
-    text-align: center;
-    color: white;
-  }
-  
-  .conditions1 {
-    color: lightblue;
-    text-decoration: none;
-  }
-  
-  .conditions1:hover {
-    text-decoration: underline;
-  }
-  
-  .register-button2 {
-    background-color: #991128;
-    color: white;
-    padding: 10px 35px;
-    margin: 8px 0;
-    border-radius: 10px;
-    border: solid rgb(29, 29, 29) 1px;
-    opacity: 0.9;
-  }
-  
-  .register-button2:hover {
-    background-color: #cc2642;
-  }
-  
-  .already-account {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .register-name1 {
-    border-radius: 8px;
-    padding: 7px 35px 7px 35px;
-    text-align: center;
-  }
-  
-  .register-usuario1 {
-    border-radius: 8px;
-    padding: 7px 35px 7px 35px;
-    text-align: center;
-  }
-  
-  .register-email1 {
-    border-radius: 8px;
-    padding: 7px 35px 7px 35px;
-    text-align: center;
-  }
-  
-  .register-password1 {
-    border-radius: 8px;
-    padding: 7px 35px 7px 35px;
-    text-align: center;
-  }
+.mobile-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-bottom: 8px;
+  color: white;
+}
 
+.barrabusqueda-header {
+  display: none;
+}
 
+.line-header-mobile {
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 2px white;
+  width: 70vw;
+  margin: auto;
+}
 
-/*-------------------------------------LOGIN---------------------------------------*/
+.menu-hamburguesa {
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 30px;
+}
 
-.password-remember {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .password-remember1 {
-    text-align: center;
-  }
-  
-  .password-remember:hover {
-    color: lightgray;
-  }
-  
-  .remember {
-    color: white;
-  }
-  
-  .remember1 {
-    text-align: center;
-  }
+.copy-header a {
+  text-decoration: none;
+  color: white;
+}
+.icon:hover {
+  color: lightgray;
+}
 
+.burger-menu:hover {
+  color: lightgrey;
+}
 
+.shopping-cart:hover {
+  color: lightgrey;
+}
 
-/*---------------------------------------PRODUCT BROWSE-----------------------------------------*/
+.copy-header {
+  display: none;
+}
 
+.main-navbar {
+  display: none;
+}
 
-.browse-title{
+/*---------------------------------FOOTER-----------------------------------------------------------*/
+
+.redessociales {
+  display: flex;
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+}
+
+.footer-bar {
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+  font-size: 12px;
+  font-weight: 200;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-text {
+  text-align: center;
+  width: 20vw;
+}
+
+.main-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer-text:hover {
+  color: lightgrey;
+}
+
+.facebook {
+  margin-top: 0;
+}
+
+footer {
+  margin: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*----------------------------------------------HOME------------------------------------*/
+
+.banner-home {
+  width: 100vw;
+  margin-bottom: 5px;
+}
+
+.articles-home {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 30px;
+  align-items: center;
+}
+
+.img-product-home {
+  width: 80vw;
+  margin: 5px;
+}
+
+.img-product-home:hover {
+  transition-duration: 120ms;
+  box-shadow: 3px 3px 7px rgb(34, 32, 32);
+}
+
+.banner-home {
+  display: none;
+}
+
+.title-home-cat {
   padding-top: 20px;
   text-align: center;
   font-family: "montserrat";
@@ -367,31 +195,228 @@ main {
   font-weight: 400;
 }
 
-.product-browse-box{
+.line-home-cat {
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 2px white;
+  width: 70vw;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+/*-------------------------------------------------REGISTER---------------------------------------*/
+
+.register-body {
+  font-family: "Roboto";
+}
+
+.register-box {
+  margin: 20px 50px 50px 50px;
+  padding-top: 15px;
+}
+
+.register-title {
+  text-align: center;
+  border-bottom: solid 1px lightgray;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  color: white;
+  font-family: "Montserrat";
+}
+
+.register-name {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px 0 22px 0;
+}
+
+.register-usuario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px 0 22px 0;
+}
+
+.register-password {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px 0 22px 0;
+}
+
+.register-email {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px 0 22px 0;
+}
+
+.register-button {
+  display: flex;
+  justify-content: center;
+}
+
+.conditions {
+  font-size: 12px;
+  text-align: center;
+  color: white;
+}
+
+.conditions1 {
+  color: lightblue;
+  text-decoration: none;
+}
+
+.conditions1:hover {
+  text-decoration: underline;
+}
+
+.register-button2 {
+  background-color: #991128;
+  color: white;
+  padding: 10px 35px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: solid rgb(29, 29, 29) 1px;
+  opacity: 0.9;
+}
+
+.register-button2:hover {
+  background-color: #cc2642;
+}
+
+.already-account {
+  display: flex;
+  justify-content: center;
+}
+
+.register-name1 {
+  border-radius: 8px;
+  padding: 7px 35px 7px 35px;
+  text-align: center;
+}
+
+.register-usuario1 {
+  border-radius: 8px;
+  padding: 7px 35px 7px 35px;
+  text-align: center;
+}
+
+.register-email1 {
+  border-radius: 8px;
+  padding: 7px 35px 7px 35px;
+  text-align: center;
+}
+
+.register-password1 {
+  border-radius: 8px;
+  padding: 7px 35px 7px 35px;
+  text-align: center;
+}
+
+/*-------------------------------------LOGIN---------------------------------------*/
+
+.password-remember {
+  color: white;
+  text-decoration: none;
+}
+
+.password-remember1 {
+  text-align: center;
+}
+
+.password-remember:hover {
+  color: lightgray;
+}
+
+.remember {
+  color: white;
+}
+
+.remember1 {
+  text-align: center;
+}
+
+/*-------------------------------------ACCOUNT---------------------------------------*/
+.imgavatar {
+  display: flex;
+  width: 15.5vw;
+  margin-left: 20vw;
+  padding: 2px;
+}
+
+.accountBox {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  margin-left: 10vw;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.dataBox {
+  background-color: white;
+}
+
+.accountData {
+  font-size: 18px;
+  font-weight: bolder;
+  width: 40vw;
+}
+
+.accountInfo {
+  color: rgba(0, 0, 0, 0.808);
+  width: 40vw;
+}
+
+.dataSubtitle {
+  font-weight: bold;
+  font-size: 25p;
+  width: 40vw;
+}
+
+.imgBox {
+  background-color: white;
+  width: 40vw;
+}
+
+/*---------------------------------------PRODUCT BROWSE-----------------------------------------*/
+
+.browse-title {
+  padding-top: 20px;
+  text-align: center;
+  font-family: "montserrat";
+  color: white;
+  font-weight: 400;
+}
+
+.product-browse-box {
   margin-bottom: 20px;
 }
 
-
-.product-browse-title{
-text-align: center;
-color: black;
+.product-browse-title {
+  text-align: center;
+  color: black;
 }
 
-.browse-body{
-font-family: "Roboto";
-margin-left: 40px;
-margin-right: 40px;
-border-radius: 15px;
+.browse-body {
+  font-family: "Roboto";
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 15px;
 }
 
-.product-browse-data{
+.product-browse-data {
   text-align: center;
   color: black;
   display: flex;
   justify-content: space-between;
 }
 
-.browse-product-line{
+.browse-product-line {
   display: flex;
   justify-content: center;
   border-bottom: solid 1px lightgrey;
@@ -399,7 +424,7 @@ border-radius: 15px;
   margin: auto;
 }
 
-.product-article-browse a{
+.product-article-browse a {
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -409,355 +434,345 @@ border-radius: 15px;
   border-radius: 5px;
 }
 
-.all-products-box{
+.all-products-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.product-browse-img{
+.product-browse-img {
   text-align: center;
 }
 
-.product-browse-img1{
+.product-browse-img1 {
   width: 25%;
 }
 
-
-
-.variedad-browse{
+.variedad-browse {
   font-size: 15px;
 }
 
-.product-data-left{
+.product-data-left {
   margin-left: 10px;
   width: 35%;
 }
 
-.product-data-price{
-display: flex;
-justify-content: flex-end;
-margin-right: 15px;
+.product-data-price {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
 }
 
-.product-browse-price{
+.product-browse-price {
   font-size: 20px;
   color: rgb(12, 196, 12);
   font-weight: bold;
 }
 
-
-
-
-  /*------------------------------------------------------PRODUCT CART-----------------------------------------------------------*/
+/*------------------------------------------------------PRODUCT CART-----------------------------------------------------------*/
 
 .cart-title {
-    text-align: center;
-    border-bottom: solid 1px lightgray;
-    margin-left: 20px;
-    padding-bottom: 10px;
-    margin-right: 20px;
-    color: white;
-    font-family: "Montserrat";
-  }
-  
-  .item {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
-  }
-  .pannel {
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    background: white;
-    border-radius: 15px;
-  }
-  .img-cart {
-    width: 90%;
-    margin: 15px;
-  }
-  
-  .nombre-producto {
-    padding: 10px;
-    width: 50%;
-    font-size: 45px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  
-  .opciones {
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    color: black;
-    font-size: 16px;
-  }
-  .opciones p {
-    font-size: 25px;
-    color: black;
-  }
-  .cuadroCompra {
-    color: lightgrey;
-    width: auto;
-    font-size: 30px;
-    text-align: center;
-    display: flex;
-    align-self: flex-end;
-  }
-  
-  .opciones li {
-    font-size: 100%;
-  }
-  .comprar {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .comprar1 {
-    background: #991128;
-    width: 80%;
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-  }
-  
-  .comprar1:hover {
-    background: #b81530;
-  }
-  
-  .contador {
-    width: 50%;
-    margin: 0;
-    padding: 0px;
-    font-size: 15px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-family: "Monstserrat", sans-serif;
-  }
-  
-  .conjuntoContador {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-  }
-  .vino {
-    width: 30%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .vinoTitulo {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .nombreVino {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  .descripcionVino {
-    font-size: 16px;
-    color: gray;
-  }
-  .envio {
-    color: green;
-    font-size: 16px;
-  }
-  
-  .eliminar-guardar {
-    color: #991128;
-  }
-  
-  .precio {
-    width: auto;
-    font-size: 40px;
-    font-weight: bold;
-  }
-  .lineCaja {
-    display: flex;
-    justify-content: center;
-    border-bottom: solid 2px gray;
-    width: 70vw;
-    margin: auto;
-    margin-bottom: 10px;
-  }
-  
-  /*Caja comprar*/
-  
-  .caja-comprar {
-    background-color: white;
-    padding-bottom: 15px;
-    position: sticky;
-    bottom: -5px;
-    width: 100%;
-    border-top: solid 1px gray;
-  }
-  
-  .caja-envio-direccion {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-bottom: solid 1px gray;
-  }
-  
-  .direccion {
-    color: #991128;
-    font-weight: bold;
-  }
-  
-  .caja-total-precio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  .total-texto {
-    font-size: 18px;
-    font-weight: bolder;
-  }
-  
-  .total-precio {
-    font-size: 18px;
-    font-weight: bolder;
-  }
-  
-  .total-cuotas {
-    font-size: 12px;
-    color: gray;
-    display: flex;
-    justify-content: end;
-  }
+  text-align: center;
+  border-bottom: solid 1px lightgray;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  color: white;
+  font-family: "Montserrat";
+}
 
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.pannel {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  border-radius: 15px;
+}
+.img-cart {
+  width: 90%;
+  margin: 15px;
+}
 
+.nombre-producto {
+  padding: 10px;
+  width: 50%;
+  font-size: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.opciones {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  font-size: 16px;
+}
+.opciones p {
+  font-size: 25px;
+  color: black;
+}
+.cuadroCompra {
+  color: lightgrey;
+  width: auto;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  align-self: flex-end;
+}
+
+.opciones li {
+  font-size: 100%;
+}
+.comprar {
+  text-align: center;
+  margin-top: 20px;
+}
+.comprar1 {
+  background: #991128;
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.comprar1:hover {
+  background: #b81530;
+}
+
+.contador {
+  width: 50%;
+  margin: 0;
+  padding: 0px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Monstserrat", sans-serif;
+}
+
+.conjuntoContador {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.vino {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.vinoTitulo {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nombreVino {
+  font-size: 20px;
+  font-weight: bold;
+}
+.descripcionVino {
+  font-size: 16px;
+  color: gray;
+}
+.envio {
+  color: green;
+  font-size: 16px;
+}
+
+.eliminar-guardar {
+  color: #991128;
+}
+
+.precio {
+  width: auto;
+  font-size: 40px;
+  font-weight: bold;
+}
+.lineCaja {
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 2px gray;
+  width: 70vw;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+/*Caja comprar*/
+
+.caja-comprar {
+  background-color: white;
+  padding-bottom: 15px;
+  position: sticky;
+  bottom: -5px;
+  width: 100%;
+  border-top: solid 1px gray;
+}
+
+.caja-envio-direccion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: solid 1px gray;
+}
+
+.direccion {
+  color: #991128;
+  font-weight: bold;
+}
+
+.caja-total-precio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.total-texto {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.total-precio {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.total-cuotas {
+  font-size: 12px;
+  color: gray;
+  display: flex;
+  justify-content: end;
+}
 
 /*-------------------------------------------------PRODUCT DETAIL--------------------------------------------------*/
 
 .productdetail {
-    display: flex;
-    background-color: white;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
+  display: flex;
+  background-color: white;
+  margin-left: 40px;
+  margin-right: 40px;
+}
 
-  .categoriaprod{
-    text-align: center;
-  }
-  
-  .title {
-    margin-bottom: 0px;
-  }
-  
-  .subtitle {
-    margin: 0px;
-    font-size: 14px;
-  }
-  
-  .descriptionprod {
-    padding-top: 0px;
-  }
-  
-  .buttons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-  }
+.categoriaprod {
+  text-align: center;
+}
 
-  .productdetail {
-    display: block;
-    margin: auto;
-    margin-right: 20px;
-    margin-left: 20px;
-    border-radius: 15px;
-  }
+.title {
+  margin-bottom: 0px;
+}
 
-  .img-detail {
-    display: flex;
-    width: 40vw;
-    padding-top: 10px;
-    border-bottom: 1px solid black;
-  }
+.subtitle {
+  margin: 0px;
+  font-size: 14px;
+}
 
-  .imgprod {
-    display: flex;
-    justify-content: center;
-  }
+.descriptionprod {
+  padding-top: 0px;
+}
 
-  .title {
-    text-align: center;
-  }
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
 
-  .subtitle {
-    text-align: center;
-  }
+.productdetail {
+  display: block;
+  margin: auto;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 15px;
+}
 
-  .descriptionprod {
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-  }
+.img-detail {
+  display: flex;
+  width: 40vw;
+  padding-top: 10px;
+  border-bottom: 1px solid black;
+}
 
-  
+.imgprod {
+  display: flex;
+  justify-content: center;
+}
 
-  .contador {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
+.title {
+  text-align: center;
+}
 
-  .buttons-pdt-detail {
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    
-  }
+.subtitle {
+  text-align: center;
+}
 
-  .price-detail{
-    font-size: 20px;
-    color: green;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-  }
+.descriptionprod {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
 
-  .buttons1 {
-    background: #b8112d;
-    border-radius: 10px;
-    color: white;
-    padding: 10px;
-    margin-right: 10px;
-  }
+.contador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 
-  .buttons1:hover {
-    background-color: #cc2642;
-  }
+.buttons-pdt-detail {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-detail {
+  font-size: 20px;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.buttons1 {
+  background: #b8112d;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.buttons1:hover {
+  background-color: #cc2642;
+}
 
 /*-------------------------------------------------------------PRODUCT CREATE-----------------------------------------------------*/
 
 .create-body {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-family: "Roboto";
-    margin-left: 40px;
-    margin-right: 40px;
-    border-radius: 15px;
-  }
-  
-.create-title-box{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Roboto";
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 15px;
+}
+
+.create-title-box {
   margin-bottom: 30px;
 }
 
-.line-create{
+.line-create {
   display: flex;
   justify-content: center;
   border-bottom: solid 2px grey;
@@ -765,64 +780,64 @@ margin-right: 15px;
   margin: auto;
 }
 
-  .create-title {
-    padding-top: 20px;
+.create-title {
+  padding-top: 20px;
   text-align: center;
   font-family: "montserrat";
   color: white;
   font-weight: 400;
-  }
-  
-  .create-box {
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-  
-  textarea {
-    min-width: 50vw;
-    max-width: 80vw;
-    min-height: 30vw;
-    max-height: 30vw;
-  }
+}
 
-  .data-box {
-    width: 40vw;
-    padding: 7px;
-    font-size: 16px;
-  }
-  
-  .create-button {
-    background-color: #991128;
-    color: white;
-    padding: 10px 35px;
-    margin: 8px 0;
-    border-radius: 10px;
-    border: solid rgb(29, 29, 29) 1px;
-    opacity: 0.9;
-    text-align: center;
-  }
+.create-box {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
 
-  .create-button:hover{
+textarea {
+  min-width: 50vw;
+  max-width: 80vw;
+  min-height: 30vw;
+  max-height: 30vw;
+}
+
+.data-box {
+  width: 40vw;
+  padding: 7px;
+  font-size: 16px;
+}
+
+.create-button {
+  background-color: #991128;
+  color: white;
+  padding: 10px 35px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: solid rgb(29, 29, 29) 1px;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.create-button:hover {
   background-color: #cc2642;
-  }
+}
 
-  .form-divs{
-    margin-bottom: 13px;
-  }
+.form-divs {
+  margin-bottom: 13px;
+}
 
-  .categories-radio {
-    color: white;
-  }
+.categories-radio {
+  color: white;
+}
 
-  .categoria-create {
-    color: white;
-  }
+.categoria-create {
+  color: white;
+}
 
-  /*---------------------------------------PRODUCT CART-----------------------------------------*/
+/*---------------------------------------PRODUCT CART-----------------------------------------*/
 
-.carrito{
+.carrito {
   padding-top: 20px;
   text-align: center;
   font-family: "montserrat";
@@ -834,12 +849,11 @@ margin-right: 15px;
   background-color: white;
   margin: 20px;
   border-radius: 5px;
-  
 }
 
 .img-productCart {
- width: 10vw;
- text-align: center;
+  width: 10vw;
+  text-align: center;
 }
 
 .marca-productCart {
@@ -856,7 +870,7 @@ margin-right: 15px;
 
 .data-navbar-productCart a {
   color: #3483fa;
-  
+
   text-decoration: none;
 }
 
@@ -866,8 +880,8 @@ margin-right: 15px;
 
 .price-productCart {
   color: black;
-    font-size: 15px;
-    font-weight: bold;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .discount-productCart {
@@ -875,39 +889,34 @@ margin-right: 15px;
   margin: 0px;
 }
 
-.old-price-productCart{
+.old-price-productCart {
   text-decoration: line-through;
   margin: 0px;
 }
 
 .data-product-productCart {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 90%;
 }
 
 .especificaciones-productCart {
   margin-left: 46px;
 }
 
-
-.discount-box-productCart{
+.discount-box-productCart {
   display: flex;
   font-size: 15px;
   flex-direction: column;
   margin: 18 0 10 0;
 }
 
-
-
-
-.navbar-productCart ul{
+.navbar-productCart ul {
   display: flex;
   list-style: none;
   margin-left: 0px;
   padding: 0;
-
 }
 
 .navbar-productCart a {
@@ -918,169 +927,108 @@ margin-right: 15px;
   margin: 5 30 0 0;
 }
 
+/*--------------------------------------------------------MEDIA QUERIS-----------------------------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*--------------------------------------------------------MEDIA QUERIS-----------------------------------------------------*/
-
-
-  @media (max-width: 560px) {
-
-    .navbar1 {
-      display: flex;
-      flex-wrap: inherit;
-      align-items: center;
-      justify-content: center;
-    }
-    
-
-    .form-logo{
-      display: none;
-    }
-    
-    
+@media (max-width: 560px) {
+  .navbar1 {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: center;
   }
 
-
-
-
-
-
-
-
-
-  @media (min-width: 768px) {
-    
-    
-    /*MEDIA QUERI HEADER*/
-    
-    .lupa-mobile {
-      display: none;
-    }
-  
-    .menu-hamburguesa {
-      display: none;
-    }
-  
-    .copy-header {
-      display: flex;
-    }
-  
-    .barrabusqueda-header {
-      display: flex;
-    }
-  
-    .main-header-top-bar{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-    }
-  
-    .copy-header{
-        color: white;
-        display: flex;
-        width: 20vw;
-        justify-content: space-evenly;
-        text-align: center;
-    }
-
-    .copy-header p:hover{
-      color: lightgray;
-    }
-    
-    .copy-header i:hover{
-      transition-duration: 20ms;
-      color: lightgrey;
-    }
-
-    .barrabusqueda-header{
-      display: flex;
-      justify-content: center;
-      border-radius: 10px;
-      width: 40vw;
-      padding: 8px;
-      border: none;
-      height: 4vh;
-    }
-  
-    .cart-mobile {
-      display: none;
-    }
-  
-    .img-banner {
-      width: 20vw;
-      
-    }
-  
-    .main-navbar {
-     display: flex;
-     
-    
-    }
-  
-    .main-navbar ul {
-      padding-top: 20px;
-      list-style: none;
-      display: flex;
-      justify-content: space-evenly;
-      color: white;
-      margin-bottom: 20px;
-    }
-  
-    .main-navbar li {
-      margin: 0 40px;
+  .form-logo {
+    display: none;
   }
-  
+}
+
+@media (min-width: 768px) {
+  /*MEDIA QUERI HEADER*/
+
+  .lupa-mobile {
+    display: none;
+  }
+
+  .menu-hamburguesa {
+    display: none;
+  }
+
+  .copy-header {
+    display: flex;
+  }
+
+  .barrabusqueda-header {
+    display: flex;
+  }
+
+  .main-header-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .copy-header {
+    color: white;
+    display: flex;
+    width: 20vw;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  .copy-header p:hover {
+    color: lightgray;
+  }
+
+  .copy-header i:hover {
+    transition-duration: 20ms;
+    color: lightgrey;
+  }
+
+  .barrabusqueda-header {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    width: 40vw;
+    padding: 8px;
+    border: none;
+    height: 4vh;
+  }
+
+  .cart-mobile {
+    display: none;
+  }
+
+  .img-banner {
+    width: 20vw;
+  }
+
+  .main-navbar {
+    display: flex;
+  }
+
+  .main-navbar ul {
+    padding-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .main-navbar li {
+    margin: 0 40px;
+  }
+
   .main-navbar a {
     text-decoration: none;
     color: white;
   }
 
-  .main-navbar a:hover{
+  .main-navbar a:hover {
     color: lightgray;
   }
-  
-/*MEDIA QUERI FOOTER*/
+
+  /*MEDIA QUERI FOOTER*/
 
   .footer-bar {
     font-size: 15px;
@@ -1103,13 +1051,11 @@ margin-right: 15px;
     font-size: 12px;
     font-weight: 200;
     flex-direction: row;
-    
-}
-  
-  
-/*MEDIA QUERI HOME*/
+  }
 
-.banner-home {
+  /*MEDIA QUERI HOME*/
+
+  .banner-home {
     display: flex;
   }
 
@@ -1125,34 +1071,26 @@ margin-right: 15px;
     justify-content: center;
     padding-bottom: 30px;
     align-items: center;
-}
+  }
 
+  /*MEDIA QUERI PRODUCT BROWSE*/
 
-/*MEDIA QUERI PRODUCT BROWSE*/
+  .product-article-browse a {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    background-color: white;
+    width: 25vw;
+    border-radius: 5px;
+  }
 
+  .product-browse-box {
+    margin: 20px;
+  }
 
-.product-article-browse a{
-  display: flex;
-  text-decoration: none;
-  color: inherit;
-  background-color: white;
-  width: 25vw;
-  border-radius: 5px;
-  
-  
-}
-
-
-.product-browse-box{
-  margin: 20px; 
-}
-
-.product-browse-box:hover {
-  box-shadow: 3px 3px 7px rgb(153, 150, 150);
-}
-
-
-
+  .product-browse-box:hover {
+    box-shadow: 3px 3px 7px rgb(153, 150, 150);
+  }
 
   /*MEDIA QUERI PRODUCT DETAIL*/
 
@@ -1167,7 +1105,6 @@ margin-right: 15px;
     width: 20vw;
     border-right: black solid 1px;
     border-bottom: none;
-    
   }
 
   .imgprod {
@@ -1175,14 +1112,14 @@ margin-right: 15px;
     padding-bottom: 20px;
   }
 
-.price-detail{
-  font-size: 25px;
-}
+  .price-detail {
+    font-size: 25px;
+  }
 
-  .buttons1{
-  padding: 10px;
-  margin: 5px 10px;
-  width: 40vw;
+  .buttons1 {
+    padding: 10px;
+    margin: 5px 10px;
+    width: 40vw;
   }
 
   .descriptionprod {
@@ -1210,31 +1147,29 @@ margin-right: 15px;
     flex-direction: column;
   }
 
-  .producttext{
+  .producttext {
     margin-top: 50px;
   }
-  
 
-  .title{
+  .title {
     font-size: 50px;
   }
 
-  .subtitle{
+  .subtitle {
     font-size: 40px;
   }
 
-  .categoriaprod{
+  .categoriaprod {
     font-size: 30px;
   }
 
-  .descriptionprod{
+  .descriptionprod {
     font-size: 25px;
   }
 
-
   /*MEDIA QUERY PRODUCT CART*/
 
-  .carrito{
+  .carrito {
     padding-top: 20px;
     text-align: center;
     font-family: "Montserrat";
@@ -1246,63 +1181,61 @@ margin-right: 15px;
     background-color: white;
     margin: 70px;
     border-radius: 5px;
-    
   }
-  
+
   .img-productCart {
-   width: 8vw;
+    width: 8vw;
   }
-  
+
   .marca-productCart {
     color: black;
   }
-  
+
   .variedad-productCart {
     color: black;
   }
-  
+
   .capacidad-productCart {
     color: black;
   }
-  
+
   .data-navbar-productCart a {
     color: #3483fa;
-    
+
     text-decoration: none;
   }
-  
+
   .envio-productCart {
     color: green;
   }
-  
+
   .price-productCart {
     color: black;
-      font-size: 30px;
-      font-weight: bold;
+    font-size: 30px;
+    font-weight: bold;
   }
-  
+
   .discount-productCart {
     color: green;
   }
-  
-  .old-price-productCart{
+
+  .old-price-productCart {
     text-decoration: line-through;
     margin: 0px;
   }
-  
+
   .data-product-productCart {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%;
   }
-  
+
   .especificaciones-productCart {
     margin-left: 46px;
   }
-  
-  
-  .discount-box-productCart{
+
+  .discount-box-productCart {
     display: flex;
     gap: 10px;
     flex-direction: row;
@@ -1311,10 +1244,7 @@ margin-right: 15px;
     margin-bottom: 10px;
   }
 
-  
-  
-  
-  .navbar-productCart ul{
+  .navbar-productCart ul {
     display: flex;
     flex-wrap: wrap;
     margin-top: 80px;
@@ -1322,45 +1252,37 @@ margin-right: 15px;
     list-style: none;
     margin-left: 0px;
     justify-content: flex-start;
-  
   }
-  
+
   .navbar-productCart a {
     margin: 0px 10px 0px 10px;
   }
-  
+
   .precio-descuento-productCart {
     margin: 5 30 0 0;
   }
 
+  /* MEDIA QUERI PRODUCT CREATE*/
 
+  .create-body input:hover {
+    border: 2px solid #991128;
+    border-radius: 10px;
+  }
 
+  .create-body textarea:hover {
+    border: 2px solid #991128;
+    border-radius: 10px;
+  }
 
-
-
-
-/* MEDIA QUERI PRODUCT CREATE*/
-
-.create-body input:hover{
-  border: 2px solid #991128 ;
-  border-radius: 10px;
-}
-
-.create-body textarea:hover{
-  border: 2px solid #991128 ;
-  border-radius: 10px;
-}
-
-.create-button {
-  width: 80vw;
-  background-color: #991128;
-  color: white;
-  padding: 10px 25px;
-  margin: 8px 0;
-  border-radius: 10px;
-  border: solid rgb(29, 29, 29) 1px;
-  opacity: 0.9;
-  text-align: center;
-}
-
+  .create-button {
+    width: 80vw;
+    background-color: #991128;
+    color: white;
+    padding: 10px 25px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: solid rgb(29, 29, 29) 1px;
+    opacity: 0.9;
+    text-align: center;
+  }
 }
