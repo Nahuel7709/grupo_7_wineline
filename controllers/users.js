@@ -24,6 +24,8 @@ const controller = {
       id: generateID(),
       usersName: req.body.usersName,
       usersId: req.body.usersId,
+      usersDirec: req.body.usersDirec,
+      usersTel: req.body.usersTel,
       usersPassword: req.body.usersPassword,
       usersEmail: req.body.usersEmail,
       country: req.body.country,

@@ -9,19 +9,12 @@
  {
   "id": 2,
   "usersName": "Nahuel Menichetti",
-  "usersId": "Nahuel",
-  "usersPassword": "hola123",
+  "usersId": "Nahuel123",
+  "usersDirec": "calle falsa 213",
+  "usersTel": "1111222333",
+  "usersPassword": "123456",
   "usersEmail": "nahuel@gmail.com",
   "country": "Argentina",
-  "usersAvatar": "1643420724630-188464333_usersAvatar.webp"
- },
- {
-  "id": 3,
-  "usersName": "Emiliano Gomez Pola",
-  "usersId": "potter",
-  "usersPassword": "1234",
-  "usersEmail": "egomezpola@hotmail.com",
-  "country": "Argentina",
-  "usersAvatar": "1644258073214-725687135_usersAvatar.jpeg"
+  "usersAvatar": "1644610175984-201919444_usersAvatar.webp"
  }
 ]
