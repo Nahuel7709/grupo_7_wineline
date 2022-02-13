@@ -1,11 +1,11 @@
 const fs = require("fs");
 const path = require("path");
-
+const bcrypt = require("bcryptjs");
 const { validationResult } =require("express-validator")
 
 //ubicacion del archivo json
 const filePath = path.resolve(__dirname, "../data/users.json");
-//lectura del archivo json y parseado a array
+//lectura del archivo json y parseado a array-db
 const usersArray = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
 const controller = {
@@ -30,16 +30,13 @@ const controller = {
     return lastID + 1;
     };
 
+    const bodyData = req.body;
+
    //se guarda el usuario
    usersArray.push({
    id: generateID(),
-   usersName: req.body.usersName,
-   usersId: req.body.usersId,
-   usersDirec: req.body.usersDirec,
-   usersTel: req.body.usersTel,
-   usersPassword: req.body.usersPassword,
-   usersEmail: req.body.usersEmail,
-   country: req.body.country,
+   ...bodyData,
+   password: bcrypt.hashSync(bodyData.password, 10),
    usersAvatar: req.file.filename,
 });
    fs.writeFileSync(filePath, JSON.stringify(usersArray, null, " "));
@@ -52,9 +49,35 @@ const controller = {
     return res.render("users/login");
   },
 
+  loginProcess: (req, res) => {
+   //preguntamos si la persona esta en la db
+   const userToLogin = usersArray.find(oneUser => oneUser.email === req.body.email);
+   
+   if (userToLogin) {
+  //comparo contraseñas
+    const isPasswordCorrect = bcrypt.compareSync(req.body.password, userToLogin.password);
+    
+  if (isPasswordCorrect){
+    delete userToLogin.password; // Borramos el password del usuario que estamos almacenando en sesion
+    req.session.userLogged=userToLogin;
+
+    //redireccionamos a users/profile
+    return res.redirect("/users/profile");
+
+   }
+  }
+},
+
   account: (req, res) => {
-    return res.render("users/profile");
-  },
+		return res.render("users/profile", {
+			user: req.session.userLogged
+		});
+	},
+
+  logout: (req, res) => {
+	
+	}
+
 };
 
 module.exports = controller;

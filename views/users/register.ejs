@@ -16,7 +16,7 @@
 
 <div class="text-center mt-5">
   
-  <form action="/users" method="post" enctype="multipart/form-data"  style="width:70vw;margin:auto;background-color: black; padding: 50px; border-radius: 15px;">
+  <form action="/users/register" method="post" enctype="multipart/form-data"  style="width:70vw;margin:auto;background-color: black; padding: 50px; border-radius: 15px;">
     <a href="/"><img src="/images/wineline-logo2.png" height="72" alt="logo" class="form-logo"></a>
     <h1 style="font-family:Montserrat; font-weight: bolder; color: white;">Registro</h1>
     
@@ -60,22 +60,22 @@
     
     
     <label for="emailAdress" class="sr-only">Email</label>
-    <% if (locals.errors && errors.usersEmail) { %>
+    <% if (locals.errors && errors.email) { %>
       <div class="text-danger">
-        <%= errors.usersEmail.msg %> 
+        <%= errors.email.msg %> 
       </div>
     <% } %>
-    <input type="text" name="usersEmail" id="emailAdress" class="form-control mb-3" placeholder="Direccion de correo electronico" autofocus
-    value=<%= locals.oldData ? oldData.usersEmail : null  %> >
+    <input type="text" name="email" id="emailAdress" class="form-control mb-3" placeholder="Direccion de correo electronico" autofocus
+    value=<%= locals.oldData ? oldData.email : null  %> >
     
     
     <label for="password" class="sr-only">Contraseña</label>
-    <% if (locals.errors && errors.usersPassword) { %>
+    <% if (locals.errors && errors.password) { %>
       <div class="text-danger">
-        <%= errors.usersPassword.msg %> 
+        <%= errors.password.msg %> 
       </div>
     <% } %>
-    <input type="password" id="password" name="usersPassword" placeholder="Contraseña" class="form-control mb-3 <%= locals.errors && errors.usersPassword ? "is-invalid" : null  %>">
+    <input type="password" id="password" name="password" placeholder="Contraseña" class="form-control mb-3 <%= locals.errors && errors.password ? "is-invalid" : null  %>">
     
     
     <label for="profilePicture" class="sr-only">Imagen de perfil</label>

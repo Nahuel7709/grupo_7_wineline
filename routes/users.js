@@ -21,12 +21,17 @@ const validations = require('../middlewares/validateRegisterMiddleware');
 //http://localhost:3000/products/create
 router.get("/register", controller.create);
 //http://localhost:3000/products
-router.post("/", uploadFile.single("usersAvatar"), validations, controller.add);
+router.post("/register", uploadFile.single("usersAvatar"), validations, controller.add);
 
 //Formulario de login
 router.get("/login", controller.login);
+// Procesar el login
+router.post('/login', controller.loginProcess);
 
-//Menú de usuario
+
+//Perfil usuario
 router.get("/profile", controller.account);
+// Logout
+router.post('/logout', controller.logout);
 
 module.exports = router;
