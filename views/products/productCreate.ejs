@@ -1,91 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<html>
-
 <%- include('../partials/head') %>
 
   
 
   <body>
+    <%- include('../partials/header') %> 
 
     <!--Main Header-->
 
 
-    <%- include('../partials/header') %>
-
     
 
 
-      <!--Formulario de creación de productos-->
+<div class="text-center mt-5">
+  
+  <form action="/products" method="post" enctype="multipart/form-data"  style="width:70vw;margin:auto;background-color: black; padding: 50px; border-radius: 15px;">
+    <a href="/"><img src="/images/wineline-logo2.png" height="72" alt="logo" class="form-logo"></a>
+    <h1 style="font-family:Montserrat; font-weight: bolder; color: white;">Crear Producto</h1>
+    
+    <label for="name" class="sr-only">Marca</label>
+    <input type="text" name="pdtMarca" id="name" class="form-control mb-3 " placeholder="Marca, ej: Rutini" autofocus>
 
-      <main class="create-body">
+
+   <label for="idUser" class="sr-only">Variedad</label>
+  <input type="text" id="idUser" name="pdtVariedad" placeholder="Variedad, ej: Malbec" class="form-control mb-3"> 
+    
+    
+    <label for="name" class="sr-only">Cantidad</label>
+    <input type="text" name="pdtPresentacion" id="name" class="form-control mb-3" placeholder="Cantidad, ej:750ml" autofocus>
+    
+    
+    <label for="name" class="sr-only">Precio</label>
+    <input type="text" name="pdtPrice" id="name" class="form-control mb-3" placeholder="Precio"  autofocus>
+    
+    
+   
+    
+
+   
+    <div class="form-floating">
+      <h6 style="text-align: start; color: white;">Breve descripción del producto</h6>
+      <textarea class="form-control mb-3" name="pdtDescripcion" placeholder="Descripción del producto" id="floatingTextarea2" style="height: 100px"></textarea>
+    </div>
+
+
+
+
+    <h6 style="text-align: start; color: white;">Elegí una Categoría</h6>
+    
+      <div class="text-danger">
         
-        <div class="create-title-box">
-        <h1 class="create-title">NUEVO ARTÍCULO</h1>
+      </div>
+    
+								<select name="pdtCategorias" class="form-select mb-3 ">
+									<option value="">Elegí una Categoría</option>
+									<%  
+										let categorias = ['Vinos', 'Cervezas', 'Espumantes'];
+									%>
+									<% for (const oneCategoria of categorias) { %>
+										<option 
+											value="<%= oneCategoria %>"
+											<%= locals.oldData && (oneCategoria === oldData.pdtCategorias) ? 'selected' : null %> 
+										> <%= oneCategoria %> </option>
+									<% } %>
+								</select>
 
-          <div class="line-create"></div>
-        </div>
 
 
-          <form class="create-box" action="/products" method="post" enctype="multipart/form-data">
 
 
-            <div class="form-divs">
-              <input type="text" name="pdtMarca"  placeholder="Marca, ej: Rutini" required class="data-box">
-            </div>
-            
-            
 
-            <div class="form-divs">
-              <input type="text" name="pdtVariedad"  placeholder="Variedad, ej: Malbec" required
-                class="data-box">
-            </div>
-            
-            
+							
+    
+    <h6 style="text-align: start; color: white;">Imagen del producto</h6>
+    <input type="file" id="profilePicture" name="productImage" placeholder="Imagen del producto" class="form-control mb-3">
+        
+      
+    
+    <div class="mt-3">
+      <button class="btn btn-lg btn-primary w-100 mb-3">Crear</button>
+    </div>
 
-            <div class="form-divs">
-              <input type="text" name="pdtPresentacion"  placeholder="Cantidad, ej:750ml" required class="data-box">
-            </div>
-            
-            
 
-            <div class="form-divs">
-              <input type="number" name="pdtPrice"  placeholder="Precio" required class="data-box">
-            </div>
-            
-            
 
-            <div class="description-article">
-              <div>
-                <textarea name="pdtDescripcion" rows="10" cols="30" placeholder="Agregá una descripción"></textarea>
-              </div>
-            
+  </form>
+  
+</div>
 
-            <p class="categoria-create">Categoria:</p>
-            <div class="categories-radio">
-              <div>
-                <label for="categoria"></label>
-                <input type="radio" name="pdtCategorias" id="categoria" value="Vinos">
-                <label for="">Vinos</label>
-                <input type="radio" name="pdtCategorias" id="categoria" value="Cervezas">
-                <label for="">Cervezas</label>
-                <input type="radio" name="pdtCategorias" id="categoria" value="Espumantes">
-                <label for="">Espumantes</label>
-              </div>
-           
-            
-            <div class="image">
-              <p>Inserte una imagen del producto:</p>
-              <input type="file" name="productImage">
-            </div>
-              
-              <button class="create-button" type="submit">Crear</button>
-              
 
-          </form>
-
-      </main>
 
 
       <%- include('../partials/footer') %>
+  </body>
+
+</html>

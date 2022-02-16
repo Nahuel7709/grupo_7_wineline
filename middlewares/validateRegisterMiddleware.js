@@ -2,7 +2,7 @@ const path = require('path');
 const { body } = require('express-validator');
 
 module.exports = [
-    body("usersName").notEmpty().withMessage("Escriba su nombre y apellido").bail().withMessage("El nombre no debe contener numeros ni signos"),
+    body("usersName").notEmpty().withMessage("Escriba su nombre y apellido"),
     body("usersId").notEmpty().withMessage("Escriba su nombre de usuario").bail().isLength({min:6, max:15}).withMessage("El nombre de usuario debe tener entre 6 y 15 caracteres"),
     body("usersDirec").notEmpty().withMessage("Escriba su dirección de envío"),
     body("usersTel").notEmpty().withMessage("Escriba su numero de telefono").bail().isNumeric().withMessage("El numero de telefono no debe contener letras ni signos"),
