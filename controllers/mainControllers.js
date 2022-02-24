@@ -2,12 +2,14 @@ const path = require("path");
 
 const controller = {
   home: (req, res) => {
-    return res.render("./users/home");
+    return res.render("./home");
   },
 
-  productCart: (req, res) => {
-    return res.render("./products/productCart");
+  about:(req, res) => {
+    return res.render("./about")
   },
+
+ 
 
 
 };

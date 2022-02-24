@@ -120,6 +120,7 @@ main {
   justify-content: center;
   gap: 25px;
   width: 100%;
+  padding-top: 20px;
 }
 
 .footer-bar {
@@ -144,7 +145,7 @@ main {
   justify-content: space-evenly;
 }
 
-.footer-text:hover {
+.footer-text a:hover {
   color: lightgrey;
 }
 
@@ -157,6 +158,10 @@ footer {
   font-family: "Montserrat", sans-serif;
 }
 
+.footer-bar a {
+  text-decoration: none;
+  color: white;
+}
 /*----------------------------------------------HOME------------------------------------*/
 
 .banner-home {
@@ -204,138 +209,33 @@ footer {
   margin-bottom: 30px;
 }
 
-/*-------------------------------------------------REGISTER---------------------------------------*/
-
-.register-body {
-  font-family: "Roboto";
-}
-
-.register-box {
-  margin: 20px 50px 50px 50px;
-  padding-top: 15px;
-}
-
-.register-title {
+/*-------------------------------------ABOUT---------------------------------------*/
+.about-title{
+  padding-top: 20px;
   text-align: center;
-  border-bottom: solid 1px lightgray;
+  font-family: "montserrat";
+  color: white;
+  font-weight: 400;
+  border-bottom: white 1px solid;
+  margin: 0px 30px 0px 30px;
+}
+
+.container-about{
+  
+  margin-top: 20px;
+}
+
+.container-about .about-info{
   margin-left: 20px;
-  padding-bottom: 10px;
-  margin-right: 20px;
-  color: white;
-  font-family: "Montserrat";
-}
-
-.register-name {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 5px 0 22px 0;
-}
-
-.register-usuario {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 5px 0 22px 0;
-}
-
-.register-password {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 5px 0 22px 0;
-}
-
-.register-email {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 5px 0 22px 0;
-}
-
-.register-button {
-  display: flex;
-  justify-content: center;
-}
-
-.conditions {
-  font-size: 12px;
-  text-align: center;
   color: white;
 }
 
-.conditions1 {
-  color: lightblue;
-  text-decoration: none;
+.container-about .about-info h3{
+  color:rgb(255, 255, 255);
+  font-family: "montserrat";
 }
 
-.conditions1:hover {
-  text-decoration: underline;
-}
-
-.register-button2 {
-  background-color: #991128;
-  color: white;
-  padding: 10px 35px;
-  margin: 8px 0;
-  border-radius: 10px;
-  border: solid rgb(29, 29, 29) 1px;
-  opacity: 0.9;
-}
-
-.register-button2:hover {
-  background-color: #cc2642;
-}
-
-.already-account {
-  display: flex;
-  justify-content: center;
-}
-
-.register-name1 {
-  border-radius: 8px;
-  padding: 7px 35px 7px 35px;
-  text-align: center;
-}
-
-.register-usuario1 {
-  border-radius: 8px;
-  padding: 7px 35px 7px 35px;
-  text-align: center;
-}
-
-.register-email1 {
-  border-radius: 8px;
-  padding: 7px 35px 7px 35px;
-  text-align: center;
-}
-
-.register-password1 {
-  border-radius: 8px;
-  padding: 7px 35px 7px 35px;
-  text-align: center;
-}
-
-/*-------------------------------------LOGIN---------------------------------------*/
-
-.password-remember {
-  color: white;
-  text-decoration: none;
-}
-
-.password-remember1 {
-  text-align: center;
-}
-
-.password-remember:hover {
-  color: lightgray;
-}
-
-.remember {
-  color: white;
-}
-
-.remember1 {
+.container-about .img-about{
   text-align: center;
 }
 
@@ -470,194 +370,6 @@ footer {
   font-weight: bold;
 }
 
-/*------------------------------------------------------PRODUCT CART-----------------------------------------------------------*/
-
-.cart-title {
-  text-align: center;
-  border-bottom: solid 1px lightgray;
-  margin-left: 20px;
-  padding-bottom: 10px;
-  margin-right: 20px;
-  color: white;
-  font-family: "Montserrat";
-}
-
-.item {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
-}
-.pannel {
-  width: auto;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  background: white;
-  border-radius: 15px;
-}
-.img-cart {
-  width: 90%;
-  margin: 15px;
-}
-
-.nombre-producto {
-  padding: 10px;
-  width: 50%;
-  font-size: 45px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.opciones {
-  margin: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  color: black;
-  font-size: 16px;
-}
-.opciones p {
-  font-size: 25px;
-  color: black;
-}
-.cuadroCompra {
-  color: lightgrey;
-  width: auto;
-  font-size: 30px;
-  text-align: center;
-  display: flex;
-  align-self: flex-end;
-}
-
-.opciones li {
-  font-size: 100%;
-}
-.comprar {
-  text-align: center;
-  margin-top: 20px;
-}
-.comprar1 {
-  background: #991128;
-  width: 80%;
-  padding: 10px;
-  border-radius: 10px;
-  color: white;
-}
-
-.comprar1:hover {
-  background: #b81530;
-}
-
-.contador {
-  width: 50%;
-  margin: 0;
-  padding: 0px;
-  font-size: 15px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  font-family: "Monstserrat", sans-serif;
-}
-
-.conjuntoContador {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-}
-.vino {
-  width: 30%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.vinoTitulo {
-  display: flex;
-  flex-wrap: wrap;
-}
-.nombreVino {
-  font-size: 20px;
-  font-weight: bold;
-}
-.descripcionVino {
-  font-size: 16px;
-  color: gray;
-}
-.envio {
-  color: green;
-  font-size: 16px;
-}
-
-.eliminar-guardar {
-  color: #991128;
-}
-
-.precio {
-  width: auto;
-  font-size: 40px;
-  font-weight: bold;
-}
-.lineCaja {
-  display: flex;
-  justify-content: center;
-  border-bottom: solid 2px gray;
-  width: 70vw;
-  margin: auto;
-  margin-bottom: 10px;
-}
-
-/*Caja comprar*/
-
-.caja-comprar {
-  background-color: white;
-  padding-bottom: 15px;
-  position: sticky;
-  bottom: -5px;
-  width: 100%;
-  border-top: solid 1px gray;
-}
-
-.caja-envio-direccion {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-bottom: solid 1px gray;
-}
-
-.direccion {
-  color: #991128;
-  font-weight: bold;
-}
-
-.caja-total-precio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.total-texto {
-  font-size: 18px;
-  font-weight: bolder;
-}
-
-.total-precio {
-  font-size: 18px;
-  font-weight: bolder;
-}
-
-.total-cuotas {
-  font-size: 12px;
-  color: gray;
-  display: flex;
-  justify-content: end;
-}
-
 /*-------------------------------------------------PRODUCT DETAIL--------------------------------------------------*/
 
 .productdetail {
@@ -757,85 +469,6 @@ footer {
   background-color: #cc2642;
 }
 
-/*-------------------------------------------------------------PRODUCT CREATE-----------------------------------------------------*/
-
-.create-body {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-family: "Roboto";
-  margin-left: 40px;
-  margin-right: 40px;
-  border-radius: 15px;
-}
-
-.create-title-box {
-  margin-bottom: 30px;
-}
-
-.line-create {
-  display: flex;
-  justify-content: center;
-  border-bottom: solid 2px grey;
-  width: 70vw;
-  margin: auto;
-}
-
-.create-title {
-  padding-top: 20px;
-  text-align: center;
-  font-family: "montserrat";
-  color: white;
-  font-weight: 400;
-}
-
-.create-box {
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-textarea {
-  min-width: 50vw;
-  max-width: 80vw;
-  min-height: 30vw;
-  max-height: 30vw;
-}
-
-.data-box {
-  width: 40vw;
-  padding: 7px;
-  font-size: 16px;
-}
-
-.create-button {
-  background-color: #991128;
-  color: white;
-  padding: 10px 35px;
-  margin: 8px 0;
-  border-radius: 10px;
-  border: solid rgb(29, 29, 29) 1px;
-  opacity: 0.9;
-  text-align: center;
-}
-
-.create-button:hover {
-  background-color: #cc2642;
-}
-
-.form-divs {
-  margin-bottom: 13px;
-}
-
-.categories-radio {
-  color: white;
-}
-
-.categoria-create {
-  color: white;
-}
-
 /*---------------------------------------PRODUCT CART-----------------------------------------*/
 
 .carrito {
@@ -849,6 +482,7 @@ textarea {
   display: flex;
   background-color: white;
   margin: 20px;
+  padding-top: 20px;
   border-radius: 5px;
 }
 

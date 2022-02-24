@@ -39,9 +39,6 @@ app.use(userLoggedMD);
 const home = require("./routes/mainRoutes");
 app.use("/", home);
 
-const productCart = require("./routes/mainRoutes");
-app.use("/productCart", productCart);
-
 const productsRoutes = require("./routes/products");
 app.use("/products", productsRoutes);
 

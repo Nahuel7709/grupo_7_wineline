@@ -34,6 +34,9 @@ router.get("/create", controller.create);
 //http://localhost:3000/products
 router.post("/",upload.single("productImage"), controller.add);
 
+//Cart
+router.get("/cart", controller.cart);
+
 
 //CUANDO EDITO
 //http://localhost:3000/products/edit/:id

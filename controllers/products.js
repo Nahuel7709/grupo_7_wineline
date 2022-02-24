@@ -25,6 +25,10 @@ const controller = {
     });
 },
 
+cart: (req, res) => {
+  return res.render("products/productCart");
+},
+
   create: (req,res)=>{
     res.render("products/productCreate");
     },

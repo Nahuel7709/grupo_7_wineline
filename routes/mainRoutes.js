@@ -8,7 +8,9 @@ const controller = require("../controllers/mainControllers");
 
 router.get("/", controller.home);
 
-router.get("/productCart", controller.productCart);
+router.get("/about", controller.about)
+
+
 
 
 
