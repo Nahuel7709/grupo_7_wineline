@@ -10,6 +10,8 @@ router.get("/", controller.home);
 
 router.get("/about", controller.about)
 
+router.get("/help", controller.help)
+
 
 
 

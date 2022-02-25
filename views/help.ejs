@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./partials/head') %> 
+
+
+<body>
+  <%- include('./partials/header') %> 
+
+
+<section class="contact">
+    <div class="content">
+        <h2>Contacto</h2>
+        <p>Llámenos o deje su mensaje y nuestro equipo se pondrá en contacto con usted.</p>
+    </div>
+    <div class="container-help">
+        <div class="contact-info">
+            <div class="box-help">
+                <div class="icon-help"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="text-help">
+                    <h3>Dirección</h3>
+                    <p>Calle Falsa 123<br>Buenos Aires<br>Argentina</p>
+                </div>
+            </div>
+            <div class="box-help">
+                <div class="icon-help"><i class="fas fa-phone"></i></div>
+                <div class="text-help">
+                    <h3>Teléfono</h3>
+                    <p>+54 9 11 1234-5678</p>
+                </div>
+            </div>
+            <div class="box-help">
+                <div class="icon-help"><i class="fas fa-envelope"></i></div>
+                <div class="text-help">
+                    <h3>Email</h3>
+                    <p>wineline@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <h2>Mande un mensaje</h2>
+                <div class="inputBox">
+                    <input type="text" name="" required>
+                    <span>Nombre completo</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="" required>
+                    <span>Email</span>
+                </div>
+                <div class="inputBox">
+                    <textarea required></textarea>
+                    <span>Escriba su mensaje</span>
+                </div>
+                <div class="mt-3">
+                    <button class="btn btn-lg btn-primary w-100">Enviar</button>
+                  </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+  
+  <%- include('./partials/footer') %>
+
+</body>
+
+
+
+
+
+</html>
