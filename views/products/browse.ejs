@@ -30,7 +30,7 @@
                 <article class="product-article-browse">
                 <a href="/products/read/<%= productsList[i].id %>">
                   <div class="product-browse-title">
-                  <h2><%= productsList[i].pdtMarca %></h2>
+                  <h2 class="product-brand-title"><%= productsList[i].pdtMarca %></h2>
                   <p class="variedad-browse"><%= productsList[i].pdtVariedad %></p>
                   </div>
                     <div class="product-browse-img">
@@ -39,8 +39,8 @@
                     <div class="browse-product-line"></div>
                     <div class="product-browse-data">
                     <div class="product-data-left">
-                    <p><%= productsList[i].pdtPresentacion %>.ml</p>
-                    <p>Categoria: <%= productsList[i].pdtCategorias %></p>
+                    <p class="product-browse-volume"><%= productsList[i].pdtPresentacion %>.ml</p>
+                    <p><span class="product-category-text"><%= productsList[i].pdtCategorias %></span></p>
                     </div>
                     <div class="product-data-price">
                     <p class="product-browse-price">$<%= productsList[i].pdtPrice %></p>

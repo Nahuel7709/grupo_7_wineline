@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Montserrat:wght@100&family=Poiret+One&display=swap');
 @import url("normalize.css");
 
 * {
@@ -493,11 +493,17 @@ footer {
   border-radius: 15px;
 }
 
+.product-brand-title{
+  font-family: 'Fredoka', sans-serif;
+}
+
 .product-browse-data {
   text-align: center;
   color: black;
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
+  
 }
 
 .browse-product-line {
@@ -534,11 +540,18 @@ footer {
 
 .variedad-browse {
   font-size: 15px;
+  font-weight: bold;
+}
+
+.product-category-text{
+  
+  font-family: 'Poiret One', cursive;
 }
 
 .product-data-left {
   margin-left: 10px;
   width: 35%;
+  font-weight: bold;
 }
 
 .product-data-price {
@@ -547,10 +560,14 @@ footer {
   margin-right: 15px;
 }
 
+.product-browse-volume{
+  font-family: 'Poiret One', cursive;
+}
+
 .product-browse-price {
   font-size: 20px;
-  color: rgb(12, 196, 12);
   font-weight: bold;
+  font-family: 'Poiret One', cursive;
 }
 
 /*-------------------------------------------------PRODUCT DETAIL--------------------------------------------------*/
@@ -676,10 +693,13 @@ footer {
 
 .marca-productCart {
   color: black;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 25px;
 }
 
 .variedad-productCart {
   color: black;
+  font-size: 15px;
 }
 
 .capacidad-productCart {
@@ -743,6 +763,7 @@ footer {
 
 .precio-descuento-productCart {
   margin: 5 30 0 0;
+  font-family: 'Poiret One', cursive;
 }
 
 /*--------------------------------------------------------MEDIA QUERIS-----------------------------------------------------*/
