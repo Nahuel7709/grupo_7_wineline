@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-03-2022 a las 21:24:33
+-- Tiempo de generación: 08-03-2022 a las 18:34:26
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.1.2
 
@@ -88,12 +88,9 @@ CREATE TABLE `categories` (
 DROP TABLE IF EXISTS `products`;
 CREATE TABLE `products` (
   `id` int(20) NOT NULL,
-  `brand` varchar(100) NOT NULL,
-  `variety` varchar(100) NOT NULL,
   `image` varchar(100) NOT NULL,
   `price` decimal(6,2) NOT NULL,
   `volume` decimal(4,2) NOT NULL,
-  `category` varchar(100) NOT NULL,
   `description` text NOT NULL,
   `discount` decimal(3,2) NOT NULL,
   `new` bit(2) NOT NULL,
