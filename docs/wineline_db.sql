@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-03-2022 a las 18:34:26
+-- Tiempo de generación: 09-03-2022 a las 22:32:44
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.1.2
 
@@ -18,10 +18,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `wineline`
+-- Base de datos: `wineline_db`
 --
-CREATE DATABASE IF NOT EXISTS `wineline` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `wineline`;
+CREATE DATABASE IF NOT EXISTS `wineline_db` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `wineline_db`;
 
 -- --------------------------------------------------------
 
@@ -31,8 +31,10 @@ USE `wineline`;
 
 DROP TABLE IF EXISTS `brands`;
 CREATE TABLE `brands` (
-  `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `createAt` timestamp NULL DEFAULT NULL,
+  `modiefiedAt` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -43,15 +45,17 @@ CREATE TABLE `brands` (
 
 DROP TABLE IF EXISTS `cartproduct`;
 CREATE TABLE `cartproduct` (
-  `id` int(11) NOT NULL,
-  `cartId` int(11) NOT NULL,
-  `productId` int(11) NOT NULL,
+  `id` int(10) UNSIGNED NOT NULL,
   `subtotal` decimal(6,2) NOT NULL,
   `price` int(11) NOT NULL,
   `discount` decimal(2,1) NOT NULL,
   `quantity` int(11) NOT NULL,
   `order_date` date NOT NULL,
-  `order_ship` date NOT NULL
+  `order_ship` date NOT NULL,
+  `cartId` int(10) UNSIGNED DEFAULT NULL,
+  `productId` int(10) UNSIGNED DEFAULT NULL,
+  `createAt` timestamp NULL DEFAULT NULL,
+  `modiefiedAt` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -62,9 +66,11 @@ CREATE TABLE `cartproduct` (
 
 DROP TABLE IF EXISTS `carts`;
 CREATE TABLE `carts` (
-  `id` int(11) NOT NULL,
+  `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(100) NOT NULL,
-  `userId` int(11) NOT NULL
+  `userId` int(10) UNSIGNED DEFAULT NULL,
+  `createAt` timestamp NULL DEFAULT NULL,
+  `modiefiedAt` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -75,8 +81,10 @@ CREATE TABLE `carts` (
 
 DROP TABLE IF EXISTS `categories`;
 CREATE TABLE `categories` (
-  `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `createAt` timestamp NULL DEFAULT NULL,
+  `modiefiedAt` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -87,19 +95,19 @@ CREATE TABLE `categories` (
 
 DROP TABLE IF EXISTS `products`;
 CREATE TABLE `products` (
-  `id` int(20) NOT NULL,
+  `id` int(10) UNSIGNED NOT NULL,
   `image` varchar(100) NOT NULL,
   `price` decimal(6,2) NOT NULL,
   `volume` decimal(4,2) NOT NULL,
   `description` text NOT NULL,
   `discount` decimal(3,2) NOT NULL,
   `new` bit(2) NOT NULL,
-  `create_at` date NOT NULL,
-  `modified_at` date NOT NULL,
-  `delete_at` date NOT NULL,
-  `brandId` int(100) NOT NULL,
-  `categoryId` int(100) NOT NULL,
-  `varietyId` int(100) NOT NULL
+  `createAt` date DEFAULT NULL,
+  `modifiedAt` date DEFAULT NULL,
+  `deleteAt` date DEFAULT NULL,
+  `brandId` int(10) UNSIGNED DEFAULT NULL,
+  `categoryId` int(10) UNSIGNED DEFAULT NULL,
+  `varietyId` int(10) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -110,15 +118,17 @@ CREATE TABLE `products` (
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
-  `name` varchar(200) NOT NULL,
-  `userName` varchar(100) NOT NULL,
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `userName` int(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `password` varchar(100) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `country` varchar(100) NOT NULL,
-  `adress` varchar(100) NOT NULL,
-  `avatar` varchar(100) NOT NULL,
-  `admin` bit(1) NOT NULL
+  `adress` varchar(255) NOT NULL,
+  `avatar` varchar(255) NOT NULL,
+  `admin` bit(1) NOT NULL,
+  `createAt` timestamp NULL DEFAULT NULL,
+  `modifiedAt` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -129,8 +139,10 @@ CREATE TABLE `users` (
 
 DROP TABLE IF EXISTS `varieties`;
 CREATE TABLE `varieties` (
-  `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `createAt` timestamp NULL DEFAULT NULL,
+  `modiefiedAt` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -141,9 +153,11 @@ CREATE TABLE `varieties` (
 
 DROP TABLE IF EXISTS `volumeproduct`;
 CREATE TABLE `volumeproduct` (
-  `id` int(11) NOT NULL,
-  `productId` int(11) NOT NULL,
-  `volumeId` int(11) NOT NULL
+  `id` int(10) UNSIGNED NOT NULL,
+  `productId` int(10) UNSIGNED NOT NULL,
+  `volumeId` int(10) UNSIGNED NOT NULL,
+  `createAt` timestamp NULL DEFAULT NULL,
+  `modiefiedAt` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -154,8 +168,10 @@ CREATE TABLE `volumeproduct` (
 
 DROP TABLE IF EXISTS `volumes`;
 CREATE TABLE `volumes` (
-  `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `createAt` timestamp NULL DEFAULT NULL,
+  `modiefiedAt` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -173,8 +189,8 @@ ALTER TABLE `brands`
 --
 ALTER TABLE `cartproduct`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `cartId` (`cartId`),
-  ADD KEY `productId` (`productId`);
+  ADD KEY `productId` (`productId`),
+  ADD KEY `cartId` (`cartId`);
 
 --
 -- Indices de la tabla `carts`
@@ -195,15 +211,14 @@ ALTER TABLE `categories`
 ALTER TABLE `products`
   ADD PRIMARY KEY (`id`),
   ADD KEY `brandId` (`brandId`),
-  ADD KEY `categoryId` (`categoryId`),
-  ADD KEY `varietyId` (`varietyId`);
+  ADD KEY `varietyId` (`varietyId`),
+  ADD KEY `categoryId` (`categoryId`);
 
 --
 -- Indices de la tabla `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `userEmail` (`email`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `varieties`
@@ -230,10 +245,58 @@ ALTER TABLE `volumes`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `brands`
+--
+ALTER TABLE `brands`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `cartproduct`
+--
+ALTER TABLE `cartproduct`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `carts`
+--
+ALTER TABLE `carts`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `categories`
+--
+ALTER TABLE `categories`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `products`
+--
+ALTER TABLE `products`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `varieties`
+--
+ALTER TABLE `varieties`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `volumeproduct`
 --
 ALTER TABLE `volumeproduct`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `volumes`
+--
+ALTER TABLE `volumes`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- Restricciones para tablas volcadas
@@ -243,8 +306,8 @@ ALTER TABLE `volumeproduct`
 -- Filtros para la tabla `cartproduct`
 --
 ALTER TABLE `cartproduct`
-  ADD CONSTRAINT `cartproduct_ibfk_1` FOREIGN KEY (`cartId`) REFERENCES `carts` (`id`),
-  ADD CONSTRAINT `cartproduct_ibfk_2` FOREIGN KEY (`productId`) REFERENCES `products` (`id`);
+  ADD CONSTRAINT `cartproduct_ibfk_1` FOREIGN KEY (`productId`) REFERENCES `products` (`id`),
+  ADD CONSTRAINT `cartproduct_ibfk_2` FOREIGN KEY (`cartId`) REFERENCES `carts` (`id`);
 
 --
 -- Filtros para la tabla `carts`
@@ -257,8 +320,8 @@ ALTER TABLE `carts`
 --
 ALTER TABLE `products`
   ADD CONSTRAINT `products_ibfk_1` FOREIGN KEY (`brandId`) REFERENCES `brands` (`id`),
-  ADD CONSTRAINT `products_ibfk_2` FOREIGN KEY (`categoryId`) REFERENCES `categories` (`id`),
-  ADD CONSTRAINT `products_ibfk_3` FOREIGN KEY (`varietyId`) REFERENCES `varieties` (`id`);
+  ADD CONSTRAINT `products_ibfk_2` FOREIGN KEY (`varietyId`) REFERENCES `varieties` (`id`),
+  ADD CONSTRAINT `products_ibfk_3` FOREIGN KEY (`categoryId`) REFERENCES `categories` (`id`);
 
 --
 -- Filtros para la tabla `volumeproduct`
