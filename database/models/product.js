@@ -16,11 +16,11 @@ module.exports = (sequelize, DataTypes) => {
 
 	Product.associate = function (models) {
 		// associations can be defined here
-		
+		Product.belongTo(models.Brand, {
+			as: "brand",
+			foreignKey: "brandId"
+		})
 		};
-
-	
-	
 
 	return Product;
 };

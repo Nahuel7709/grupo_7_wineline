@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { Product } = require("../database/models");
 
 //ubicacion del archivo json
 const filePath = path.resolve(__dirname,"../data/products.json");
@@ -9,6 +10,18 @@ const productsArray = JSON.parse(fs.readFileSync(filePath,"utf8"));
 
 
 const controller = {
+  show: function (req,res){
+    Product
+    .findAll({
+      include:["brand"]
+    })
+    .then((products)=> {
+      return res.render("index", {products});
+    })
+    .catch ((err)=> { console.log(err)})
+
+  },
+
   browse: (req,res)=>{
    res.render("products/browse",{
        productsList: productsArray
