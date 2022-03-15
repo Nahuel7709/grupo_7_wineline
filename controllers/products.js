@@ -2,17 +2,18 @@ const {Product} = require("../database/models");
 
 console.log(Product)
 
+
 const controller = {
 	
-  browse: function (req, res) {
-		Product
-		.findAll({})
-		.then((products)=>{
-			console.log(products)
-		})
-    .catch(error => console.log (error))
-		return res.send("HOLA");
-	},
+	browse: async (req, res) => {
+		try{
+			const products = await Product.findAll({ include: ["brand", "categories", "varieties", "volumes"] });
+			return res.render("products/browse", { products });
+		}catch (e) {
+			console.error(e);
+		}
+		
+		},
 
 
 	
