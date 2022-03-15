@@ -1,8 +1,8 @@
 module.exports = (sequelize, DataTypes) => {
 	// 1. Definir la estructura de la tabla
 	const volumeProduct = sequelize.define('volumeProduct', {
-		productId: DataTypes.INTERGER,
-        volumeId: DataTypes.INTERGER,
+		productId: DataTypes.INTEGER,
+        volumeId: DataTypes.INTEGER,
 			
 	}, {});
 
