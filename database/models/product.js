@@ -19,7 +19,33 @@ module.exports = (sequelize, DataTypes) => {
 		Product.belongsTo(models.Brand, {
 			as: "brand",
 			foreignKey: "brandId"
-		})
+		});
+
+		Product.belongsTo(models.Category, {
+			as: "categories",
+			foreignKey: "categoryId"
+		});
+
+		Product.belongsTo(models.Variety, {
+			as: "varieties",
+			foreignKey: "varietyId"
+		});
+
+		Product.belongsToMany(models.Volume, {
+			as: "volumes",
+			through: "volumeproduct",
+			foreignKey: "productId",
+			otherKey: "volumeId"
+		});
+
+		Product.belongsToMany(models.Cart, {
+			as: "carts",
+			through: "cartproduct",
+			foreignKey: "productId",
+			otherKey: "cartId"
+		});
+
+		
 		};
 
 	return Product;

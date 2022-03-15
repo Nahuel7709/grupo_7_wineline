@@ -6,7 +6,13 @@ module.exports = (sequelize, DataTypes) => {
 	}, {});
 
 	Volume.associate = function (models) {
-		// associations can be defined here
+		
+		Volume.belongsToMany(models.Product, {
+			as: "products",
+			through: "volumeproduct",
+			foreignKey: "volumeId",
+			otherKey: "productId"
+		});
 		
 		};
 
