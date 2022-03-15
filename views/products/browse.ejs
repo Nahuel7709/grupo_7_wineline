@@ -30,7 +30,7 @@
               <article class="product-article-browse">
               <a href="/products/read/<%= products[i].id %>">
                 <div class="product-browse-title">
-                <h2><%= products[i].brand.name %></h2>
+                <h2><%= products[i].name %></h2>
                 <p class="variedad-browse"><%= products[i].varieties.name %></p>
                 </div>
                   <div class="product-browse-img">
@@ -39,7 +39,7 @@
                   <div class="browse-product-line"></div>
                   <div class="product-browse-data">
                   <div class="product-data-left">
-                  <p><%= products[i].volume %>.ml</p>
+                  <p><%= volumes[i].name %>.ml</p>
                   <p>Categoria: <%= products[i].categories.name %></p>
                   </div>
                   <div class="product-data-price">

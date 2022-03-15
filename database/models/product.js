@@ -1,6 +1,7 @@
 module.exports = (sequelize, DataTypes) => {
 	// 1. Definir la estructura de la tabla
 	const Product = sequelize.define('Product', {
+		name: DataTypes.STRING,
 		image: DataTypes.STRING,
 		price: DataTypes.DECIMAL(6,2),
         volume: DataTypes.DECIMAL(4,2),
