@@ -42,7 +42,7 @@ router.get("/cart", controller.cart);
 //http://localhost:3000/products/edit/:id
 router.get("/edit/:id", controller.edit);
 //http://localhost:3000/products/:id
-router.put("/:id", controller.update);
+router.put("/:id",upload.single("image"), controller.update);
 
 
 

@@ -2,6 +2,7 @@ const {Product, Volume, Category, Variety} = require("../database/models");
 
 const fs = require("fs");
 const path = require("path");
+const { body } = require("express-validator");
 
 
 const controller = {
@@ -33,7 +34,7 @@ const controller = {
 
 
 	add: async  (req, res) => {
-		const productStored = await Product.create(req.body)
+		const productStored = await Product.create({ ...req.body, image: req.file.filename })
 		return res.redirect("/products");
 	},
 	
@@ -60,8 +61,17 @@ const controller = {
 
 	update:  (req, res) => {
 		const productID = req.params.id;
-		Product.update({ where: { id: productID }});
+		Product.update(
+			{ 
+			  ...req.body,
+			  image: req.file.filename 
+			},
+			{ where: { id: productID } }
+		  )
 		return res.redirect("/products");
+
+
+		
 	},
 
   cart: (req, res) => {
