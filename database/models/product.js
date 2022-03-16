@@ -4,13 +4,13 @@ module.exports = (sequelize, DataTypes) => {
 		name: DataTypes.STRING,
 		image: DataTypes.STRING,
 		price: DataTypes.DECIMAL(6,2),
-        volume: DataTypes.DECIMAL(4,2),
         description: DataTypes.STRING,
         discount: DataTypes.DECIMAL(3,2),
         new: DataTypes.BOOLEAN,
 		brandId: DataTypes.INTEGER,
         categoryId: DataTypes.INTEGER,
         varietyId: DataTypes.INTEGER,
+		volumeId: DataTypes.INTEGER,
 	}, {
 		paranoid: true
 	});
@@ -32,11 +32,9 @@ module.exports = (sequelize, DataTypes) => {
 			foreignKey: "varietyId"
 		});
 
-		Product.belongsToMany(models.Volume, {
+		Product.belongsTo(models.Volume, {
 			as: "volumes",
-			through: "volumeproduct",
-			foreignKey: "productId",
-			otherKey: "volumeId"
+			foreignKey: "volumeId",	
 		});
 
 		Product.belongsToMany(models.Cart, {

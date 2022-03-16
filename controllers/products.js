@@ -34,16 +34,19 @@ const controller = {
 
 	add: async  (req, res) => {
 		const productStored = await Product.create(req.body)
-		
 		return res.redirect("/products");
 	},
 	
 	delete:  (req, res) => {
-		
+		const productID = req.params.id;
+		Product.destroy({ where: { id: productID }});
+		return res.redirect("/products");
 	},
 	
-	read:  (req, res) => {
-	
+	read: async  (req, res) => {
+		const productID = req.params.id;
+		const productFinded = await Product.findByPk(productID, { include: ["brand", "categories", "volumes", "varieties"] });
+		return res.render("products/productDetail", { productFinded });
 	},
 
 	edit:  (req, res) => {

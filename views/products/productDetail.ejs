@@ -10,14 +10,15 @@
 
     <main class="productdetail">
       <div class="imgprod">
-        <img class="img-detail" src="/uploads/products/<%= theProduct.pdtImage %>" alt="">
+        <img class="img-detail" src="/uploads/products/<%= productFinded.image %>" alt="">
       </div>
       <div class="producttext">
-        <h3 class="title"><%= theProduct.pdtMarca %></h3>
-          <p class="subtitle"><%= theProduct.pdtVariedad %></p>
-          <p class="categoriaprod"><%= theProduct.pdtCategorias %></p>
-          <p class="descriptionprod"><%= theProduct.pdtDescripcion %></p>
-          <p class="price-detail">$<%= theProduct.pdtPrice %></p>
+        <h3 class="title"><%= productFinded.name %></h3>
+          <p class="subtitle"><%= productFinded.varieties.name %></p>
+          <p class="categoriaprod"><%= productFinded.categories.name %></p>
+          <p class="categoriaprod"><%= productFinded.volumes.name %>.ml</p>
+          <p class="descriptionprod"><%= productFinded.description %></p>
+          <p class="price-detail">$<%= productFinded.price %></p>
           
             <br>
             <br>
@@ -29,7 +30,7 @@
               <div class="buttons-pdt-detail" style="width:50vw;margin:auto;">
                 <button class="btn btn-lg btn-primary m-3">Comprar</button>
                 <button class="btn btn-lg btn-primary m-3">Agregar al carrito</button>
-                <form class="text-center" action="/products/<%= theProduct.id %>?_method=delete" method="POST">
+                <form class="text-center" action="/products/<%= productFinded.id %>?_method=delete" method="POST">
                 <button class="btn btn-lg btn-danger  m-3" type="submit">Eliminar</button>
                 </form>
               </div>
