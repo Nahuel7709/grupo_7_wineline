@@ -49,12 +49,19 @@ const controller = {
 		return res.render("products/productDetail", { productFinded });
 	},
 
-	edit:  (req, res) => {
-	
+	edit: async  (req, res) => {
+		const productID = req.params.id;
+		const productFinded = await Product.findByPk(productID, { include: ["brand", "categories", "volumes", "varieties"] });
+		const categories = await Category.findAll({});
+			const volumes = await Volume.findAll({});
+			const varieties = await Variety.findAll({});
+		return res.render("products/productEdit", { productFinded, categories, volumes, varieties });
 	},
 
 	update:  (req, res) => {
-	
+		const productID = req.params.id;
+		Product.update({ where: { id: productID }});
+		return res.redirect("/products");
 	},
 
   cart: (req, res) => {

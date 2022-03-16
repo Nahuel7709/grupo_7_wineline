@@ -1,89 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<html>
-
 <%- include('../partials/head') %>
 
   
 
   <body>
+    <%- include('../partials/header') %> 
 
     <!--Main Header-->
 
 
-    <%- include('../partials/header') %>
+    
 
 
-      <!--Formulario de creación de productos-->
+<div class="text-center mt-5">
+  
+  <form method="POST" action="/products/<%= productFinded.id %>?_method=put" enctype="multipart/form-data"  style="width:70vw;margin:auto;background-color: black; padding: 50px; border-radius: 15px;">
+    <a href="/"><img src="/images/wineline-logo2.png" height="72" alt="logo" class="form-logo"></a>
+    <h1 style="font-family:Montserrat; font-weight: bolder; color: white;">Editar Producto</h1>
+    
+    <label for="name" class="sr-only">Marca</label>
+    <input type="text" name="name" id="name" class="form-control mb-3 " value="<%= productFinded.name %>" autofocus>
 
-      <main class="create-body">
+
+    <div class="form-group mb-3">
+      <select name="varietyId" class="form-select">
+        <option value="">Selecciona una variedad</option>
+        <% varieties.forEach(oneVariety => { %>
+          <option 
+          value="<%= oneVariety.id %>"
+          <%= oneVariety.id === productFinded.varietyId ? "selected" : ""  %> 
+        >
+          <%= oneVariety.name %>
+        </option>
+        <% }) %>
+      </select>
+    </div>
+    
+    
+    <label for="name" class="sr-only">Cantidad</label>
+    <div class="form-group mb-3">
+      <select name="volumeId" class="form-select">
+        <option value="">Selecciona una cantidad</option>
+        <% volumes.forEach(oneVolume => { %>
+          <option 
+          value="<%= oneVolume.id %>"
+          <%= oneVolume.id === productFinded.volumeId ? "selected" : ""  %> 
+        >
+          <%= oneVolume.name %>
+        </option>
+        <% }) %>
+      </select>
+    </div>
+    
+    
+    <label for="name" class="sr-only">Precio</label>
+    <input type="text" name="price" id="name" class="form-control mb-3" value="$<%= productFinded.price %>"  autofocus>
+
+    <h6 style="text-align: start; color: white;">Ingrese el descuento</h6>
+    <label for="name" class="sr-only">Descuento</label>
+    <input type="text" name="discount" id="name" class="form-control mb-3" value="<%= productFinded.discount %>"  autofocus>
+    
+   
+    <div class="form-floating">
+      <h6 style="text-align: start; color: white;">Agregue nueva descripción</h6>
+      <textarea class="form-control mb-3" name="description" value="<%= productFinded.description %>" id="floatingTextarea2" style="height: 100px"></textarea>
+    </div>
+
+
+
+
+    <h6 style="text-align: start; color: white;">Elegí una Categoría</h6>
+    
+      <div class="text-danger">
         
-        <div class="create-title-box">
-        <h1 class="create-title">EDITAR ARTICULO</h1>
+      </div>
+    
+      <div class="form-group mb-3">
+        <select name="categoryId" class="form-select">
+          <option value="">Selecciona una opción</option>
+          <% categories.forEach(oneCategory => { %>
+            <option 
+            value="<%= oneCategory.id %>"
+            <%= oneCategory.id === productFinded.categoryId ? "selected" : ""  %> 
+          >
+            <%= oneCategory.name %>
+          </option>
+          <% }) %>
+        </select>
+      </div>
 
-          <div class="line-create"></div>
-        </div>
 
 
-          <form class="create-box" action="/products/<%= theProduct.id %>?_method=put" method="post">
 
 
-            <div class="form-divs">
-              <input type="text" name="pdtMarca"  placeholder="Marca, ej: Rutini" required class="data-box" value="<%= theProduct.pdtMarca %>">
-            </div>
-            
-            
 
-            <div class="form-divs">
-              <input type="text" name="pdtVariedad"  placeholder="Variedad, ej: Malbec" required
-                class="data-box" value="<%= theProduct.pdtVariedad %>">
-            </div>
-            
-            
+							
+    
+    <h6 style="text-align: start; color: white;">Imagen del producto</h6>
+    <input type="file" id="profilePicture" name="image" value="<%= productFinded.image %>" class="form-control mb-3">
+        
+      
+    
+    <div class="mt-3">
+      <button class="btn btn-lg btn-primary w-100 mb-3">Guardar</button>
+    </div>
 
-            <div class="form-divs">
-              <input type="text" name="pdtPresentacion"  placeholder="Cantidad, ej:750ml" required class="data-box" value="<%= theProduct.pdtPresentacion %>">
-            </div>
-            
-            
 
-            <div class="form-divs">
-              <input type="number" name="pdtPrice"  placeholder="Precio" required class="data-box" value="<%= theProduct.pdtPrice %>">
-            </div>
-            
-            
 
-            <div class="description-article">
-              <div>
-                <textarea name="pdtDescripcion" rows="10" cols="30" placeholder="Agregá una descripción"><%= theProduct.pdtDescripcion %></textarea>
-              </div>
-            
+  </form>
+  
+</div>
 
-            <p class="categoria-create">Categoria:</p>
-            <div class="categories-radio">
-              <div>
-                <label for="categoria"></label>
-                <input type="radio" name="pdtCategorias" id="categoria" value="Vinos">
-                <label for="">Vinos</label>
-                <input type="radio" name="pdtCategorias" id="categoria" value="Cervezas">
-                <label for="">Cervezas</label>
-                <input type="radio" name="pdtCategorias" id="categoria" value="Espumantes">
-                <label for="">Espumantes</label>
-              </div>
-           
-            
-            <div class="image">
-              <p>Inserte una imagen del producto:</p>
-              <input type="file" name="productImage" value="<%= theProduct.productImage %>">
-            </div>
-              
-              <button class="create-button" type="submit">Editar</button>
-              
 
-          </form>
-
-      </main>
 
 
       <%- include('../partials/footer') %>
+  </body>
+
+</html>

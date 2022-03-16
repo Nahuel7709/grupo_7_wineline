@@ -30,6 +30,7 @@
               <div class="buttons-pdt-detail" style="width:50vw;margin:auto;">
                 <button class="btn btn-lg btn-primary m-3">Comprar</button>
                 <button class="btn btn-lg btn-primary m-3">Agregar al carrito</button>
+                <a href="/products/edit/<%= productFinded.id %>" style="text-align: center;"><button class="btn btn-lg btn-info m-3">Editar</button></a>
                 <form class="text-center" action="/products/<%= productFinded.id %>?_method=delete" method="POST">
                 <button class="btn btn-lg btn-danger  m-3" type="submit">Eliminar</button>
                 </form>
