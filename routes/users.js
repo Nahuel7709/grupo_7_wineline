@@ -19,7 +19,7 @@ const authMiddleware = require('../middlewares/authMiddleware');
 //http://localhost:3000/products/create
 router.get("/register", guestMiddleware, controller.create);
 //http://localhost:3000/products
-router.post("/register", uploadFile.single("usersAvatar"), validations, controller.add);
+router.post("/register", uploadFile.single("avatar"), validations, controller.add);
 
 //Formulario de login
 router.get("/login", guestMiddleware, controller.login);

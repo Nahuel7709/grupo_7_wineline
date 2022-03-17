@@ -8,7 +8,7 @@ const usersArray = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
 
 function autoLoginMidddleware (req, res, next){
-   const emailCookie = req.cookies.userEmail
+   const emailCookie = req.cookies.email
    if (emailCookie !== undefined){
    //preguntamos si la persona esta en la db
    const userToLogin = usersArray.find(oneUser => oneUser.email === emailCookie);

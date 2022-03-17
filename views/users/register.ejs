@@ -26,46 +26,46 @@
         <%= errors.usersName.msg %> 
       </div>
     <% } %>
-    <input type="text" name="usersName" id="name" class="form-control mb-3 <%= locals.errors && errors.usersName ? "is-invalid" : null  %> " placeholder="Nombre y apellido" autofocus
-    value=<%= locals.oldData ? oldData.usersName : null  %> >
+    <input type="text" name="name" id="name" class="form-control mb-3 <%= locals.errors && errors.name ? "is-invalid" : null  %> " placeholder="Nombre y apellido" autofocus
+    value=<%= locals.oldData ? oldData.name : null  %> >
 
 
    <label for="idUser" class="sr-only">Nombre de usuario</label>
-    <% if (locals.errors && errors.usersId) { %>
+    <% if (locals.errors && errors.userName) { %>
       <div class="text-danger">
-        <%= errors.usersId.msg %> 
+        <%= errors.userName.msg %> 
       </div>
     <% } %>
-    <input type="text" id="idUser" name="usersId" placeholder="Nombre de usuario" class="form-control mb-3 <%= locals.errors && errors.usersId ? "is-invalid" : null  %> " 
-    value=<%= locals.oldData ? oldData.usersId : null  %> >
+    <input type="text" id="idUser" name="userName" placeholder="Nombre de usuario" class="form-control mb-3 <%= locals.errors && errors.userName ? "is-invalid" : null  %> " 
+    value=<%= locals.oldData ? oldData.userName : null  %> >
     
     <label for="name" class="sr-only">Dirección de envío</label>
-    <% if (locals.errors && errors.usersDirec) { %>
+    <% if (locals.errors && errors.adress) { %>
       <div class="text-danger">
-        <%= errors.usersDirec.msg %> 
+        <%= errors.adress.msg %> 
       </div>
     <% } %>
-    <input type="text" name="usersDirec" id="name" class="form-control mb-3 <%= locals.errors && errors.usersDirec ? "is-invalid" : null  %>" placeholder="Dirección de envío" autofocus
-    value=<%= locals.oldData ? oldData.usersDirec : null  %> >
+    <input type="text" name="adress" id="name" class="form-control mb-3 <%= locals.errors && errors.adress ? "is-invalid" : null  %>" placeholder="Dirección de envío" autofocus
+    value=<%= locals.oldData ? oldData.adress : null  %> >
     
     
     <label for="name" class="sr-only">Teléfono</label>
-    <% if (locals.errors && errors.usersTel) { %>
+    <% if (locals.errors && errors.cellphone) { %>
       <div class="text-danger">
-        <%= errors.usersTel.msg %> 
+        <%= errors.cellphone.msg %> 
       </div>
     <% } %>
-    <input type="text" name="usersTel" id="name" class="form-control mb-3 <%= locals.errors && errors.usersTel ? "is-invalid" : null  %>" placeholder="Teléfono"  autofocus
-    value=<%= locals.oldData ? oldData.usersTel : null  %> >
+    <input type="text" name="cellphone" id="name" class="form-control mb-3 <%= locals.errors && errors.cellphone ? "is-invalid" : null  %>" placeholder="Teléfono"  autofocus
+    value=<%= locals.oldData ? oldData.cellphone : null  %> >
     
     
-    <label for="emailAdress" class="sr-only">Email</label>
+    <label for="email" class="sr-only">Email</label>
     <% if (locals.errors && errors.email) { %>
       <div class="text-danger">
         <%= errors.email.msg %> 
       </div>
     <% } %>
-    <input type="text" name="email" id="emailAdress" class="form-control mb-3" placeholder="Direccion de correo electronico" autofocus
+    <input type="text" name="email" id="email" class="form-control mb-3" placeholder="Direccion de correo electronico" autofocus
     value=<%= locals.oldData ? oldData.email : null  %> >
     
     
@@ -103,10 +103,10 @@
 							
     
     <h6 style="text-align: start; color: white;">Foto de perfil</h6>
-    <input type="file" id="profilePicture" name="usersAvatar" placeholder="Imagen de perfil" class="form-control mb-3 <%= locals.errors && errors.usersAvatar ? 'is-invalid' : null %>">
-    <% if (locals.errors && errors.usersAvatar) { %>
+    <input type="file" id="profilePicture" name="avatar" placeholder="Imagen de perfil" class="form-control mb-3 <%= locals.errors && errors.avatar ? 'is-invalid' : null %>">
+    <% if (locals.errors && errors.avatar) { %>
       <div class="text-danger">
-        <%= errors.usersAvatar.msg %>
+        <%= errors.avatar.msg %>
       </div>
     <% } %>
     <div class="mt-3">

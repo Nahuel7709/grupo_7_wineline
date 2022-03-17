@@ -9,22 +9,22 @@
         <div class="dataBox">
           <h2 class="dataSubtitle">Datos de la cuenta</h2>
           <div class="accountData"><span>Usuario</span></div>
-          <div class="accountInfo"><span><%= user.usersId %> </span></div>
+          <div class="accountInfo"><span><%= user.userName %> </span></div>
           <div class="accountData"><span>E-mail</span></div>
           <div class="accountInfo"><span><%= user.email %></span></div>
           <br>
           <h2 class="dataSubtitle">Datos personales</h2>
           <div class="accountData"><span>Nombre completo</span></div>
-          <div class="accountInfo"><span><%= user.usersName %></span></div>
+          <div class="accountInfo"><span><%= user.name %></span></div>
           <div class="accountData"><span>Direccion de envío</span></div>
-          <div class="accountInfo"><span><%= user.usersDirec %></span></div>
+          <div class="accountInfo"><span><%= user.adress %></span></div>
           <div class="accountData"><span>País</span></div>
           <div class="accountInfo"><span><%= user.country %></span></div>
           <div class="accountData"><span>Telefono</span></div>
-          <div class="accountInfo"><span><%= user.usersTel %></span></div>
+          <div class="accountInfo"><span><%= user.cellphone %></span></div>
         </div>
         <div class=imgBox>
-          <img class="imgavatar" src="/uploads/users/<%= user.usersAvatar %>" alt="">
+          <img class="imgavatar" src="/uploads/users/<%= user.avatar %>" alt="">
         </div>
         </div>
 

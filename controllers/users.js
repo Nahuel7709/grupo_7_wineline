@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const bcrypt = require("bcryptjs");
 const { validationResult } =require("express-validator")
+const { User } = require("../database/models");
 
 //ubicacion del archivo json
 const filePath = path.resolve(__dirname, "../data/users.json");
@@ -23,26 +24,35 @@ const controller = {
       });
     }
 
-    //generamos el id
-    const generateID = () => {
-    const lastUser = usersArray[usersArray.length - 1];
-    const lastID = lastUser.id;
-    return lastID + 1;
-    };
+    User.findOne({ where: { email: req.body.email } })
+    .then((userInDB) => {
+        if (userInDB) {
+            return res.render('users/register', {
+                errors: {
+                    email: {
+                        msg: 'Este email ya esta registrado'
+                    }
+                },
+                oldData: req.body
+            });
 
-    const bodyData = req.body;
+        } else {
+            let userToCreate = {
+                ...req.body,
+                avatar: req.file.filename,
+                password: bcrypt.hashSync(req.body.password, 10),
+                admin: 0
+            }
+            User.create(userToCreate)
+                .then(() => {
+                    return res.redirect("/users/login")
+                })
+        }
+    })
 
-   //se guarda el usuario
-   usersArray.push({
-   id: generateID(),
-   ...bodyData,
-   password: bcrypt.hashSync(bodyData.password, 10),
-   usersAvatar: req.file.filename,
-});
-   fs.writeFileSync(filePath, JSON.stringify(usersArray, null, " "));
-   //la redireccion
-   res.redirect("/users/login");
-},
+    },
+
+    
 
 
   login: (req, res) => {
@@ -50,39 +60,49 @@ const controller = {
   },
 
   loginProcess: (req, res) => {
-   //preguntamos si la persona esta en la db
-   const userToLogin = usersArray.find(oneUser => oneUser.email === req.body.email);
-   
-   if (userToLogin) {
-  //comparo contraseñas
-    const isPasswordCorrect = bcrypt.compareSync(req.body.password, userToLogin.password);
-    
-  if (isPasswordCorrect){
-    delete userToLogin.password; 
-    req.session.userLogged=userToLogin;
 
-    if(req.body.user_remember) {
-      res.cookie("userEmail", userToLogin.email, { maxAge: (1000 * 60) * 10 });
-    }
+      User.findOne({ where: { email: req.body.email } }).then((userToLogin) => {
 
-    //redireccionamos a users/profile
-    return res.redirect("/users/profile");
+          if (userToLogin) {
+             const isPasswordCorrect = bcrypt.compareSync(req.body.password, userToLogin.password);
 
-   }
-  }
+              if (isPasswordCorrect) {
+                  delete userToLogin.password
+                  req.session.userLogged=userToLogin;
+                  return res.redirect('/users/profile')
+              }
+
+              if(req.body.user_remember) {
+                res.cookie("email", userToLogin.email, { maxAge: (1000 * 60) * 10 });
+              }
+              return res.redirect("/users/profile");
+          }
+
+          return res.render('users/login', {
+              errors: {
+                  email: {
+                      msg: 'Las credenciales son inválidas'
+                  }
+              }
+          })
+      })
 },
 
   account: (req, res) => {
-		return res.render("users/profile", {
-			user: req.session.userLogged
-		});
+    User.findByPk(req.session.userLogged.id).then((user) => {
+            
+      return res.render('users/profile',{
+          user
+      });
+  })
 	},
 
   logout: (req, res) => {
-    res.clearCookie("userEmail");
+    res.clearCookie("email");
     req.session.destroy();
 		return res.redirect("/");
 	}
+	
 
 };
 
