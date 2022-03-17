@@ -69,14 +69,13 @@ const controller = {
               if (isPasswordCorrect) {
                   delete userToLogin.password
                   req.session.userLogged=userToLogin;
-                  return res.redirect('/users/profile')
-              }
-
-              if(req.body.user_remember) {
-                res.cookie("email", userToLogin.email, { maxAge: (1000 * 60) * 10 });
+              
+              if(req.body.remember) {
+                res.cookie("remember", userToLogin.email, { maxAge: (1000 * 60) * 10 });
               }
               return res.redirect("/users/profile");
           }
+        }
 
           return res.render('users/login', {
               errors: {
@@ -98,7 +97,7 @@ const controller = {
 	},
 
   logout: (req, res) => {
-    res.clearCookie("email");
+    res.clearCookie("remember");
     req.session.destroy();
 		return res.redirect("/");
 	}

@@ -1,21 +1,30 @@
 const fs = require("fs");
 const path = require("path");
 
-//traigo la db
-const filePath = path.resolve(__dirname, "../data/users.json");
-const usersArray = JSON.parse(fs.readFileSync(filePath, "utf8"));
+const {User} = require('../database/models/index.js');
 
 
+function autoLoginMidddleware(req, res, next) {
 
-function autoLoginMidddleware (req, res, next){
+   
    const emailCookie = req.cookies.email
-   if (emailCookie !== undefined){
-   //preguntamos si la persona esta en la db
-   const userToLogin = usersArray.find(oneUser => oneUser.email === emailCookie);
-   delete userToLogin.password; 
-   req.session.userLogged=userToLogin;
+
+   if (emailCookie != undefined) {
+       User.findOne ({
+           where: {
+               email: emailCookie
+           }
+       })
+       .then(UserFromCookie => {
+           req.session.userLogged = UserFromCookie;
+           res.locals.userData = req.session.userLogged;
+           next();
+       })
+
+
+   } else {
+       next();
    }
-   next();
-};
+}
 
 module.exports = autoLoginMidddleware;
