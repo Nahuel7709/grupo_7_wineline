@@ -96,6 +96,31 @@ const controller = {
   })
 	},
 
+  profileEdit: (req, res) => {
+    
+    User.findByPk(req.session.userLogged.id).then((user) => {
+        
+        return res.render('users/edit', {
+            user
+        });
+    })
+},
+
+profileUpdate: function (req, res) {
+  const userID = req.params.id;
+  User.update(
+    { 
+      ...req.body,
+      avatar: req.file.filename,
+      password: bcrypt.hashSync(req.body.password, 10),
+      admin: 0
+    },
+    { where: { id: userID } }
+    )
+  return res.redirect("users/profile");
+
+},
+
   logout: (req, res) => {
     res.clearCookie("remember");
     req.session.destroy();

@@ -22,6 +22,7 @@
           <div class="accountInfo"><span><%= user.country %></span></div>
           <div class="accountData"><span>Telefono</span></div>
           <div class="accountInfo"><span><%= user.cellphone %></span></div>
+          <a href="/users/profileEdit/<%= user.id %>" style="text-align: center;"><button class="btn btn-lg btn-info mt-3">Editar Usuario</button></a>
         </div>
         <div class=imgBox>
           <img class="imgavatar" src="/uploads/users/<%= user.avatar %>" alt="">
