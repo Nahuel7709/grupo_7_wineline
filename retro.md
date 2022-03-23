@@ -77,3 +77,21 @@
 . Esperar los ultimos dias, para elevar todo el trabajo. 
 
 5. Dejar de hacer:
+
+**Retrospectiva Sprint 5.**
+
+1. Comenzar a hacer: 
+. Comenzar a dividir tareas al comienzo del sprint.
+
+2. Hacer más:
+. Reuniones parciales par aadelantar trabajos.
+
+3. Continuar haciendo:
+• Trabajar en equipo y ayudarnos entre todos.
+. Mantenernos comunicados todo el tiempo para mejoras del trabajo.
+. Continuar con las reunines cortas implementadas en el strint 3.
+
+4. Hacer menos:
+. Dejar para ultimo momento los detalles para la entrega. 
+
+5. Dejar de hacer:
