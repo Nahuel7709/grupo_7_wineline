@@ -33,7 +33,7 @@ router.get("/profile", authMiddleware, controller.account);
 //Formulario editar usuario
 router.get("/profileEdit/:id", authMiddleware, controller.profileEdit);
 //Procesar el edit
-router.put("/profileEdit/:id",uploadFile.single("avatar"), controller.profileUpdate);
+router.put("/:id",uploadFile.single("avatar"), controller.profileUpdate);
 
 // Logout
 router.post('/logout', controller.logout);

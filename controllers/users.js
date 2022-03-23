@@ -117,7 +117,7 @@ profileUpdate: function (req, res) {
     },
     { where: { id: userID } }
     )
-  return res.redirect("users/profile");
+  return res.redirect("/users/profile");
 
 },
 
