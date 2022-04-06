@@ -16,7 +16,7 @@
 
 <div class="text-center mt-5">
   
-  <form action="/users/register" method="post" enctype="multipart/form-data"  style="width:70vw;margin:auto;background-color: black; padding: 50px; border-radius: 15px;">
+  <form action="/users/register" method="post" enctype="multipart/form-data"  style="width:70vw;margin:auto;background-color: black; padding: 50px; border-radius: 15px;" id="registerForm">
     <a href="/"><img src="/images/wineline-logo2.png" height="72" alt="logo" class="form-logo"></a>
     <h1 style="font-family:Montserrat; font-weight: bolder; color: white;">Registro</h1>
     
@@ -26,8 +26,9 @@
         <%= errors.usersName.msg %> 
       </div>
     <% } %>
-    <input type="text" name="name" id="name" class="form-control mb-3 <%= locals.errors && errors.name ? "is-invalid" : null  %> " placeholder="Nombre y apellido" autofocus
-    value=<%= locals.oldData ? oldData.name : null  %> >
+    <input type="text" name="name" id="nombre" class="form-control mb-3 <%= locals.errors && errors.name ? "is-invalid" : null  %> " placeholder="Nombre y apellido" autofocus
+    value=<%= locals.oldData ? oldData.name : null  %> ><span class="mb-3"></span>
+    
 
 
    <label for="idUser" class="sr-only">Nombre de usuario</label>
@@ -37,7 +38,7 @@
       </div>
     <% } %>
     <input type="text" id="idUser" name="userName" placeholder="Nombre de usuario" class="form-control mb-3 <%= locals.errors && errors.userName ? "is-invalid" : null  %> " 
-    value=<%= locals.oldData ? oldData.userName : null  %> >
+    value=<%= locals.oldData ? oldData.userName : null  %> ><span class="mb-3"></span>
     
     <label for="name" class="sr-only">Dirección de envío</label>
     <% if (locals.errors && errors.adress) { %>
@@ -45,8 +46,8 @@
         <%= errors.adress.msg %> 
       </div>
     <% } %>
-    <input type="text" name="adress" id="name" class="form-control mb-3 <%= locals.errors && errors.adress ? "is-invalid" : null  %>" placeholder="Dirección de envío" autofocus
-    value=<%= locals.oldData ? oldData.adress : null  %> >
+    <input type="text" name="adress" id="adress" class="form-control mb-3 <%= locals.errors && errors.adress ? "is-invalid" : null  %>" placeholder="Dirección de envío" autofocus
+    value=<%= locals.oldData ? oldData.adress : null  %> > <span class="mb-3"></span>
     
     
     <label for="name" class="sr-only">Teléfono</label>
@@ -55,8 +56,8 @@
         <%= errors.cellphone.msg %> 
       </div>
     <% } %>
-    <input type="text" name="cellphone" id="name" class="form-control mb-3 <%= locals.errors && errors.cellphone ? "is-invalid" : null  %>" placeholder="Teléfono"  autofocus
-    value=<%= locals.oldData ? oldData.cellphone : null  %> >
+    <input type="text" name="cellphone" id="cellphone" class="form-control mb-3 <%= locals.errors && errors.cellphone ? "is-invalid" : null  %>" placeholder="Teléfono"  autofocus
+    value=<%= locals.oldData ? oldData.cellphone : null  %> > <span class="mb-3"></span>
     
     
     <label for="email" class="sr-only">Email</label>
@@ -66,7 +67,7 @@
       </div>
     <% } %>
     <input type="text" name="email" id="email" class="form-control mb-3" placeholder="Direccion de correo electronico" autofocus
-    value=<%= locals.oldData ? oldData.email : null  %> >
+    value=<%= locals.oldData ? oldData.email : null  %> > <span class="mb-3"></span>
     
     
     <label for="password" class="sr-only">Contraseña</label>
@@ -75,7 +76,7 @@
         <%= errors.password.msg %> 
       </div>
     <% } %>
-    <input type="password" id="password" name="password" placeholder="Contraseña" class="form-control mb-3 <%= locals.errors && errors.password ? "is-invalid" : null  %>">
+    <input type="password" id="password" name="password" placeholder="Contraseña" class="form-control mb-3 <%= locals.errors && errors.password ? "is-invalid" : null  %>"><span class="mb-3"></span>
     
     
     <label for="profilePicture" class="sr-only">Imagen de perfil</label>
@@ -85,7 +86,7 @@
         <%= errors.country.msg %>
       </div>
     <% } %>
-								<select 
+								<select id="country"
 									name="country" 
 									class="form-select mb-3 <%= locals.errors && errors.country ? 'is-invalid' : null %>"
 								>
@@ -100,6 +101,7 @@
 										> <%= oneCountry %> </option>
 									<% } %>
 								</select>
+                <span class="mb-3"></span>
 							
     
     <h6 style="text-align: start; color: white;">Foto de perfil</h6>
@@ -124,6 +126,7 @@
 
 
       <%- include('../partials/footer') %>
+      <script src="/js/registerValidation.js"></script>
   </body>
 
 </html>
