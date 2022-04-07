@@ -16,7 +16,7 @@
 
 <div class="text-center mt-5">
   
-  <form action="/products" method="post" enctype="multipart/form-data"  style="width:70vw;margin:auto;background-color: black; padding: 50px; border-radius: 15px;">
+  <form action="/products" method="post" id="productCreateForm" enctype="multipart/form-data"  style="width:70vw;margin:auto;background-color: black; padding: 50px; border-radius: 15px;">
     <a href="/"><img src="/images/wineline-logo2.png" height="72" alt="logo" class="form-logo"></a>
     <h1 style="font-family:Montserrat; font-weight: bolder; color: white;">Crear Producto</h1>
     
@@ -101,6 +101,7 @@
 
 
       <%- include('../partials/footer') %>
+      <script src="/js/createValidation.js"></script>
   </body>
 
 </html>
