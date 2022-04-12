@@ -130,7 +130,7 @@ inputs.forEach((input) => {
 });
 
 registerForm.addEventListener("submit", (e) => {
-  e.preventDefault();
+  
   if (
     campos.usuario &&
     campos.nombre &&
@@ -139,7 +139,7 @@ registerForm.addEventListener("submit", (e) => {
     campos.telefono &&
     campos.direccion
   ) {
-    registerForm.reset();
+    
 
     document
       .getElementById("formulario__mensaje-exito")
@@ -153,21 +153,10 @@ registerForm.addEventListener("submit", (e) => {
     document.querySelectorAll("#registerForm input").forEach((input) => {
       input.classList.remove("is-valid");
     });
+  }else{
+    e.preventDefault();
+    document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
   }
 });
 
-//registerCellphone.addEventListener("input", (e) => {
-//	const field = e.target;
-//	const cellphone = field.value;
-//	const spanTagError = field.nextElementSibling;
-//	if(isNaN(cellphone)) {
-//		field.classList.add("is-invalid");
-//		spanTagError.innerText = `Debes ingresar solo números`;
-//		spanTagError.classList.add("invalid-feedback");
-//	}else {
-//		field.classList.remove("is-invalid");
-//		field.classList.add("is-valid");
-//		spanTagError.innerText = "";
-//		spanTagError.classList.remove("invalid-feedback");
-//	}
-//})
+
