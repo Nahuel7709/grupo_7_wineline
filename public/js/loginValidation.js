@@ -56,9 +56,9 @@ inputs.forEach((input) => {
 });
 
 loginForm.addEventListener("submit", (e) => {
-  e.preventDefault();
+ 
   if (campos.correo && campos.password) {
-    loginForm.reset();
+    
 
     document
       .getElementById("formulario__mensaje-exito")
@@ -72,5 +72,8 @@ loginForm.addEventListener("submit", (e) => {
     document.querySelectorAll("#loginForm input").forEach((input) => {
       input.classList.remove("is-valid");
     });
+  }else{
+    e.preventDefault();
+    document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
   }
 });
