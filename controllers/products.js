@@ -77,6 +77,59 @@ const controller = {
   cart: (req, res) => {
     return res.render("products/productCart");
   },
+
+  wines: async (req, res) => {
+	try{
+		const products = await Product.findAll({ include: ["brand", "categories", "varieties", "volumes"] });
+		const winesCategory = await products.filter( oneProduct => oneProduct.categoryId === 1);
+		return res.render("products/wines", { winesCategory });
+	}catch (e) {
+		console.error(e);
+	  }
+},
+
+beer: async (req, res) => {
+	try{
+		const products = await Product.findAll({ include: ["brand", "categories", "varieties", "volumes"] });
+		const beerCategory = await products.filter( oneProduct => oneProduct.categoryId === 2);
+		return res.render("products/beer", { beerCategory });
+	}catch (e) {
+		console.error(e);
+	  }
+},
+
+sparkling: async (req, res) => {
+	try{
+		const products = await Product.findAll({ include: ["brand", "categories", "varieties", "volumes"] });
+		const sparklingCategory = await products.filter( oneProduct => oneProduct.categoryId === 3);
+		return res.render("products/sparkling", { sparklingCategory });
+	}catch (e) {
+		console.error(e);
+	  }
+},
+
+news: async (req, res) => {
+	try{
+		const products = await Product.findAll({ include: ["brand", "categories", "varieties", "volumes"] });
+		const newsCategory = await products.filter( oneProduct => oneProduct.new == true);
+		return res.render("products/news", { newsCategory });
+	}catch (e) {
+		console.error(e);
+	  }
+},
+
+discount: async (req, res) => {
+	try{
+		const products = await Product.findAll({ include: ["brand", "categories", "varieties", "volumes"] });
+		const discountCategory = await products.filter( oneProduct => oneProduct.discount != 0);
+		return res.render("products/discount", { discountCategory });
+	}catch (e) {
+		console.error(e);
+	  }
+},
+ 
+
+
 }
 
 module.exports = controller;

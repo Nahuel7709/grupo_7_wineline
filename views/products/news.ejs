@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<html>
+
+<%- include('../partials/head') %>
+
+  
+
+  <body>
+
+    <!--Main Header-->
+
+
+    <%- include('../partials/header') %>
+
+
+      <!--Formulario de creación de productos-->
+
+      <main class="browse-body">
+        
+        <div class="create-title-box">
+        <h1 class="browse-title">NOVEDADES</h1>
+        
+
+        <div class="all-products-box">
+          <% for( let i=0; i < newsCategory.length; i++ ) { %>
+              
+            <section class="product-browse-box">
+              <article class="product-article-browse">
+              <a href="/products/read/<%= newsCategory[i].id %>">
+                <div class="product-browse-title">
+                <h2><%= newsCategory[i].name %></h2>
+                <p class="variedad-browse"><%= newsCategory[i].varieties.name %></p>
+                </div>
+                  <div class="product-browse-img">
+                  <img src="/uploads/products/<%= newsCategory[i].image %>" alt="imagen de producto" class="product-browse-img1">
+                  </div>
+                  <div class="browse-product-line"></div>
+                  <div class="product-browse-data">
+                  <div class="product-data-left">
+                  <p><%= newsCategory[i].volumes.name %>.ml</p>
+                  <p>Categoria: <%= newsCategory[i].categories.name %></p>
+                  </div>
+                  <div class="product-data-price">
+                  <p class="product-browse-price">$<%= newsCategory[i].price %></p>
+                  </div>
+                  </div>
+                  
+            </a>
+            </article>
+            </section>
+             
+              <% } %>
+      </div>
+        
+
+
+      </main>
+
+
+      <%- include('../partials/footer') %>
+
+
+
+
+
+
+
+  </body>
+
+</html>

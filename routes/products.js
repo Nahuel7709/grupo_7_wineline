@@ -37,6 +37,15 @@ router.post("/",upload.single("image"), controller.add);
 //Cart
 router.get("/cart", controller.cart);
 
+//categorias
+router.get("/wines", controller.wines);
+router.get("/beer", controller.beer);
+router.get("/sparkling", controller.sparkling);
+
+router.get("/news", controller.news);
+router.get("/discount", controller.discount);
+
+
 
 //CUANDO EDITO
 //http://localhost:3000/products/edit/:id
