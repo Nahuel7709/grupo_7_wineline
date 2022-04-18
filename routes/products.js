@@ -20,7 +20,7 @@ const multerDiskStorage = multer.diskStorage({
   
   const upload = multer({ storage: multerDiskStorage });
 
-
+const adminMiddleware = require('../middlewares/adminMiddleware');
 
 
   //TODOS LOS PRODUCTOS
@@ -30,7 +30,7 @@ router.get("/", controller.browse);
 
 //CUANDO CREO
 //http://localhost:3000/products/create
-router.get("/create", controller.create);
+router.get("/create", adminMiddleware, controller.create);
 //http://localhost:3000/products
 router.post("/",upload.single("image"), controller.add);
 
@@ -40,7 +40,7 @@ router.get("/cart", controller.cart);
 
 //CUANDO EDITO
 //http://localhost:3000/products/edit/:id
-router.get("/edit/:id", controller.edit);
+router.get("/edit/:id", adminMiddleware, controller.edit);
 //http://localhost:3000/products/:id
 router.put("/:id",upload.single("image"), controller.update);
 
@@ -51,7 +51,7 @@ router.put("/:id",upload.single("image"), controller.update);
 router.get("/read/:id", controller.read);
 
 //http://localhost:3000/products/id
-router.delete("/:id", controller.delete);
+router.delete("/:id", adminMiddleware, controller.delete);
 
 
 
