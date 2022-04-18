@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./partials/head') %> 
+
+
+<body>
+  <%- include('./partials/header') %> 
+
+
+<section class="contact">
+    <div class="content">
+        <h2>Preguntas frecuentes</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <strong>No me decido que comprar</strong>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Brindamos Compra Asistida
+                    Con este servicio de valor agregado marcamos una diferencia importante. Estamos listos para atenderlo, ayudarlo, asesorarlo y realizar todos los pasos de la compra por Ud, ya sea mediante el chat o por venta telefonica.</strong> 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <strong>Envios</strong> 
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Entregas con Logística Propia
+                    Para nosotros la venta termina con su review positiva por eso gestionamos nuestros pedidos con nuestra propia flota a todo el pais. Nuestro compromiso es que cada pedido llegue en tiempo y forma. Proveemos la entrega más rapida del mercado y contamos con entrega las 24 horas. Esto implica que podemos entregar su compra en medio de un agasajo o evento.</strong>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <strong>Medios de pago</strong> 
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong> Pague al recibir o con transferencia bancaria. Online con tarjetas de crédito o debito. Aceptamos MercadoPago con todas sus promociones vigentes.</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        <a href="/"><button class="btn btn-lg btn-primary w-100">Home</button></a>
+    </div>
+    
+
+
+
+
+  
+  <%- include('./partials/footer') %>
+
+</body>

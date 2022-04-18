@@ -14,6 +14,10 @@ router.get("/help", controller.help);
 
 router.get("/admin", controller.admin);
 
+router.get("/terms", controller.terms);
+
+router.get("/faq", controller.faq);
+
 
 
 

@@ -15,6 +15,14 @@ const controller = {
 
  admin:(req, res) => {
   return res.render("./admin")
+},
+
+terms:(req, res) => {
+  return res.render("./terms")
+},
+
+faq:(req, res) => {
+  return res.render("./faq")
 }
 
 
