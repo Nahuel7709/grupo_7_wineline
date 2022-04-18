@@ -11,7 +11,11 @@ const controller = {
 
  help:(req, res) => {
    return res.render("./help")
- }
+ },
+
+ admin:(req, res) => {
+  return res.render("./admin")
+}
 
 
 };
