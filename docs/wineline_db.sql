@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-03-2022 a las 21:54:55
+-- Tiempo de generación: 19-04-2022 a las 04:47:25
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.1.2
 
@@ -117,7 +117,7 @@ CREATE TABLE `products` (
   `price` decimal(6,2) NOT NULL,
   `description` text NOT NULL,
   `discount` decimal(5,2) NOT NULL,
-  `new` bit(2) NOT NULL,
+  `new` bit(1) NOT NULL,
   `createdAt` timestamp NULL DEFAULT NULL,
   `updatedAt` timestamp NULL DEFAULT NULL,
   `deletedAt` timestamp NULL DEFAULT NULL,
@@ -132,15 +132,18 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `image`, `price`, `description`, `discount`, `new`, `createdAt`, `updatedAt`, `deletedAt`, `brandId`, `categoryId`, `varietyId`, `volumeId`) VALUES
-(1, 'Trumpeter', '1643036550919-637800597_productImage.jpg', '1160.00', 'Rojo violáceo brillante, seduce con sus aromas frutales (ciruela) y especiados (canela, cardamomo, pimienta negra). Posee gran cuerpo y su vivaz estructura acentúa los taninos intensos que se vuelven aterciopelados en el retrogusto. Variedad: 100% Malbec.', '0.00', b'00', NULL, NULL, NULL, 1, 1, 1, 1),
-(22, 'Luigi Bosca', '1648056980620-7267540_image.jpg', '1350.00', 'Luigi Bosca Malbec es un tinto de color rojo violáceo brillante. Sus aromas son intensos y amables, con notas que recuerdan a frutas rojas, y tonos algo florales y especiados. En boca es generoso, fluido y expresivo, con taninos incipientes. De paladar franco y paso refrescante, con buen cuerpo y carácter.', '10.00', b'00', '2022-03-21 23:44:28', '2022-03-23 17:36:20', NULL, NULL, 1, 1, 1),
-(23, 'Baron B', '1647914157910-710979778_image.jpg', '2200.00', 'Sus finas y persistentes burbujas, de color amarillo con destellos ocres, revelan autenticidad y delicadeza. Aromas expresivos a damasco y frutos ci´tricos se combinan con notas de pan tostado y frutos secos, dando complejidad a este espumante con final de boca sensual y de gran persistencia.', '0.00', b'00', '2022-03-22 01:55:57', '2022-03-22 01:55:57', NULL, NULL, 3, 8, 5),
-(24, 'Nieto Senetiner', '1648056430026-621253868_image.jpg', '1100.00', 'Ligero tono ámbar. Aroma complejo y frutado, recuerda notas de frambuesa junto con notas de praliné y pan tostado, fiel a la excelencia del Pinot Noir.', '5.00', b'00', '2022-03-23 17:27:10', '2022-03-23 17:27:10', NULL, NULL, 3, 8, 1),
-(25, 'Rutini', '1648056488981-474713934_image.jpg', '1215.00', 'Rojo intenso, con matices azulados. En nariz, se presenta frutado, con notas de ciruela, vainilla y anís; mientras, en boca, se reafirman los acentos aciruelados. Los taninos, muy presentes pero amables, destacan su personalidad. Variedad: 100% Malbec de Altamira, Gualtallary y La Consulta.', '0.00', b'00', '2022-03-23 17:28:08', '2022-03-23 17:28:08', NULL, NULL, 1, 1, 1),
-(26, 'Stella Artois', '1648056698740-950470696_image.png', '160.00', 'Tiene un Sabor sutil, proviene de la mezcla de la mejor malta y las mejores variedades de lúpulo. Utilizando sólo ingredientes naturales que garantiza una lager fresca, de alta calidad con un ligero sabor amargo.', '0.00', b'00', '2022-03-23 17:31:38', '2022-03-23 17:31:38', NULL, NULL, 2, 10, 4),
-(27, 'Corona', '1648056768725-537134649_image.jpg', '220.00', 'Corona Porron 710 cc (Pack x 12) Corona Extra es única porque tiene un color inconfundible, un sabor incomparable y en definitiva no tiene igual. ... Corona es una cerveza clara que no esconde nada, de ahí su botella transparente. Y es que cuando se usan sólo los mejores ingredientes, no hay nada que ocultar.', '0.00', b'00', '2022-03-23 17:32:48', '2022-03-23 17:32:48', NULL, NULL, 2, 10, 4),
-(28, 'Chandon', '1648056853493-692616796_image.jpg', '990.00', 'Chandon Délice es la sutil variante de un estilo. Versátil por combinar lo clásico del Chardonnay y Pinot Noir con lo vanguardista del Sémillon y Petit Manseng. Este espumante traspasa la frontera de sabores. Su color es amarillo brillante con algunos matices verdosos.', '0.00', b'00', '2022-03-23 17:34:13', '2022-03-23 17:34:13', NULL, NULL, 3, 11, 1),
-(29, 'Andes', '1648056904484-16983656_image.jpg', '390.00', 'La Andes Origen Rubia es una Cerveza estilo american pilsner, una Rubia con cuerpo y carácter maltoso. Aroma leve a lúpulo, cereal y toque de levadura. Debe servirse en copa para apreciar mejor sus aromas y resaltar así su color dorado brillante.', '0.00', b'00', '2022-03-23 17:35:04', '2022-03-23 17:35:04', NULL, NULL, 2, 10, 1);
+(1, 'Trumpeter', '1643036550919-637800597_productImage.jpg', '1160.00', 'Rojo violáceo brillante, seduce con sus aromas frutales (ciruela) y especiados (canela, cardamomo, pimienta negra). Posee gran cuerpo y su vivaz estructura acentúa los taninos intensos que se vuelven aterciopelados en el retrogusto. Variedad: 100% Malbec.', '0.00', b'0', NULL, NULL, NULL, 1, 1, 1, 1),
+(22, 'Luigi Bosca', '1648056980620-7267540_image.jpg', '1350.00', 'Luigi Bosca Malbec es un tinto de color rojo violáceo brillante. Sus aromas son intensos y amables, con notas que recuerdan a frutas rojas, y tonos algo florales y especiados. En boca es generoso, fluido y expresivo, con taninos incipientes. De paladar franco y paso refrescante, con buen cuerpo y carácter.', '10.00', b'1', '2022-03-21 23:44:28', '2022-03-23 17:36:20', NULL, NULL, 1, 1, 1),
+(23, 'Baron B', '1647914157910-710979778_image.jpg', '2200.00', 'Sus finas y persistentes burbujas, de color amarillo con destellos ocres, revelan autenticidad y delicadeza. Aromas expresivos a damasco y frutos ci´tricos se combinan con notas de pan tostado y frutos secos, dando complejidad a este espumante con final de boca sensual y de gran persistencia.', '0.00', b'0', '2022-03-22 01:55:57', '2022-03-22 01:55:57', NULL, NULL, 3, 8, 5),
+(24, 'Nieto Senetiner', '1648056430026-621253868_image.jpg', '1100.00', 'Ligero tono ámbar. Aroma complejo y frutado, recuerda notas de frambuesa junto con notas de praliné y pan tostado, fiel a la excelencia del Pinot Noir.', '5.00', b'0', '2022-03-23 17:27:10', '2022-03-23 17:27:10', NULL, NULL, 3, 8, 1),
+(25, 'Rutini', '1648056488981-474713934_image.jpg', '1215.00', 'Rojo intenso, con matices azulados. En nariz, se presenta frutado, con notas de ciruela, vainilla y anís; mientras, en boca, se reafirman los acentos aciruelados. Los taninos, muy presentes pero amables, destacan su personalidad. Variedad: 100% Malbec de Altamira, Gualtallary y La Consulta.', '0.00', b'0', '2022-03-23 17:28:08', '2022-03-23 17:28:08', NULL, NULL, 1, 1, 1),
+(26, 'Stella Artois', '1648056698740-950470696_image.png', '160.00', 'Tiene un Sabor sutil, proviene de la mezcla de la mejor malta y las mejores variedades de lúpulo. Utilizando sólo ingredientes naturales que garantiza una lager fresca, de alta calidad con un ligero sabor amargo.', '0.00', b'0', '2022-03-23 17:31:38', '2022-03-23 17:31:38', NULL, NULL, 2, 10, 4),
+(27, 'Corona', '1648056768725-537134649_image.jpg', '220.00', 'Corona Porron 710 cc (Pack x 12) Corona Extra es única porque tiene un color inconfundible, un sabor incomparable y en definitiva no tiene igual. ... Corona es una cerveza clara que no esconde nada, de ahí su botella transparente. Y es que cuando se usan sólo los mejores ingredientes, no hay nada que ocultar.', '0.00', b'0', '2022-03-23 17:32:48', '2022-03-23 17:32:48', NULL, NULL, 2, 10, 4),
+(28, 'Chandon', '1648056853493-692616796_image.jpg', '990.00', 'Chandon Délice es la sutil variante de un estilo. Versátil por combinar lo clásico del Chardonnay y Pinot Noir con lo vanguardista del Sémillon y Petit Manseng. Este espumante traspasa la frontera de sabores. Su color es amarillo brillante con algunos matices verdosos.', '0.00', b'1', '2022-03-23 17:34:13', '2022-03-23 17:34:13', NULL, NULL, 3, 11, 1),
+(29, 'Andes', '1648056904484-16983656_image.jpg', '390.00', 'La Andes Origen Rubia es una Cerveza estilo american pilsner, una Rubia con cuerpo y carácter maltoso. Aroma leve a lúpulo, cereal y toque de levadura. Debe servirse en copa para apreciar mejor sus aromas y resaltar así su color dorado brillante.', '0.00', b'0', '2022-03-23 17:35:04', '2022-03-23 17:35:04', NULL, NULL, 2, 10, 1),
+(30, 'Nahuel Menichetti', '1648081365483-833665907_image.jpg', '7777.00', 'gssgsgdsgsd', '85.30', b'0', '2022-03-24 00:22:45', '2022-03-24 00:22:45', '2022-03-24 00:23:31', NULL, 3, 5, 6),
+(31, 'WINELINE', '1648092606604-952568145_image.jpg', '1100.00', 'asddaasdadsasdadsads', '85.30', b'0', '2022-03-24 03:30:06', '2022-03-24 03:30:06', '2022-03-24 03:30:23', NULL, 1, 3, 6),
+(32, 'WINELINE', '1648092661782-289385240_image.jpg', '9999.99', 'sdadsaadsdsaads', '85.30', b'0', '2022-03-24 03:31:01', '2022-03-24 03:31:01', '2022-03-24 03:31:15', NULL, 2, 4, 3);
 
 -- --------------------------------------------------------
 
@@ -171,7 +174,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `userName`, `email`, `cellphone`, `password`, `country`, `adress`, `avatar`, `admin`, `createdAt`, `updatedAt`, `deletedAt`) VALUES
 (1, 'Nahuel', 'Nahuel09', 'nahuelm@gmail.com', '111111111111', '$2a$10$ICUYIZxNudrwf/2XVSPyNOVl1uFnfugFwluivca6Gs86vrbqM5YEC', 'Uruguay', 'Calle Falsa 123', '1648057629280-787712398_avatar.jpg', b'0', '2022-03-17 16:01:12', '2022-03-23 17:47:09', NULL),
-(2, 'Nahuel Prueba', 'PruebaActualiz', 'usuarioprueba@gmail.com', '111112211111', '$2a$10$DlYlVxSUVWZsH5PZEmPeuuMP4/ePlPVMe1tsDSOI9UYVrV8V6JnQu', 'Venezuela', 'Calle Falsa 700', '1648057395550-73002422_avatar.jpg', b'0', '2022-03-17 17:42:20', '2022-03-23 17:43:15', NULL);
+(2, 'Nahuel Prueba', 'PruebaActualiz', 'usuarioprueba@gmail.com', '111112211111', '$2a$10$DlYlVxSUVWZsH5PZEmPeuuMP4/ePlPVMe1tsDSOI9UYVrV8V6JnQu', 'Venezuela', 'Calle Falsa 700', '1648057395550-73002422_avatar.jpg', b'0', '2022-03-17 17:42:20', '2022-03-23 17:43:15', NULL),
+(3, 'Nahuel', 'PruebaScript', 'usuarioprueba2@gmail.com', '111111111111', '$2a$10$pjSibPx0GIsJFI4EVcI5uuXdlJWYH2vD/bKA2ZIMsSytTKBXLm1ju', 'Argentina', 'Calle Falsa 322', '1649287333475-142813917_avatar.jpg', b'0', '2022-04-06 23:22:13', '2022-04-06 23:22:13', NULL),
+(5, 'Nahuel Menichetti', 'validaciones77', 'validaciones@gmail.com', '111111111111', '$2a$10$jliloT/fIrTD.bUgDGbTgObkjmXewGNXfKErmG9l367KUpLe3TrTa', 'Argentina', 'CalleFalsa900', '1649790447755-414702813_avatar.jpg', b'1', '2022-04-12 19:07:27', '2022-04-12 19:07:27', NULL);
 
 -- --------------------------------------------------------
 
@@ -321,13 +326,13 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT de la tabla `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `varieties`
