@@ -1,4 +1,5 @@
 const {Product, Volume, Category, Variety} = require("../database/models");
+const { Op } = require("sequelize");
 
 const fs = require("fs");
 const path = require("path");
@@ -127,6 +128,20 @@ discount: async (req, res) => {
 		console.error(e);
 	  }
 },
+
+search: (req, res) => {
+    let search = req.query.searchbar;
+
+    Product.findAll({
+      where: {
+        name: { [Op.like]: "%" + search + "%" },
+      },
+      include: ["brand", "categories", "varieties", "volumes"],
+    }).then((productsSearch) => {
+      res.render("products/search", { productsSearch });
+    });
+  },
+
  
 
 

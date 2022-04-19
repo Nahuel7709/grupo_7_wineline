@@ -45,7 +45,8 @@ router.get("/sparkling", controller.sparkling);
 router.get("/news", controller.news);
 router.get("/discount", controller.discount);
 
-
+//search
+router.get("/search", controller.search);
 
 //CUANDO EDITO
 //http://localhost:3000/products/edit/:id
