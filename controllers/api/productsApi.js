@@ -5,10 +5,9 @@ module.exports = {
         const products = await Product.findAll({
             include: ["categories"]
         });
-        return res.json ({
-            total: products.length,
-            products:products
-        })
+        return res.json (
+           products
+        )
     },
 
     detail: async (req, res) => {

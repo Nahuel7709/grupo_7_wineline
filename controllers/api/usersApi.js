@@ -3,10 +3,9 @@ const { User } = require ("../../database/models")
 module.exports = {
     all: async (req,res) => {
         const users = await User.findAll();
-        return res.json ({
-            total: users.length,
-            users:users
-        })
+        return res.json (
+            users
+            )
     },
 
     user: async (req, res) => {
